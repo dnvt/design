@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+
+  transition: background 0.1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+legend,
+ul {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light-mode {
+  background: #fff;
+  transition: background 0.1s ease;
+}
+
+body.dark-mode {
+  background: #000;
+  transition: background 0.1s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap");
+
+@font-face {
+  font-family: "iA Writer";
+  src: url("./Assets/Fonts/iAWriterQuattroS-Regular.woff2") format("woff2"),
+    url("./Assets/Fonts/iAWriterQuattroS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Sectra";
+  src: url("./Assets/Fonts/GTSectraTrial-Rg.woff2") format("woff2"),
+    url("./Assets/Fonts/GTSectraTrial-Rg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT Sectra";
+  src: url("./Assets/Fonts/GTSectraTrial-Bd.woff2") format("woff2"),
+    url("./Assets/Fonts/GTSectraTrial-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  cursor: pointer;
+  text-align: inherit;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: inherit;
+}
