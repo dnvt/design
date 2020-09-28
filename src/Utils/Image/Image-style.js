@@ -20,6 +20,12 @@ const ImageStyle = createUseStyles({
       borderRadius: "42px",
     },
   },
+  vignette: {
+    width: "100%",
+    height: "100%",
+    padding: "16px",
+    background: ({ theme }) => theme.outline,
+  },
 });
 
 export default ImageStyle;

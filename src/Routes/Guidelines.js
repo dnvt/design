@@ -13,11 +13,11 @@ const Guidelines = () => {
       <FontSection />
       <Section value='Navigation Section' />
       <NavigationSection />
-      <Section value=' Device Section' />
-      <DeviceSection />
       <Section value=' Utility Section' />
       <UtilsSection />
       <Section value=' Device Section' />
+      <DeviceSection />
+      <Section value=' Image Section' />
       <ImageSection />
     </>
   );

@@ -1,20 +1,22 @@
 import React from "react";
+import { useTheme } from "react-jss";
 import Container from "../../Components/Containers/Container";
+import Vignettes from "../../Components/Vignettes/Vignettes";
 import Spacer from "../../Utils/Spacer/Spacer";
 
-export const ImageSection = () => {
+export const ImageSection = (props) => {
+  const theme = useTheme();
+
   return (
     <>
       <Container>
         <Spacer height={24} />
       </Container>
-      {/* <LegendImage
+      <Vignettes
         big
-        src={"./img/USMobile-02"}
         alt={"This is a fantastic image for you mon ami"}
-        visibility={visibility}
-        background={colors.brey}
-      /> */}
+        background={theme.grey}
+      />
       <Container>
         {/* <SpacingFortyHalf visibility={visibility} />
 

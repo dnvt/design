@@ -22,7 +22,7 @@ const Image = (props) => {
   let imageState;
 
   const picture = (
-    <picture>
+    <picture style={props.background && { background: props.background }}>
       <source srcSet={imageWebp} type='image/webp' />
       <img src={imagePng} alt={props.alt} />
     </picture>
