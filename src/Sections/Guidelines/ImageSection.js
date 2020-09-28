@@ -4,7 +4,7 @@ import Container from "../../Components/Containers/Container";
 import Vignettes from "../../Components/Vignettes/Vignettes";
 import Spacer from "../../Utils/Spacer/Spacer";
 
-export const ImageSection = (props) => {
+export const ImageSection = () => {
   const theme = useTheme();
 
   return (
@@ -14,25 +14,20 @@ export const ImageSection = (props) => {
       </Container>
       <Vignettes
         big
-        alt={"This is a fantastic image for you mon ami"}
+        alt='This is a fantastic image for you mon ami'
         background={theme.grey}
       />
       <Container>
-        {/* <SpacingFortyHalf visibility={visibility} />
-
-        <LegendImage
-          src={"./img/USMobile-02"}
-          visibility={visibility}
-          background={colors.usmob}
-        />
-        <SpacingFortyHalf visibility={visibility} />
-        <LegendImage
-          src={"./img/USMobile-02"}
-          alt={"This is a fantastic image for you mon ami"}
-          visibility={visibility}
-          background={colors.usmob}
-        /> */}
+        <Spacer height={32} />
       </Container>
+      <Vignettes
+        alt='This is a fantastic image for you mon ami'
+        background={theme.grey}
+      />
+      <Container>
+        <Spacer height={32} />
+      </Container>
+      <Vignettes background={theme.grey} />
     </>
   );
 };

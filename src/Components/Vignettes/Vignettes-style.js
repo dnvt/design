@@ -8,6 +8,7 @@ const VignettesStyle = createUseStyles({
     alignItems: "center",
     justifyContent: "center",
     height: "336px",
+    background: ({ theme }) => theme.outline,
 
     "@media (min-width: 768px)": {
       height: "576px",

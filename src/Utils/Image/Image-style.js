@@ -24,7 +24,21 @@ const ImageStyle = createUseStyles({
     width: "100%",
     height: "100%",
     padding: "16px",
-    background: ({ theme }) => theme.outline,
+    // background: ({ theme }) => theme.outline,
+  },
+
+  bigVignette: {
+    width: "100%",
+    height: "100%",
+    padding: "16px",
+    // background: ({ theme }) => theme.outline,
+    "@media (min-width: 992px)": {
+      width: "928px",
+    },
+
+    "@media (min-width: 1360px)": {
+      width: "1120px",
+    },
   },
 });
 

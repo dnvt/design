@@ -6,6 +6,7 @@ import Image from "../../Utils/Image/Image";
 import Spacer from "../../Utils/Spacer/Spacer";
 import Font from "../../Utils/Font/Font";
 import Container from "../Containers/Container";
+import { useTheme } from "react-jss";
 
 // TODO: Continue cleaning this shit
 
@@ -14,26 +15,38 @@ const Vignettes = (props) => {
   // props.src = string;
   // props.alt = string;
 
+  const theme = useTheme();
   const window = useWindowSize();
-  const classes = VignettesStyle();
+  const classes = VignettesStyle({ ...props, theme });
 
-  const inner = (
+  const imgSegment = (
+    <div className={classes.Vignette}>
+      <Image
+        cl={props.big ? "bigVignette" : "vignette"}
+        src={props.src}
+        alt={props.alt}
+      />
+    </div>
+  );
+
+  const legendSegment = (
     <>
-      <div className={classes.Vignette}>
-        {/* <div className={classes.ImageContainer}> */}
-        <Image cl='vignette' src={props.src} alt={props.alt} />
-        {/* </div> */}
-      </div>
-      {props.alt && (
-        <>
-          <Spacer height={window.width > 992 ? 16 : 8} />
-          <Font type='legend'>{props.alt}</Font>
-        </>
-      )}
+      <Spacer height={window.width > 992 ? 16 : 8} />
+      <Font type='legend'>{props.alt}</Font>
     </>
   );
 
-  return props.big ? <>{inner}</> : <Container>{inner}</Container>;
+  return props.big ? (
+    <>
+      {imgSegment}
+      {props.alt && <Container>{legendSegment}</Container>}
+    </>
+  ) : (
+    <Container>
+      {imgSegment}
+      {props.alt && <> {legendSegment}</>}
+    </Container>
+  );
 };
 
 // if (big) {
