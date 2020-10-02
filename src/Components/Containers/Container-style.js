@@ -95,6 +95,14 @@ const ContainerStyle = createUseStyles({
     "@media (min-width: 768px)": { columnGap: "32px" },
   },
 
+  mobileScrollList: {
+    display: "grid",
+    gridTemplateColumns: "64px 1fr 1fr 1fr 1fr 64px",
+    columnGap: "24px",
+
+    "@media (min-width: 768px)": { columnGap: "32px" },
+  },
+
   // Realm of the Full Container
   FullContainer: {
     position: "relative",

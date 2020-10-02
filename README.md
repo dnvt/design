@@ -1,8 +1,8 @@
 # design
 
-Tasks at hand
-[] - Vignettes components
-[] - Cards components
+Tasks at hand  
+[ ] - Vignettes components  
+[ ] - Cards components  
 
 ## `yarn start`
 

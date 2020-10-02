@@ -17,6 +17,17 @@ export const DeviceSection = () => {
         <Container>
           <Spacer height={40} />
         </Container>
+        
+        <Container drag mobileFour>
+          <Device mobile />
+          <Device mobile />
+          <Device mobile />
+          <Device mobile />
+        </Container>
+        <Container>
+          <Spacer height={80} />
+        </Container>
+
         <Container big around>
           <Device mobile />
           <SpacerFullHeight />
@@ -25,6 +36,7 @@ export const DeviceSection = () => {
         <Container>
           <Spacer height={80} />
         </Container>
+
         <Container big around>
           <Device browser />
           <SpacerFullHeight />
@@ -33,6 +45,7 @@ export const DeviceSection = () => {
         <Container>
           <Spacer height={80} />
         </Container>
+
         <Container drag frameless>
           <Device frameless />
           <Device frameless />

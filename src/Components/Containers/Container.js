@@ -48,6 +48,25 @@ const Container = (props) => {
       </div>
     );
 
+    if (props.drag && props.mobileFour)
+    return (
+      <div className={classes.FullContainer}>
+        <ArrowDragScroll big left />
+        <div className={classes.FramelessDragContainer}>
+          <div className={classes.mobileScrollList}>
+            <div>
+              <Spacer font height='100%' width='64px' bg={theme.main50} />
+            </div>
+            {props.children}
+            <div>
+              <Spacer font height='100%' width='64px' bg={theme.main50} />
+            </div>
+          </div>
+        </div>
+        <ArrowDragScroll big right />
+      </div>
+    );
+
   // Else default case
   // <Container>{ children }</Container>
   return <div className={classes.Container}>{props.children}</div>;
