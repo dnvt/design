@@ -4,6 +4,11 @@ import Spacer from "../../Utils/Spacer/Spacer";
 import ArrowDragScroll from "../ArrowSignals/ArrowDragSignal";
 import ContainerStyle from "./Container-style";
 
+// TODO
+// Wanna add Spacer as a variable within 
+// the Container component
+// <Container ...props spacer={VALUE}></Container>
+
 const Container = (props) => {
   const classes = ContainerStyle();
   const theme = useTheme();
@@ -26,9 +31,6 @@ const Container = (props) => {
 
   // Drag & Frameless Container
   // <Container drag frameless>{ children }</Container>
-
-  // TODO > Handle the padding of this
-  // The shadows get truncated currently
   if (props.drag && props.frameless)
     return (
       <div className={classes.FullContainer}>

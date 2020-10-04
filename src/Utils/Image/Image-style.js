@@ -6,6 +6,9 @@ const ImageStyle = createUseStyles({
     height: "100%",
     background: ({ theme }) => theme.outline,
     padding: "16px",
+    "@media (min-width: 1360px)": {
+      padding: "24px",
+    },
   },
   mobile: {
     width: "100%",
@@ -17,6 +20,7 @@ const ImageStyle = createUseStyles({
       borderRadius: "28px",
     },
     "@media (min-width: 1360px)": {
+      padding: "40px 24px",
       borderRadius: "42px",
     },
   },
@@ -25,6 +29,9 @@ const ImageStyle = createUseStyles({
     height: "100%",
     padding: "16px",
     // background: ({ theme }) => theme.outline,
+    "@media (min-width: 1360px)": {
+      padding: "24px",
+    },
   },
 
   bigVignette: {
@@ -37,6 +44,7 @@ const ImageStyle = createUseStyles({
     },
 
     "@media (min-width: 1360px)": {
+      padding: "24px",
       width: "1120px",
     },
   },
