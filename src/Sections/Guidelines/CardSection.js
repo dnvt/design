@@ -5,6 +5,18 @@ const CardSection = (props) => {
   return (
     <>
       <SpaceFortyHalf />
+      {/* <Card
+        loading
+        title='Test of this title'
+        titleColor={colors.text}
+        tags='Programming'
+        tagsColor={colors.blue}
+        src={"./img/USMobile-02"}
+        background={colors.grey}
+        backgroundHover={colors.b10}
+        alt
+        path='/'
+      /> */}
     </>
   );
 };
