@@ -5,6 +5,7 @@ import NavigationSection from "../Sections/Guidelines/NavigationSection";
 import UtilsSection from "../Sections/Guidelines/UtilsSection";
 import { DeviceSection } from "../Sections/Guidelines/DeviceSection";
 import { ImageSection } from "../Sections/Guidelines/ImageSection";
+import CardSection from "../Sections/Guidelines/CardSection";
 
 const Guidelines = () => {
   return (
@@ -19,6 +20,8 @@ const Guidelines = () => {
       <DeviceSection />
       <Section value=' Image Section' />
       <ImageSection />
+      <Section value=' Card Section' />
+      <CardSection />
     </>
   );
 };

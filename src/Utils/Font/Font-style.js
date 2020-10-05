@@ -76,14 +76,14 @@ const FontStyle = createUseStyles({
 
     "@media (min-width: 768px)": {
       fontSize: "180px",
-      lineHeight: "192px",
+      lineHeight: "184px",
       marginLeft: "-1.2%",
       marginRight: "-1.2%",
       letterSpacing: "-.023em",
     },
     "@media (min-width: 1360px)": {
       fontSize: "242px",
-      lineHeight: "240px",
+      lineHeight: "232px",
       marginLeft: "-1.2%",
       marginRight: "-1.2%",
     },

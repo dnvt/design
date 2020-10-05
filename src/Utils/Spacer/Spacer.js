@@ -2,6 +2,7 @@ import React from "react";
 import SpacerStyle from "./Spacer-style";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 import { useTheme } from "react-jss";
+import Container from "../../Components/Containers/Container";
 
 const Spacer = (props) => {
   const theme = useTheme();
@@ -60,131 +61,8 @@ const Spacer = (props) => {
     );
   }
 
+  if (props.container) return <Container>{spacer}</Container>;
   return <>{spacer}</>;
 };
 
 export default Spacer;
-
-// export function SpacingFortyHalf({ visibility }) {
-//   const { width } = useWindowDimensions();
-
-//   if (width > "992") {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='40'
-//             height={space[5]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   }
-//   if (width > "768") {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='32'
-//             height={space[4]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   } else {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='24'
-//             height={space[3]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   }
-// }
-
-// export function SpacingEightyHalf({ visibility }) {
-//   const { width } = useWindowDimensions();
-
-//   if (width > "1360") {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='80'
-//             height={space[7]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   }
-//   if (width > "992") {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='64'
-//             height={space[6]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   } else {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='40'
-//             height={space[5]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   }
-// }
-
-// export function SpacingHundredEighty({ visibility }) {
-//   const { width } = useWindowDimensions();
-
-//   if (width > "768") {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='104'
-//             height={space[8]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   } else {
-//     return (
-//       <>
-//         <Container>
-//           <Spacing
-//             visibility={visibility}
-//             value='64'
-//             height={space[6]}
-//             width='100%'
-//           />
-//         </Container>
-//       </>
-//     );
-//   }
-// }
