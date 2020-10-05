@@ -1,8 +1,9 @@
 import React from "react";
-import SpacerStyle from "./Spacer-style";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 import { useTheme } from "react-jss";
+
 import Container from "../../Components/Containers/Container";
+import SpacerStyle from "./Spacer-style";
 
 const Spacer = (props) => {
   const theme = useTheme();

@@ -1,22 +1,20 @@
 import React from "react";
-import { useTheme } from "react-jss";
-import Spacer from "../../Utils/Spacer/Spacer";
+import Verticaler from "../../Utils/Spacer/Variations/Verticaler";
 import ArrowDragScroll from "../ArrowSignals/ArrowDragSignal";
 import ContainerStyle from "./Container-style";
 
 // TODO
-// Wanna add Spacer as a variable within 
+// Wanna add Spacer as a variable within
 // the Container component
 // <Container ...props spacer={VALUE}></Container>
 
 const Container = (props) => {
   const classes = ContainerStyle();
-  const theme = useTheme();
 
   // Full Container
   // <Container full>{ children }</Container
   if (props.full)
-    return <div className={classes.FullContainer}>{props.children}</div>; 
+    return <div className={classes.FullContainer}>{props.children}</div>;
 
   // Big Container
   // <Container big>{ children }</Container>
@@ -38,11 +36,11 @@ const Container = (props) => {
         <div className={classes.FramelessDragContainer}>
           <div className={classes.imageScrollCards}>
             <div>
-              <Spacer font height='100%' width='64px' bg={theme.main50} />
+              <Verticaler width='64px' />
             </div>
             {props.children}
             <div>
-              <Spacer font height='100%' width='64px' bg={theme.main50} />
+              <Verticaler width='64px' />
             </div>
           </div>
         </div>
@@ -50,18 +48,18 @@ const Container = (props) => {
       </div>
     );
 
-    if (props.drag && props.mobileFour)
+  if (props.drag && props.mobileFour)
     return (
       <div className={classes.FullContainer}>
         <ArrowDragScroll big left />
         <div className={classes.FramelessDragContainer}>
           <div className={classes.mobileScrollList}>
             <div>
-              <Spacer font height='100%' width='64px' bg={theme.main50} />
+              <Verticaler width='64px' />
             </div>
             {props.children}
             <div>
-              <Spacer font height='100%' width='64px' bg={theme.main50} />
+              <Verticaler width='64px' />
             </div>
           </div>
         </div>

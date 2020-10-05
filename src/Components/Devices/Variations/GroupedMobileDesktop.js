@@ -43,7 +43,6 @@ const GroupedMobileDesktop = (props) => {
       <Container big around>
         <Device browser src={props.srcDesktop[1]} />
       </Container>
-      <Spacer container height={80} />
     </>
   );
 };
