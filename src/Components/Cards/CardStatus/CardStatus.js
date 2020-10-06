@@ -7,7 +7,7 @@ const CardStatus = () => {
 
   return (
     <>
-      <div className={classes.projectStatus}>
+      <div className={classes.Status}>
         {loading && (
           <MenuLink icon='loading' value='Loading...' color={theme.text} />
         )}
