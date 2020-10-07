@@ -37,7 +37,7 @@ export const light = {
 };
 
 export const dark = {
-  gridLine: "rgba(105,70,186,.5)",
+  gridLine: "rgba(105,70,186,.4)",
   gridBackground: "rgba(80,11,241,.25)",
   sidelines: "1px solid rgba(225,225,225,.15)",
   outline: "rgba(225,225,225,.1)",

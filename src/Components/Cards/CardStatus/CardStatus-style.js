@@ -3,6 +3,7 @@ import { createUseStyles } from "react-jss";
 const CardStatusStyle = createUseStyles({
   Status: {
     position: "absolute",
+    zIndex: "10",
     maxWidth: "100%",
     top: "0",
     left: "0",

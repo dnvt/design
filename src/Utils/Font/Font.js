@@ -13,6 +13,8 @@ const Font = (props) => {
   const window = useWindowSize();
   const FONTSPACING = FontSpacing(window);
 
+  // What's englobate the Font components
+  // so it always perfectly align onto the grid
   const FontPadding = (props) => {
     return (
       <>
@@ -38,12 +40,31 @@ const Font = (props) => {
     );
   };
 
+  // Need to separate integrate the H3 into a span
+  // so it can get its own underline border
+  const fontH3 = (
+    <span
+      className={classes.span}
+      style={
+        props.hover
+          ? { borderColor: props.color }
+          : { borderColor: "transparent" }
+      }
+    >
+      {props.children}
+    </span>
+  );
+
+  // Defining the main component to render
   let fontType = (
     <props.type className={classes[props.type]} style={{ color: props.color }}>
-      <FontPadding type={props.type}>{props.children}</FontPadding>
+      <FontPadding type={props.type}>
+        {props.type !== "h3" ? props.children : fontH3}
+      </FontPadding>
     </props.type>
   );
 
+  // Conditional rendering based on certain Font type
   if (
     props.type === "text" ||
     props.type === "hero" ||
@@ -61,6 +82,8 @@ const Font = (props) => {
     );
   }
 
+  // Font Component render
+  // <Font type="type" color=(optional && default theme.text)" />
   return <>{fontType}</>;
 };
 

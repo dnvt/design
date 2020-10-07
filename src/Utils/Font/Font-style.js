@@ -110,7 +110,7 @@ const FontStyle = createUseStyles({
   },
   span: {
     borderBottom: "1px solid",
-    transition: "border .1s ease",
+    transition: "borderBottom .1s ease",
   },
   h4: {
     transition: "color .1s ease",

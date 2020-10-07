@@ -2,8 +2,8 @@ import { createUseStyles } from "react-jss";
 
 const WindowSizeDisplayStyle = createUseStyles({
   Display: {
-    position: "absolute",
-    top: "16px",
+    position: "fixed",
+    bottom: "16px",
     left: "16px",
     height: "auto",
     width: 172,

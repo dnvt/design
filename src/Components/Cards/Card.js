@@ -2,40 +2,46 @@ import React from "react";
 import CardStyle from "./Card-style";
 
 import CardStatus from "./CardStatus/CardStatus";
+import CardImage from "./CardImage/CardImage";
+import CardTitle from "./CardTitle/CardTitle";
+import useHover from "../../Hooks/useHover";
+import Container from "../Containers/Container";
 
 const Card = (props) => {
   const classes = CardStyle();
-  // TODO: Findout about the hover hook Im using
-  // const [ref, hovered] = useHover();
+  const [hoveredRef, isHovered] = useHover();
 
-  return (
-    <div className={classes.projectCover} ref={ref} style={{ height: height }}>
-      <CardStatus
-        nda={nda}
-        loading={loading}
-        wip={wip}
-        fill={titleColor}
-        titleColor={titleColor}
-      />
+  let card = (
+    <div
+      className={classes.projectCover}
+      ref={hoveredRef}
+      style={{ height: props.height }}
+    >
+      <CardStatus nda={props.nda} loading={props.loading} wip={props.wip} />
       <CardImage
-        alt={alt}
-        src={src}
-        fill={theme}
-        background={hovered ? backgroundHover : background}
-        scale={hovered ? "1.04" : "1"}
-        path={path}
+        alt={props.alt}
+        src={props.src}
+        background={isHovered ? props.backgroundHover : props.background}
+        scale={isHovered ? "1.04" : "1"}
+        path={props.path}
       />
       <CardTitle
-        reverse={reverse}
-        right={right}
-        projectTags={tags}
-        projectTitle={title}
-        hover={hovered}
-        tagsColor={tagsColor}
-        titleColor={titleColor}
-      />
+        reverse={props.reverse}
+        right={props.right}
+        tagValue={props.tagValue}
+        hover={isHovered}
+        tagColor={props.tagsColor}
+        titleColor={props.titleColor}
+      >
+        {props.children}
+      </CardTitle>
     </div>
   );
+
+  // Putting the Card component around a Container 
+  // on the props call
+  if (props.container) return <Container>{card}</Container>;
+  return card;
 };
 
 export default Card;

@@ -1,22 +1,45 @@
 import React from "react";
-import SpaceFortyHalf from "../../Utils/Spacer/Variations/SpacerFortyHalf";
+import { useTheme } from "react-jss";
+import Card from "../../Components/Cards/Card";
+import Spacer from "../../Utils/Spacer/Spacer";
+import SpacerFortyHalf from "../../Utils/Spacer/Variations/SpacerFortyHalf";
 
-const CardSection = (props) => {
+const CardSection = () => {
+  const theme = useTheme();
+
   return (
     <>
-      <SpaceFortyHalf />
-      {/* <Card
-        loading
-        title='Test of this title'
-        titleColor={colors.text}
-        tags='Programming'
-        tagsColor={colors.blue}
-        src={"./img/USMobile-02"}
-        background={colors.grey}
-        backgroundHover={colors.b10}
+      <SpacerFortyHalf />
+      <Card
+        container
+        wip
+        titleColor={theme.text}
+        tagValue='Programming'
+        tagsColor={theme.main}
+        // src={"./img/USMobile-02"}
+        background={theme.grey}
+        backgroundHover={theme.hover}
         alt
         path='/'
-      /> */}
+      >
+        Test of this title
+      </Card>
+      <Spacer container height={32} />
+      <Card
+        container
+        nda
+        right
+        titleColor={theme.text}
+        tagValue='Programming'
+        tagsColor={theme.secondary}
+        // src={"./img/USMobile-02"}
+        background={theme.grey}
+        backgroundHover={theme.hover}
+        alt
+        path='/'
+      >
+        Test of this title
+      </Card>
     </>
   );
 };

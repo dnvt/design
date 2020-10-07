@@ -13,7 +13,7 @@ const CardImage = (props) => {
           className={classes.CardImage}
           style={{ background: props.background }}
         >
-          {src && (
+          {props.src && (
             <picture
               className={classes.image}
               style={{ transform: "scale(" + props.scale + ")" }}

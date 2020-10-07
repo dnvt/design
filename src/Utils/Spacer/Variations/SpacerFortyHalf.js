@@ -3,14 +3,14 @@ import Container from "../../../Components/Containers/Container";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Spacer from "../Spacer";
 
-const SpaceFortyHalf = () => {
+const SpacerFortyHalf = () => {
   const window = useWindowSize();
 
   if (window.width > "992") {
     return (
       <>
         <Container>
-          <Spacer height='40' />
+          <Spacer height={40} />
         </Container>
       </>
     );
@@ -20,7 +20,7 @@ const SpaceFortyHalf = () => {
     return (
       <>
         <Container>
-          <Spacer height='32' />
+          <Spacer height={32} />
         </Container>
       </>
     );
@@ -29,10 +29,10 @@ const SpaceFortyHalf = () => {
   return (
     <>
       <Container>
-        <Spacer height='24' />
+        <Spacer height={24} />
       </Container>
     </>
   );
 };
 
-export default SpaceFortyHalf;
+export default SpacerFortyHalf;
