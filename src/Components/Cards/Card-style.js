@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 
 const CardStyle = createUseStyles({
-  projectCover: {
+  Card: {
     position: "relative",
     width: "100%",
     minWidth: "288px",

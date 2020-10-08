@@ -13,12 +13,13 @@ const Card = (props) => {
 
   let card = (
     <div
-      className={classes.projectCover}
+      className={classes.Card}
       ref={hoveredRef}
       style={{ height: props.height }}
     >
-      <CardStatus nda={props.nda} loading={props.loading} wip={props.wip} />
+      <CardStatus status={props.status} />
       <CardImage
+        status={props.status}
         alt={props.alt}
         src={props.src}
         background={isHovered ? props.backgroundHover : props.background}
@@ -38,7 +39,7 @@ const Card = (props) => {
     </div>
   );
 
-  // Putting the Card component around a Container 
+  // Putting the Card component around a Container
   // on the props call
   if (props.container) return <Container>{card}</Container>;
   return card;

@@ -12,7 +12,7 @@ const CardSection = () => {
       <SpacerFortyHalf />
       <Card
         container
-        wip
+        status='construction'
         titleColor={theme.text}
         tagValue='Programming'
         tagsColor={theme.main}
@@ -27,8 +27,8 @@ const CardSection = () => {
       <Spacer container height={32} />
       <Card
         container
-        nda
         right
+        status='stop'
         titleColor={theme.text}
         tagValue='Programming'
         tagsColor={theme.secondary}

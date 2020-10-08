@@ -5,26 +5,28 @@ import CardStatusStyle from "./CardStatus-style";
 
 const CardStatus = (props) => {
   const theme = useTheme();
-  const classes = CardStatusStyle({...props, theme});
+  const classes = CardStatusStyle({ ...props, theme });
+
+  let value;
+  switch (props.status) {
+    case "loading":
+      value = "Loading...";
+      break;
+    case "stop":
+      value = "NDA - Password protected";
+      break;
+    case "construction":
+      value = "In Progress";
+      break;
+    default:
+      console.warn("Incorrect props.status on the Card component");
+      break;
+  }
 
   return (
     <>
       <div className={classes.Status}>
-        {props.loading && (
-          <MenuLink icon='loading' value='Loading...' color={theme.text} />
-        )}
-
-        {props.nda && (
-          <MenuLink icon='stop' value='NDA Projects' color={theme.text} />
-        )}
-
-        {props.wip && (
-          <MenuLink
-            icon='construction'
-            value='In Progress'
-            color={theme.text}
-          />
-        )}
+        <MenuLink icon={props.status} value={value} color={theme.text} />
       </div>
     </>
   );
