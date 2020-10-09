@@ -12,6 +12,7 @@ const CardImage = (props) => {
     </div>
   );
 
+  // This condition might change when I implement password checkin
   if (props.status !== "stop") return <Link to={props.path}>{cardImage}</Link>;
   return cardImage;
 };

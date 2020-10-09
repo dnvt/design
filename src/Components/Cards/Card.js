@@ -13,7 +13,7 @@ const Card = (props) => {
 
   let card = (
     <div
-      className={classes.Card}
+      className={props.status !== "stop" ? classes.Card : classes.PrivateCard}
       ref={hoveredRef}
       style={{ height: props.height }}
     >
@@ -46,3 +46,24 @@ const Card = (props) => {
 };
 
 export default Card;
+
+// const classes = useStyles();
+
+// return (
+//   <div className={classes.privateCover}>
+//     <ProjectStatus
+//       fill={fill}
+//       nda={nda}
+//       loading={loading}
+//       wip={wip}
+//       titleColor={titleColor}
+//     />
+//     <PrivateImage alt={alt} src={src} background={background} />
+//     <ProjectTitle
+//       projectTags={tags}
+//       projectTitle={title}
+//       tagsColor={tagsColor}
+//       titleColor={titleColor}
+//     />
+//   </div>
+// );
