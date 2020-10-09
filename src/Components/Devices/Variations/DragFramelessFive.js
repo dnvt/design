@@ -5,7 +5,7 @@ import Device from "../Device";
 const DragFramelessFive = (props) => {
   if (props.src) {
     return (
-      <Container drag frameless>
+      <Container drag five>
         <Device frameless src={props.src[0]} />
         <Device frameless src={props.src[1]} />
         <Device frameless src={props.src[2]} />

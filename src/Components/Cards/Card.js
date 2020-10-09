@@ -15,7 +15,7 @@ const Card = (props) => {
     <div
       className={props.status !== "stop" ? classes.Card : classes.PrivateCard}
       ref={hoveredRef}
-      style={{ height: props.height }}
+      style={{ height: props.height, width: props.width }}
     >
       <CardStatus status={props.status} />
       <CardImage

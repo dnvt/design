@@ -13,7 +13,7 @@ const CardStatus = (props) => {
       value = "Loading...";
       break;
     case "stop":
-      value = "NDA - Password protected";
+      value = "Password protected";
       break;
     case "construction":
       value = "In Progress";

@@ -27,33 +27,31 @@ const Container = (props) => {
       </div>
     );
 
-  // Drag & Frameless Container
-  // <Container drag frameless>{ children }</Container>
-  if (props.drag && props.frameless)
-    return (
-      <div className={classes.FullContainer}>
-        <ArrowDragScroll big left />
-        <div className={classes.FramelessDragContainer}>
-          <div className={classes.imageScrollCards}>
-            <div>
-              <Verticaler width='64px' />
-            </div>
-            {props.children}
-            <div>
-              <Verticaler width='64px' />
-            </div>
-          </div>
-        </div>
-        <ArrowDragScroll big right />
-      </div>
-    );
+  // Drag Container
+  // <Container drag number>{ children }</Container>
+  let scrollNumber;
 
-  if (props.drag && props.mobileFour)
+  if (props.drag) {
+    switch (true) {
+      case props.five:
+        scrollNumber = classes.ScrollFive;
+        break;
+      case props.four:
+        scrollNumber = classes.ScrollFour;
+        break;
+      case props.three:
+        scrollNumber = classes.ScrollThree;
+        break;
+      default:
+        console.warn("You got the ScrollNumber wrong buddy!");
+        break;
+    }
+
     return (
       <div className={classes.FullContainer}>
         <ArrowDragScroll big left />
-        <div className={classes.FramelessDragContainer}>
-          <div className={classes.mobileScrollList}>
+        <div className={classes.DragContainer}>
+          <div className={scrollNumber}>
             <div>
               <Verticaler width='64px' />
             </div>
@@ -66,6 +64,7 @@ const Container = (props) => {
         <ArrowDragScroll big right />
       </div>
     );
+  }
 
   // Else default case
   // <Container>{ children }</Container>

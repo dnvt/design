@@ -66,8 +66,8 @@ const ContainerStyle = createUseStyles({
     justifyContent: "space-around",
   },
 
-  // Realm of the Frameless Dragable
-  FramelessDragContainer: {
+  // Realm of the Dragable
+  DragContainer: {
     position: "relative",
     WebkitOverflowScrolling: "touch",
     scrollSnapType: "x mandatory",
@@ -87,7 +87,7 @@ const ContainerStyle = createUseStyles({
     zIndex: "1",
   },
 
-  imageScrollCards: {
+  ScrollFive: {
     display: "grid",
     gridTemplateColumns: "64px 1fr 1fr 1fr 1fr 1fr 64px",
     columnGap: "24px",
@@ -95,9 +95,17 @@ const ContainerStyle = createUseStyles({
     "@media (min-width: 768px)": { columnGap: "32px" },
   },
 
-  mobileScrollList: {
+  ScrollFour: {
     display: "grid",
     gridTemplateColumns: "64px 1fr 1fr 1fr 1fr 64px",
+    columnGap: "24px",
+
+    "@media (min-width: 768px)": { columnGap: "32px" },
+  },
+
+  ScrollThree: {
+    display: "grid",
+    gridTemplateColumns: "64px 1fr 1fr 1fr 64px",
     columnGap: "24px",
 
     "@media (min-width: 768px)": { columnGap: "32px" },

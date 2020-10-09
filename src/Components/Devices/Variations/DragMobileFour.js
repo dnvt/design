@@ -4,7 +4,7 @@ import Device from "../Device";
 
 const DragMobileFour = (props) => {
   return (
-    <Container drag mobileFour>
+    <Container drag four>
       <Device mobile src={props.src[0]} />
       <Device mobile src={props.src[1]} />
       <Device mobile src={props.src[2]} />
