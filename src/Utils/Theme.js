@@ -3,6 +3,7 @@ export const light = {
   gridBackground: "rgba(0,186,255,.1)",
   sidelines: "1px solid rgba(25,25,25,.1)",
   outline: "rgba(25,25,25,.1)",
+  borderDevice: "1px solid rgba(0,0,0,.1)",
 
   background: "#ffffff",
   text: "#191919",
@@ -41,6 +42,7 @@ export const dark = {
   gridBackground: "rgba(80,11,241,.25)",
   sidelines: "1px solid rgba(225,225,225,.15)",
   outline: "rgba(225,225,225,.1)",
+  borderDevice: "1px solid rgba(255,255,255,.1)",
 
   background: "#000",
   text: "#e9e9e9",

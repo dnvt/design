@@ -200,7 +200,7 @@ const DeviceStyle = createUseStyles({
     position: "absolute",
     width: "25%",
     height: "10%",
-    background: "rgba(0,0,0,.1)",
+    background: ({ theme }) => theme.outline,
     zIndex: "3",
     top: "50%",
     left: "37.5%",
@@ -212,8 +212,8 @@ const DeviceStyle = createUseStyles({
     left: "0",
     width: "100%",
     height: "80%",
-    borderTop: "1px solid rgba(0,0,0,.1)",
-    borderBottom: "1px solid rgba(0,0,0,.1)",
+    borderTop: ({ theme }) => theme.borderDevice,
+    borderBottom: ({ theme }) => theme.borderDevice,
   },
 
   // Frameless

@@ -29,12 +29,12 @@ const VerticalStyle = createUseStyles({
       columnGap: "24px",
     },
 
-    "@media (min-width: 992px)": {
-      gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr",
-      columnGap: "32px",
-    },
+    // "@media (min-width: 992px)": {
+    //   gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr",
+    //   columnGap: "32px",
+    // },
 
-    "@media (min-width: 1360px)": {
+    "@media (min-width: 992px)": {
       gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ",
       columnGap: "32px",
     },

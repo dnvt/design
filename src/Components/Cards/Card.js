@@ -46,24 +46,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
-// const classes = useStyles();
-
-// return (
-//   <div className={classes.privateCover}>
-//     <ProjectStatus
-//       fill={fill}
-//       nda={nda}
-//       loading={loading}
-//       wip={wip}
-//       titleColor={titleColor}
-//     />
-//     <PrivateImage alt={alt} src={src} background={background} />
-//     <ProjectTitle
-//       projectTags={tags}
-//       projectTitle={title}
-//       tagsColor={tagsColor}
-//       titleColor={titleColor}
-//     />
-//   </div>
-// );

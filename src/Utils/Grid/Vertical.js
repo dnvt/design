@@ -21,7 +21,7 @@ const Vertical = (props) => {
       rowNumber = 2;
       break;
     case window.width < breakpoints[2]:
-      rowNumber = 6;
+      rowNumber = 12;
       break;
     default:
       rowNumber = 12;
@@ -36,7 +36,7 @@ const Vertical = (props) => {
 
   return (
     <div className={classes.Vertical}>
-      <Container>
+      <Container height>
         <div className={classes.Column}>{rowArray}</div>
       </Container>
     </div>

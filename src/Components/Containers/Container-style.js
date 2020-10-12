@@ -66,6 +66,36 @@ const ContainerStyle = createUseStyles({
     justifyContent: "space-around",
   },
 
+  // Realm of the Group
+  // TODO: Do the match to not use the css grid
+  GroupLeft: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    columnGap: "24px",
+
+    "@media (min-width: 992px)": {
+      gridTemplateColumns: "288px auto",
+      columnGap: "32px",
+    },
+    "@media (min-width: 1360px)": {
+      gridTemplateColumns: "352px auto",
+    },
+  },
+
+  GroupRight: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    columnGap: "24px",
+
+    "@media (min-width: 992px)": {
+      gridTemplateColumns: "auto 288px",
+      columnGap: "32px",
+    },
+    "@media (min-width: 1360px)": {
+      gridTemplateColumns: "auto 352px",
+    },
+  },
+
   // Realm of the Dragable
   DragContainer: {
     position: "relative",
@@ -82,6 +112,7 @@ const ContainerStyle = createUseStyles({
       scrollSnapStop: "always",
     },
     maxWidth: "100%",
+    // maxWidth: "1920px",
     margin: "-160px auto",
     padding: "160px 16px",
     zIndex: "1",
@@ -109,6 +140,16 @@ const ContainerStyle = createUseStyles({
     columnGap: "24px",
 
     "@media (min-width: 768px)": { columnGap: "32px" },
+  },
+
+  // Realm of the Footer
+  FooterCards: {
+    display: "grid",
+    gridTemplateColumns: "64px 1fr 1fr 1fr 64px",
+    columnGap: "24px",
+
+    "@media (min-width: 768px)": { columnGap: "32px" },
+    "@media (min-width: 992px)": { gridTemplateColumns: "1fr 1fr 1fr" },
   },
 
   // Realm of the Full Container

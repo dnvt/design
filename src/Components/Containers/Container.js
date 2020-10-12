@@ -27,6 +27,17 @@ const Container = (props) => {
       </div>
     );
 
+  // Group container
+  // <Container group (left||null)>{ children }</Container>
+  if (props.group)
+    return (
+      <div className={classes.Container}>
+        <div className={props.left ? classes.GroupLeft : classes.GroupRight}>
+          {props.children}
+        </div>
+      </div>
+    );
+
   // Drag Container
   // <Container drag number>{ children }</Container>
   let scrollNumber;
@@ -62,6 +73,44 @@ const Container = (props) => {
           </div>
         </div>
         <ArrowDragScroll big right />
+      </div>
+    );
+  }
+
+  // Footer drag Container
+  // TODO Add conditional on the Arrows to be displayed or Not
+  if (props.footer) {
+    if (window.width < "992") {
+      return (
+        <div className={classes.FullContainer}>
+          <ArrowDragScroll left />
+          <div className={classes.DragContainer}>
+            <div className={classes.FooterCards}>
+              <div>
+                <Verticaler width='64px' />
+              </div>
+              {props.children}
+              <div>
+                <Verticaler width='64px' />
+              </div>
+            </div>
+          </div>
+          <ArrowDragScroll right />
+        </div>
+      );
+    }
+    return (
+      <div className={classes.Container}>
+        <div className={classes.FooterCards}>{props.children}</div>
+      </div>
+    );
+  }
+
+  // Vertical grid need height 100%
+  if (props.height) {
+    return (
+      <div className={classes.Container} style={{ height: "100%" }}>
+        {props.children}
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../../Containers/Container";
-import Card from "../../Card";
+import Container from "../../Containers/Container";
+import Card from "../Card";
 
 const DragCardsThree = (props) => {
   let cardGroup = [];
@@ -17,11 +17,11 @@ const DragCardsThree = (props) => {
         tagValue={props.tag.value[i]}
         background={props.background.color[i]}
         backgroundHover={props.background.hover[i]}
-        titleColor={props.text.color[i]}
+        titleColor={props.title.color[i]}
         width={props.width}
         height={props.height}
       >
-        {props.text.value[i]}
+        {props.title.value[i]}
       </Card>
     );
   }
