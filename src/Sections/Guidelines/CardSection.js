@@ -1,9 +1,9 @@
 import React from "react";
 import { useTheme } from "react-jss";
 import Card from "../../Components/Cards/Card";
-import DragCardsThree from "../../Components/Cards/Variations/DragCardsThree";
-import FooterCards from "../../Components/Cards/Variations/FooterCards";
-import GroupedCard from "../../Components/Cards/Variations/GroupedCards";
+import DragCardsThree from "../../Components/Cards/Layouts/DragCardsThree";
+import FooterCards from "../../Components/Cards/Layouts/FooterCards";
+import GroupedCard from "../../Components/Cards/Layouts/GroupedCards";
 import Spacer from "../../Utils/Spacer/Spacer";
 import SpacerFortyHalf from "../../Utils/Spacer/Variations/SpacerFortyHalf";
 

@@ -2,9 +2,9 @@ import React from "react";
 // import browserP from "../../Assets/Images/Guidelines/browser1.png";
 // import browserW from "../../Assets/Images/Guidelines/browser1.webp";
 import Spacer from "../../Utils/Spacer/Spacer";
-import DragMobileFour from "../../Components/Devices/Variations/DragMobileFour";
-import DragFramelessFive from "../../Components/Devices/Variations/DragFramelessFive";
-import GroupedMobileDesktop from "../../Components/Devices/Variations/GroupedMobileDesktop";
+import DragMobileFour from "../../Components/Devices/Layouts/DragMobileFour";
+import DragFramelessFive from "../../Components/Devices/Layouts/DragFramelessFive";
+import GroupedMobileDesktop from "../../Components/Devices/Layouts/GroupedMobileDesktop";
 
 export const DeviceSection = () => {
   // const images = [browserP, browserW];
