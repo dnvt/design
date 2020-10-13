@@ -13,7 +13,7 @@ const CardTitle = (props) => {
         }
         style={props.reverse && { transform: "scaleX(-1)", right: "0" }}
       >
-        <Font type='h5' color={props.tagColor}>
+        <Font type='h5' color={props.tagColor} margin='0 0 -8px 0'>
           {props.tagValue}
         </Font>
         <Font type='h3' color={props.titleColor} hover={props.hover}>

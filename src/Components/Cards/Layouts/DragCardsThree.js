@@ -7,11 +7,11 @@ const DragCardsThree = (props) => {
   const window = useWindowSize();
 
   let cardWidth = "288px";
-  if (window.width > "1360") {
-    cardWidth = "544px";
-  }
   if (window.width > "992") {
     cardWidth = "448px";
+  }
+  if (window.width > "1360") {
+    cardWidth = "544px";
   }
 
   let cardGroup = [];

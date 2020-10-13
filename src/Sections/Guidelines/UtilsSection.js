@@ -5,6 +5,7 @@ import Container from "../../Components/Containers/Container";
 import Font from "../../Utils/Font/Font";
 import useDarkMode from "use-dark-mode";
 import { useWindowSize } from "../../Hooks/useWindowSize";
+import Tooltip from "../../UI/Tooltip/Tooltip";
 
 const ColorSwatch = (props) => {
   const theme = useTheme();
@@ -161,6 +162,8 @@ const UtilsSection = (props) => {
             value={darkMode.value ? "#2C292E" : "#F4F6F9"}
           />
         </div>
+        <Spacer height={32} />
+        <Tooltip value='This is a tooltip test!!' />
       </Container>
     </>
   );
