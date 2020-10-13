@@ -112,7 +112,6 @@ const ContainerStyle = createUseStyles({
       scrollSnapStop: "always",
     },
     maxWidth: "100%",
-    // maxWidth: "1920px",
     margin: "-160px auto",
     padding: "160px 16px",
     zIndex: "1",
@@ -145,11 +144,8 @@ const ContainerStyle = createUseStyles({
   // Realm of the Footer
   FooterCards: {
     display: "grid",
-    gridTemplateColumns: "64px 1fr 1fr 1fr 64px",
-    columnGap: "24px",
-
-    "@media (min-width: 768px)": { columnGap: "32px" },
-    "@media (min-width: 992px)": { gridTemplateColumns: "1fr 1fr 1fr" },
+    gridTemplateColumns: " 1fr 1fr 1fr ",
+    columnGap: "32px",
   },
 
   // Realm of the Full Container

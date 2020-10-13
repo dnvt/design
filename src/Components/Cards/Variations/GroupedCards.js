@@ -30,7 +30,7 @@ const GroupedCard = (props) => {
     );
   }
 
-  if (window > "992") {
+  if (window.width > "992") {
     if (props.left) {
       return (
         <Container group left>

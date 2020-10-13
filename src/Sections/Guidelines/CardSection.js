@@ -45,7 +45,6 @@ const CardSection = () => {
       </Card>
       <Spacer container height={80} />
       <DragCardsThree
-
         title={{
           color: [theme.text, theme.text, theme.text],
           value: ["Title number 1", "Title number 2", "Title number 3"],
@@ -104,7 +103,6 @@ const CardSection = () => {
       <Spacer container height={80} />
       <FooterCards
         footer
-        width='100%'
         title={{
           color: [theme.text, theme.text, theme.text],
           value: ["Previous", "Random", "Next"],

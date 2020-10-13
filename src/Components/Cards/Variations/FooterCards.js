@@ -3,6 +3,7 @@ import Container from "../../Containers/Container";
 import Card from "../Card";
 
 const DragCardsThree = (props) => {
+
   let cardGroup = [];
 
   for (let i = 0; i < 3; i++) {
@@ -20,7 +21,7 @@ const DragCardsThree = (props) => {
           background={props.background.color[i]}
           backgroundHover={props.background.hover[i]}
           titleColor={props.title.color[i]}
-          width={props.width}
+          width='auto'
           height={props.height}
         >
           {props.title.value[i]}
@@ -39,7 +40,7 @@ const DragCardsThree = (props) => {
           background={props.background.color[i]}
           backgroundHover={props.background.hover[i]}
           titleColor={props.title.color[i]}
-          width={props.width}
+          width='auto'
           height={props.height}
         >
           {props.title.value[i]}

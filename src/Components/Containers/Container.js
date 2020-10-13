@@ -1,4 +1,5 @@
 import React from "react";
+import { useWindowSize } from "../../Hooks/useWindowSize";
 import Verticaler from "../../Utils/Spacer/Variations/Verticaler";
 import ArrowDragScroll from "../ArrowSignals/ArrowDragSignal";
 import ContainerStyle from "./Container-style";
@@ -9,6 +10,7 @@ import ContainerStyle from "./Container-style";
 // <Container ...props spacer={VALUE}></Container>
 
 const Container = (props) => {
+  const window = useWindowSize();
   const classes = ContainerStyle();
 
   // Full Container
@@ -83,9 +85,9 @@ const Container = (props) => {
     if (window.width < "992") {
       return (
         <div className={classes.FullContainer}>
-          <ArrowDragScroll left />
+          <ArrowDragScroll big left />
           <div className={classes.DragContainer}>
-            <div className={classes.FooterCards}>
+            <div className={classes.ScrollThree}>
               <div>
                 <Verticaler width='64px' />
               </div>
@@ -95,7 +97,7 @@ const Container = (props) => {
               </div>
             </div>
           </div>
-          <ArrowDragScroll right />
+          <ArrowDragScroll big right />
         </div>
       );
     }
