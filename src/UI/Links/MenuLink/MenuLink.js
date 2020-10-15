@@ -9,6 +9,7 @@ import Icon from "../../../Utils/Icon/Icon";
 import MenuLinkStyle from "./MenuLink-style";
 import useHover from "../../../Hooks/useHover";
 import { Link } from "react-router-dom";
+import Tooltip from "../../Tooltip/Tooltip";
 
 const MenuLink = (props) => {
   const [hoveredRef, isHovered] = useHover();
@@ -72,12 +73,22 @@ const MenuLink = (props) => {
     </div>
   );
 
+  const tooltip = (
+    <div
+      style={{ left: props.left }}
+      className={isHovered ? classes.tooltipHovered : classes.tooltip}
+    >
+      <Tooltip value={props.tooltip} />
+    </div>
+  );
+
   if (props.noLink)
     return (
       <div className={classes.MenuLink} ref={hoveredRef}>
         {props.icon && icon}
         {props.value && content}
         {props.iconRight && iconRight}
+        {props.tooltip && tooltip}
       </div>
     );
 

@@ -5,7 +5,7 @@ import ButtonStyle from "./Button-style";
 
 const DarkModeToggle = (props) => {
   const classes = ButtonStyle();
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode();
 
   let button = <Icon name='light' color={props.color} size='24' />;
   if (darkMode.value)

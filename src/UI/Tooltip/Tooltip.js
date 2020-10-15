@@ -10,11 +10,7 @@ const Tooltip = (props) => {
   // TODO: Create a new font style for the tooltips
   return (
     <div className={classes.Tooltip}>
-      <div style={{ margin: "-12px 0 -4px 0" }}>
-        <Font type='legend' color={theme.background}>
-          {props.value}
-        </Font>
-      </div>
+      <Font type='tooltip'>{props.value}</Font>
     </div>
   );
 };

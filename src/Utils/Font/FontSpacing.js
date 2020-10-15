@@ -36,6 +36,10 @@ const FontSpacing = (window) => {
   let legendTop = "7px";
   let legendBottom = "9px";
 
+  // tooltip
+  let tooltipTop = "2px";
+  let tooltipBottom = "6px";
+
   // menu
   let menuTop = "7px";
   let menuBottom = "9px";
@@ -80,6 +84,10 @@ const FontSpacing = (window) => {
       legendTop = "10px";
       legendBottom = "6px";
 
+      // tooltip
+      tooltipTop = "5px";
+      tooltipBottom = "3px";
+
       // menu
       menuTop = "6px";
       menuBottom = "10px";
@@ -121,6 +129,10 @@ const FontSpacing = (window) => {
       // legend
       legendTop = "10px";
       legendBottom = "6px";
+
+      // tooltip
+      tooltipTop = "5px";
+      tooltipBottom = "3px";
 
       // menu
       menuTop = "6px";
@@ -167,6 +179,10 @@ const FontSpacing = (window) => {
     legend: {
       top: legendTop,
       bottom: legendBottom,
+    },
+    tooltip: {
+      top: tooltipTop,
+      bottom: tooltipBottom,
     },
     menu: {
       top: menuTop,

@@ -57,7 +57,10 @@ const Font = (props) => {
 
   // Defining the main component to render
   let fontType = (
-    <props.type className={classes[props.type]} style={{ color: props.color, margin: props.margin }}>
+    <props.type
+      className={classes[props.type]}
+      style={{ color: props.color, margin: props.margin }}
+    >
       <FontPadding type={props.type}>
         {props.type !== "h3" ? props.children : fontH3}
       </FontPadding>
@@ -69,7 +72,8 @@ const Font = (props) => {
     props.type === "text" ||
     props.type === "hero" ||
     props.type === "link" ||
-    props.type === "menu"
+    props.type === "menu" ||
+    props.type === "tooltip"
   ) {
     fontType = (
       <div

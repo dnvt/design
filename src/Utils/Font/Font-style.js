@@ -238,6 +238,30 @@ const FontStyle = createUseStyles({
       letterSpacing: "-.014em",
     },
   },
+  tooltip: {
+    transition: "color .1s ease",
+    fontFamily: "iA Writer",
+    fontWeight: "normal",
+    fontSize: "15px",
+    lineHeight: "24px",
+    letterSpacing: "-.009em",
+    paddingInlineStart: 0,
+    paddingInlineEnd: 0,
+    whiteSpace: "nowrap",
+    color: ({ theme }) => theme.background,
+    margin: "0",
+
+    "@media (min-width: 768px)": {
+      fontSize: "16px",
+      lineHeight: "32px",
+      letterSpacing: "-.011em",
+    },
+    "@media (min-width: 1360px)": {
+      fontSize: "18px",
+      lineHeight: "32px",
+      letterSpacing: "-.014em",
+    },
+  },
   menu: {
     transition: "color .1s ease",
     fontFamily: "iA Writer",

@@ -7,6 +7,8 @@ import HeaderStyle from "./Header-style";
 import Container from "../Containers/Container";
 import MenuLink from "../../UI/Links/MenuLink/MenuLink";
 import Spacer from "../../Utils/Spacer/Spacer";
+import useDarkMode from "use-dark-mode";
+import { useGridVisibility } from "../../Hooks/useGridVisibility";
 
 // TODO
 // Check the header on mobile
@@ -16,6 +18,9 @@ import Spacer from "../../Utils/Spacer/Spacer";
 const Header = (props) => {
   const theme = useTheme();
   const window = useWindowSize();
+  const darkMode = useDarkMode();
+  const [visibility] = useGridVisibility();
+
   const classes = HeaderStyle({ ...props, theme });
   const color = [theme.text, theme.main, theme.secondary];
 
@@ -73,9 +78,18 @@ const Header = (props) => {
               color={color[0]}
               hover={color[1]}
               active={color[2]}
+              tooltip={visibility ? "Hide Grid" : "Show Grid"}
+              left={visibility ? "-46px" : "-49px"}
             />
             {iconSpacer}
-            <MenuLink noLink icon='theme' color={color[0]} hover={color[1]} />
+            <MenuLink
+              noLink
+              icon='theme'
+              color={color[0]}
+              hover={color[1]}
+              tooltip={darkMode.value ? "Light Theme" : "Dark Theme"}
+              left={darkMode.value ? "-60px" : "-56px"}
+            />
           </nav>
         </header>
       </Container>
