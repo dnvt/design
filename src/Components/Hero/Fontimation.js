@@ -29,7 +29,7 @@ export function fontimation(
   transRight7,
   props8,
   transLeft8,
-  transRight8,
+  transRight8
 ) {
   const fonti = (
     <Font passRef={fontRef} type='hero'>
@@ -40,9 +40,7 @@ export function fontimation(
   const FontimationLeft = (
     <div className={classes.heroAnimated} style={{ height: window.height }}>
       <animated.div style={{ transform: props.xy.interpolate(transLeft) }}>
-        <Font passRef={fontRef} type='hero'>
-          {value}
-        </Font>
+        {fonti}
       </animated.div>
     </div>
   );

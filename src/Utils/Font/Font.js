@@ -59,7 +59,7 @@ const Font = (props) => {
   let fontType = (
     <props.type
       className={classes[props.type]}
-      style={{ color: props.color, margin: props.margin }}
+      style={{ color: props.color, margin: props.margin, width: props.width }}
     >
       <FontPadding type={props.type}>
         {props.type !== "h3" ? props.children : fontH3}
@@ -79,7 +79,7 @@ const Font = (props) => {
       <div
         ref={props.passRef}
         className={classes[props.type]}
-        style={{ color: props.color }}
+        style={{ color: props.color, width: props.width }}
       >
         <FontPadding type={props.type}>{props.children}</FontPadding>
       </div>

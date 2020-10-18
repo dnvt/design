@@ -18,7 +18,7 @@ const FontHero = (props) => {
     <Container full>
       <div
         className={classes.Fontimation}
-        style={{ height: "400px", margin: "-80px 0" }}
+        style={{ height: "480px", margin: "-80px 0" }}
       >
         <Font type='hero'>{props.value}</Font>
       </div>

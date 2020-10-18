@@ -8,34 +8,32 @@ const HeaderStyle = createUseStyles({
   menuMobile: {
     zIndex: "100",
     display: "flex",
-    width: "calc(100% - 24px)",
-    "@media (min-width: 576px)": {
-      width: "calc(100% - 38px)",
-    },
-    "@media (min-width: 768px)": {
-      display: "none",
-    },
+    // width: "calc(100% - 24px)",
+    // "@media (min-width: 576px)": {
+    //   width: "calc(100% - 38px)",
+    // },
+    // "@media (min-width: 768px)": {
+    //   display: "none",
+    // },
     "& div": {
       display: "flex",
     },
   },
   menu: {
     zIndex: "100",
-    display: "none",
-    "@media (min-width: 768px)": {
-      display: "flex",
-    },
+    display: "flex",
   },
   nav: {
     display: "flex",
     justifyContent: "space-between",
-    width: "calc(100% - 12px)",
+    width: "100%",
     marginTop: "0",
     marginBottom: "0",
     marginRight: "40px",
     padding: "8px 0px",
     "@media (min-width: 768px)": {
       justifyContent: "flex-start",
+      width: "calc(100% - 12px)",
       padding: "16px 0px",
     },
     "@media (min-width: 992px)": {

@@ -41,7 +41,7 @@ const FontStyle = createUseStyles({
     fontWeight: "800",
     fontSize: "46px",
     lineHeight: "56px",
-    letterSpacing: "-.022em",
+    letterSpacing: "-.019em",
     color: ({ theme }) => theme.text,
     margin: "0",
     overflowWrap: "break-word",

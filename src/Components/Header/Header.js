@@ -10,11 +10,6 @@ import Spacer from "../../Utils/Spacer/Spacer";
 import useDarkMode from "use-dark-mode";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 
-// TODO
-// Check the header on mobile
-// [ ] - Not full width
-// [ ] - Not fixed
-
 const Header = (props) => {
   const theme = useTheme();
   const window = useWindowSize();
@@ -29,9 +24,6 @@ const Header = (props) => {
   );
   const iconSpacer = (
     <Spacer font height='100%' width={window.width > 1360 ? 32 : 24} />
-  );
-  const mobileSpacer = (
-    <Spacer font height='100%' width={window.width > 1360 ? 16 : 8} />
   );
 
   if (window.width > 767)
@@ -97,25 +89,19 @@ const Header = (props) => {
 
   return (
     <Container>
-      <header className={classes.menuMobile}>
+      <header className={classes.menu}>
         <nav className={classes.nav}>
           <MenuLink
             value='François Denavaut'
             color={color[0]}
             hover={color[1]}
           />
-          <div>
-            <MenuLink
-              icon='grid'
-              color={color[0]}
-              hover={color[1]}
-              active={color[2]}
-            />
-            {mobileSpacer}
-            <MenuLink icon='theme' color={color[0]} hover={color[1]} />
-            {mobileSpacer}
-            <MenuLink icon='hash' color={color[0]} hover={color[1]} />
-          </div>
+          <MenuLink
+            to='/menu'
+            icon='menu'
+            color={color[0]}
+            hover={color[1]}
+          />
         </nav>
       </header>
     </Container>
