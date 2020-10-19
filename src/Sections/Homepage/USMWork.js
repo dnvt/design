@@ -9,8 +9,9 @@ import InternalLink from "../../UI/Links/InternalLink/InternalLink";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import Card from "../../Components/Cards/Card";
 import DragMobileFour from "../../Components/Devices/Layouts/DragMobileFour";
+import DragCardsThree from "../../Components/Cards/Layouts/DragCardsThree";
 
-export const Work = () => {
+const USMWork = () => {
   const theme = useTheme();
   const window = useWindowSize();
 
@@ -72,7 +73,6 @@ export const Work = () => {
       <Spacer container height={80} />
       <Container>
         <Card
-          container
           status='construction'
           titleColor={theme.text}
           tagValue='Programming'
@@ -85,9 +85,8 @@ export const Work = () => {
         >
           Test of this title
         </Card>
-        <Spacer container height={32} />
+        <Spacer height={32} />
         <Card
-          container
           status='construction'
           titleColor={theme.text}
           tagValue='Programming'
@@ -100,9 +99,8 @@ export const Work = () => {
         >
           Test of this title
         </Card>
-        <Spacer container height={32} />
+        <Spacer height={32} />
         <Card
-          container
           status='construction'
           titleColor={theme.text}
           tagValue='Programming'
@@ -115,8 +113,37 @@ export const Work = () => {
         >
           Test of this title
         </Card>
-        <Spacer container height={32} />
+        <Spacer height={104} />
+        <Font type='h4'>Work under NDA</Font>
+        <Column spacer third>
+          <Font type='text'>
+            As a freelancer in Berlin, I worked on several NDA projects as an
+            interaction and motion designer. I defined and unified the behavior
+            for interfaces on mediums like airplane seats, cookwear and TV
+            screens. If you want to learn about these projects, contact me.
+          </Font>
+        </Column>
+        <Spacer height={40} />
       </Container>
+      <DragCardsThree
+        title={{
+          color: [theme.text, theme.text, theme.text],
+          value: ["Title number 1", "Title number 2", "Title number 3"],
+        }}
+        tag={{
+          color: [theme.main, theme.main, theme.text],
+          value: ["Tag number 1", "Tag number 2", "Tag number 3"],
+        }}
+        background={{
+          color: [theme.grey, theme.grey, theme.grey],
+          hover: [theme.hover, theme.hover, theme.hover],
+        }}
+        status={["loading", "loading", "stop"]}
+        src={["", "", ""]}
+        alt={["", "", ""]}
+      />
     </>
   );
 };
+
+export default USMWork;

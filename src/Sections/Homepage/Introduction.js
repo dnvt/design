@@ -6,7 +6,7 @@ import Container from "../../Components/Containers/Container";
 import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
 import Column from "../../Components/Containers/Columns/Column";
 
-export const Introduction = () => {
+const Introduction = () => {
   const theme = useTheme();
 
   return (
@@ -28,3 +28,4 @@ export const Introduction = () => {
     </Container>
   );
 };
+export default Introduction;
