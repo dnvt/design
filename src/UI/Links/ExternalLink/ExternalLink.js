@@ -1,7 +1,8 @@
 import React from "react";
-import ExternalLinkStyle from "./ExternalLink-style";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import useHover from "../../../Hooks/useHover";
+
+import ExternalLinkStyle from "./ExternalLink-style";
 import Icon from "../../../Utils/Icon/Icon";
 import Separator from "../../../Utils/Separator/Separator";
 
@@ -27,7 +28,7 @@ const ExternalLink = (props) => {
           <Icon name='link' color={props.color} />
         </div>
       </div>
-      <Separator color={props.color} opacity='1' />
+      <Separator ext color={props.color} opacity='1' />
     </div>
   );
 
@@ -62,7 +63,7 @@ const ExternalLink = (props) => {
           <Icon name='link' color={props.color} />
         </div>
       </div>
-      <Separator color={props.color} opacity='1' />
+      <Separator ext color={props.color} opacity='1' />
     </div>
   );
 

@@ -7,7 +7,7 @@ const ExternalLinkStyle = createUseStyles({
     flexDirection: "column",
     margin: "0",
 
-    paddingBottom: "7px",
+    paddingBottom: "8px",
     width: "100%",
     "@media (min-width: 768px)": { width: "max-content", marginRight: "32px" },
     "@media (min-width: 1360px)": { marginRight: "40px" },

@@ -15,7 +15,7 @@ const InternalLink = (props) => {
     <>
       <div ref={hoveredRef} className={classes.internal}>
         <div className={classes.inside}>
-          <Link className={classes.link} to={props.to}>
+          <Link className={classes.link} to={props.path}>
             <Font type='link' color={isHovered ? theme.main : theme.text}>
               {props.value}
             </Font>

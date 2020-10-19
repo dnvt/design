@@ -6,12 +6,12 @@ const Separator = (props) => {
 
   return (
     <div
-      className={classes.Separator}
+      className={props.ext ? classes.SeparEx : classes.Separator}
       background={props.color}
       hover={props.hover}
       opacity={props.opacity}
-      />
-      );
-    };
-    
-    export default Separator;
+    />
+  );
+};
+
+export default Separator;
