@@ -11,13 +11,13 @@ export const DeviceSection = () => {
 
   return (
     <>
-      <Spacer container height={40} />
+      <Spacer c height={40} />
       <DragMobileFour src={[]} />
 
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <GroupedMobileDesktop srcDesktop={[]} srcMobile={[]} />
 
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <DragFramelessFive src={[]} />
     </>
   );

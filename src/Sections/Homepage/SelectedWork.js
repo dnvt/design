@@ -14,7 +14,6 @@ const SelectedWork = (props) => {
   return (
     <>
       <Container>
-        <Spacer height={104} />
         <Font type='h4'>Selected</Font>
         <Column spacer third>
           <Font type='text'>

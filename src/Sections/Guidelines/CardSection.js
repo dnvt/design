@@ -27,7 +27,7 @@ const CardSection = () => {
       >
         Test of this title
       </Card>
-      <Spacer container height={32} />
+      <Spacer c height={32} />
       <Card
         container
         right
@@ -43,7 +43,7 @@ const CardSection = () => {
       >
         Test of this title
       </Card>
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <DragCardsThree
         title={{
           color: [theme.text, theme.text, theme.text],
@@ -61,7 +61,7 @@ const CardSection = () => {
         src={["", "", ""]}
         alt={["", "", ""]}
       />
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <GroupedCard
         width='100%'
         title={{
@@ -100,7 +100,7 @@ const CardSection = () => {
         src={["", ""]}
         alt={["", ""]}
       />
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <FooterCards
         footer
         title={{

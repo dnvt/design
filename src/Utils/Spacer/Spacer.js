@@ -62,7 +62,7 @@ const Spacer = (props) => {
     );
   }
 
-  if (props.container) return <Container>{spacer}</Container>;
+  if (props.c) return <Container>{spacer}</Container>;
   return <>{spacer}</>;
 };
 

@@ -17,7 +17,7 @@ const GroupedMobileDesktop = (props) => {
           <Device mobile src={props.srcMobile[0]} />
         </Container>
 
-        <Spacer container height={80} />
+        <Spacer c height={80} />
         <Container big around>
           <Device mobile src={props.srcMobile[1]} />
           <SpacerFullHeight />
@@ -31,14 +31,14 @@ const GroupedMobileDesktop = (props) => {
       <Container big around>
         <Device browser src={props.srcDesktop[0]} />
       </Container>
-      <Spacer container height={80} />
+      <Spacer c height={80} />
 
       <Container big center>
         <Device mobile src={props.srcMobile[0]} />
         <SpacerFullHeight />
         <Device mobile src={props.srcMobile[1]} />
       </Container>
-      <Spacer container height={80} />
+      <Spacer c height={80} />
 
       <Container big around>
         <Device browser src={props.srcDesktop[1]} />

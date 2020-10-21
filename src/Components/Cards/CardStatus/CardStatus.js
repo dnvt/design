@@ -18,6 +18,9 @@ const CardStatus = (props) => {
     case "construction":
       value = "In Progress";
       break;
+    case "link":
+      value = "External link";
+      break;
     default:
       console.warn("Incorrect props.status on the Card component");
       break;

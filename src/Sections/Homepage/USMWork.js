@@ -68,9 +68,9 @@ const USMWork = () => {
           />
         </div>
       </Container>
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <DragMobileFour src={[]} />
-      <Spacer container height={80} />
+      <Spacer c height={80} />
       <Container>
         <Card
           status='construction'

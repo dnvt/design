@@ -10,7 +10,6 @@ const SideProjects = (props) => {
   return (
     <>
       <Container>
-        <Spacer height={184} />
         <Font type='h2'>Side Projects</Font>
         <Spacer height={104} />
         <Card

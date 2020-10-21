@@ -3,6 +3,7 @@ import { createUseStyles } from "react-jss";
 const ColumnStyle = createUseStyles({
   Column: {
     display: "grid",
+    width: "100%",
     gridTemplateColumns: "1fr",
     columnGap: "24px",
 
