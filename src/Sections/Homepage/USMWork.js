@@ -4,12 +4,31 @@ import Spacer from "../../Utils/Spacer/Spacer";
 import Font from "../../Utils/Font/Font";
 import Container from "../../Components/Containers/Container";
 import Column from "../../Components/Containers/Columns/Column";
-import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
-import InternalLink from "../../UI/Links/InternalLink/InternalLink";
+// import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
+// import InternalLink from "../../UI/Links/InternalLink/InternalLink";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import Card from "../../Components/Cards/Card";
 import DragMobileFour from "../../Components/Devices/Layouts/DragMobileFour";
 import DragCardsThree from "../../Components/Cards/Layouts/DragCardsThree";
+
+/// Images
+// Mobile
+import phone01Png from "../../Assets/Images/USMobile/Phone/phone01.png";
+import phone01Webp from "../../Assets/Images/USMobile/Phone/phone01.webp";
+import phone02Png from "../../Assets/Images/USMobile/Phone/phone02.png";
+import phone02Webp from "../../Assets/Images/USMobile/Phone/phone02.webp";
+import phone03Png from "../../Assets/Images/USMobile/Phone/phone03.png";
+import phone03Webp from "../../Assets/Images/USMobile/Phone/phone03.webp";
+import phone04Png from "../../Assets/Images/USMobile/Phone/phone04.png";
+import phone04Webp from "../../Assets/Images/USMobile/Phone/phone04.webp";
+
+// Cards
+import brandingPng from "../../Assets/Images/USMobile/Cards/Branding.png";
+import brandingWebp from "../../Assets/Images/USMobile/Cards/Branding.webp";
+import matrixPng from "../../Assets/Images/USMobile/Cards/Matrix.png";
+import matrixWebp from "../../Assets/Images/USMobile/Cards/Matrix.webp";
+import systemPng from "../../Assets/Images/USMobile/Cards/System.png";
+import systemWebp from "../../Assets/Images/USMobile/Cards/System.webp";
 
 const USMWork = () => {
   const theme = useTheme();
@@ -54,7 +73,7 @@ const USMWork = () => {
             mouth from product experience.
           </Font>
         </Column>
-        <div style={{ display: "flex" }}>
+        {/* <div style={{ display: "flex" }}>
           <InternalLink
             path='/'
             value='Read use case'
@@ -66,52 +85,61 @@ const USMWork = () => {
             color={theme.text}
             value='Visit usmobile.com'
           />
-        </div>
+        </div> */}
       </Container>
-      <Spacer c height={80} />
-      <DragMobileFour src={[]} />
-      <Spacer c height={80} />
+      {/* <Spacer c height={80} /> */}
+      <Spacer c height={64} />
+      <DragMobileFour
+        src={[
+          [phone01Png, phone01Webp],
+          [phone02Png, phone02Webp],
+          [phone03Png, phone03Webp],
+          [phone04Png, phone04Webp],
+        ]}
+      />
+      <Spacer c height={104} />
       <Container>
         <Card
           status='construction'
           titleColor={theme.text}
-          tagValue='Programming'
-          tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
-          background={theme.grey}
-          backgroundHover={theme.hover}
-          alt
+          tagValue='Design system, UI, Illustrations'
+          src={[brandingPng, brandingWebp]}
+          tagsColor={theme.usmobile.text}
+          background={theme.usmobile.background}
+          backgroundHover={theme.usmobile.hover}
+          alt='Branding image for US Mobile'
           path='/'
         >
-          Test of this title
+          Creative direction <br /> & design guidelines
         </Card>
         <Spacer height={32} />
         <Card
           status='construction'
           titleColor={theme.text}
-          tagValue='Programming'
-          tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
-          background={theme.grey}
-          backgroundHover={theme.hover}
+          tagValue='Design system, UI, Motion Design'
+          src={[matrixPng, matrixWebp]}
+          tagsColor={theme.usmobile.text}
+          background={theme.usmobile.background}
+          backgroundHover={theme.usmobile.hover}
           alt
           path='/'
         >
-          Test of this title
+          Build your plan
         </Card>
         <Spacer height={32} />
         <Card
+          right
           status='construction'
           titleColor={theme.text}
-          tagValue='Programming'
-          tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
-          background={theme.grey}
-          backgroundHover={theme.hover}
+          tagValue='UX, UI, Design system'
+          src={[systemPng, systemWebp]}
+          tagsColor={theme.usmobile.text}
+          background={theme.usmobile.background}
+          backgroundHover={theme.usmobile.hover}
           alt
           path='/'
         >
-          Test of this title
+          US Mobile Dashboard use case
         </Card>
         <Spacer height={104} />
         <Font type='h4'>Work under NDA</Font>
@@ -120,7 +148,8 @@ const USMWork = () => {
             As a freelancer in Berlin, I worked on several NDA projects as an
             interaction and motion designer. I defined and unified the behavior
             for interfaces on mediums like airplane seats, cookwear and TV
-            screens. If you want to learn about these projects, contact me.
+            screens.
+            <br /> Contact me to learn more about these projects.
           </Font>
         </Column>
         <Spacer height={40} />

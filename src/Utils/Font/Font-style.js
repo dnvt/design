@@ -36,7 +36,7 @@ const FontStyle = createUseStyles({
     },
   },
   h1: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "Inter",
     fontWeight: "800",
     fontSize: "46px",
@@ -56,7 +56,7 @@ const FontStyle = createUseStyles({
     },
   },
   h2: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "Inter",
     fontWeight: "300",
     fontSize: "84px",
@@ -89,19 +89,19 @@ const FontStyle = createUseStyles({
     },
   },
   h3: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "Inter",
     fontWeight: "Bold",
     fontSize: "36px",
     lineHeight: "48px",
-    letterSpacing: "-.021em",
+    letterSpacing: "-.016em",
     color: ({ theme }) => theme.text,
     margin: "0",
 
     "@media (min-width: 768px)": {
       fontSize: "42px",
       lineHeight: "56px",
-      letterSpacing: "-.021em",
+      letterSpacing: "-.016em",
     },
     "@media (min-width: 1360px)": {
       fontSize: "46px",
@@ -110,31 +110,31 @@ const FontStyle = createUseStyles({
   },
   span: {
     borderBottom: "1px solid",
-    transition: "borderBottom .1s ease",
+    transition: "borderBottom .15s ease",
   },
   h4: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "Inter",
     fontWeight: "500",
     fontSize: "21px",
     lineHeight: "32px",
-    letterSpacing: "-.017em",
+    letterSpacing: "-.015em",
     color: ({ theme }) => theme.text,
     margin: "0",
 
     "@media (min-width: 768px)": {
       fontSize: "24px",
       lineHeight: "32px",
-      letterSpacing: "-.019em",
+      letterSpacing: "-.018em",
     },
     "@media (min-width: 1360px)": {
       fontSize: "26px",
       lineHeight: "32px",
-      letterSpacing: "-.02em",
+      letterSpacing: "-.018em",
     },
   },
   h5: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "iA Writer",
     fontWeight: "normal",
     fontSize: "16px",
@@ -155,7 +155,7 @@ const FontStyle = createUseStyles({
     },
   },
   text: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "GT Sectra",
     fontWeight: "normal",
     fontSize: "19px",
@@ -173,7 +173,7 @@ const FontStyle = createUseStyles({
       lineHeight: "32px",
     },
     "& span": {
-      transition: "color .1s ease",
+      transition: "color .15s ease",
       fontFamily: "iA Writer",
       fontWeight: "normal",
       fontSize: "15px",
@@ -197,7 +197,7 @@ const FontStyle = createUseStyles({
     },
   },
   link: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "GT Sectra",
     fontWeight: "normal",
     fontSize: "19px",
@@ -216,7 +216,7 @@ const FontStyle = createUseStyles({
     },
   },
   legend: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "iA Writer",
     fontWeight: "normal",
     fontSize: "15px",
@@ -239,7 +239,7 @@ const FontStyle = createUseStyles({
     },
   },
   tooltip: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "iA Writer",
     fontWeight: "normal",
     fontSize: "15px",
@@ -263,7 +263,7 @@ const FontStyle = createUseStyles({
     },
   },
   menu: {
-    transition: "color .1s ease",
+    transition: "color .15s ease",
     fontFamily: "iA Writer",
     fontWeight: "normal",
     fontSize: "15px",

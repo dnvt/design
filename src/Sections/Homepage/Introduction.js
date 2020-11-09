@@ -12,7 +12,8 @@ const Introduction = () => {
 
   return (
     <>
-      <Container style={{ marginTop: "-160px" }}>
+      {/* <Container style={{ marginTop: "-184px" }}> */}
+      <Container>
         <Font type='h1'>
           Digital designer based in New York – currently redefining modern video
           workflow at Frame.io
@@ -28,16 +29,8 @@ const Introduction = () => {
         </Column>
         <ExternalLink path='/' color={theme.text} value='Get in touch' />
         <Spacer height={80} />
-        <Font type='h2'>
-          Latest releases
-        </Font>
+        <Font type='h2'>Latest releases</Font>
         <Spacer height={64} />
-        {/* <Column spacer third>
-          <Font type='text'>
-          Worked within the Enterprise time to build Watermark ID tools and
-          other fantastic features to support big budget customers
-          </Font>
-        </Column> */}
       </Container>
       <GroupedCard
         left
@@ -58,16 +51,6 @@ const Introduction = () => {
         src={["", ""]}
         alt={["", ""]}
       />
-      <Container>
-        {/* <Column spacer third>
-          <Font type='text'>
-            Product designer and creative director able to provide strong
-            leadership on the development of product designs, marketing
-            campaigns, user interfaces, and motion design.
-          </Font>
-        </Column>
-        <ExternalLink path='/' color={theme.text} value='Get in touch' /> */}
-      </Container>
     </>
   );
 };

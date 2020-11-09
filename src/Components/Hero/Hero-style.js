@@ -2,7 +2,6 @@ import { createUseStyles } from "react-jss";
 
 const HeroStyle = createUseStyles({
   Hero: {
-    position: "relative",
     display: "grid",
     gridTemplateColumns:
       "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr",
@@ -17,10 +16,10 @@ const HeroStyle = createUseStyles({
     },
   },
   Fontimation: {
-    overflow: "hidden",
     display: "flex",
     alignItems: "baseline",
     justifyContent: "center",
+    overflow: "hidden",
 
     "@media (min-width: 576px)": {
       height: "240px",

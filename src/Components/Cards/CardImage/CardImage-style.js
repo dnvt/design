@@ -4,7 +4,7 @@ const CardImageStyle = createUseStyles({
   CardImage: {
     display: "flex",
     justifyContent: "center",
-    transition: "background .1s ease",
+    transition: "background .15s ease",
     width: "auto",
     position: "relative",
     height: "100%",
@@ -14,7 +14,7 @@ const CardImageStyle = createUseStyles({
     },
   },
   image: {
-    transition: "transform .1s ease",
+    transition: "transform .15s ease",
     width: "auto",
     position: "relative",
     height: "100%",

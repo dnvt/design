@@ -15,7 +15,7 @@ const DeviceStyle = createUseStyles({
     width: "auto",
     maxWidth: "100%",
     height: "284px",
-    transition: "background .1s ease, box-shadow .1s ease",
+    transition: "background .15s ease, box-shadow .15s ease",
     "@media (min-width: 576px)": {
       height: "428px",
     },
@@ -95,36 +95,39 @@ const DeviceStyle = createUseStyles({
 
   // Mobile
   mobileContent: {
-    zIndex: "90",
+    zIndex: "1",
     position: "relative",
     padding: "12px",
     boxShadow: ({ theme }) => theme.shadow,
     background: ({ theme }) => theme.tint,
     borderRadius: "36px",
     overflow: "hidden",
-    maxWidth: "264px",
+    width: "249px",
     objectFit: "cover",
     height: "512px",
     "& img": {
       borderRadius: "22px",
+      height: "100%",
     },
 
     "@media (min-width: 768px)": {
-      minWidth: "270px",
+      minWidth: "281px",
       height: "576px",
       borderRadius: "40px",
       padding: "14px",
-      "& loading": {
+      "& img": {
         borderRadius: "28px",
+        height: "100%",
       },
     },
     "@media (min-width: 1360px)": {
       height: "704px",
-      minWidth: "325px",
+      minWidth: "342px",
       borderRadius: "55px",
       padding: "16px",
-      "& loading": {
+      "& img": {
         borderRadius: "42px",
+        height: "100%",
       },
     },
     "& loading": { borderRadius: "40px" },
@@ -212,6 +215,7 @@ const DeviceStyle = createUseStyles({
     left: "0",
     width: "100%",
     height: "80%",
+    zIndex: "-1",
     borderTop: ({ theme }) => theme.borderDevice,
     borderBottom: ({ theme }) => theme.borderDevice,
   },

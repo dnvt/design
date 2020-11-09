@@ -9,6 +9,9 @@ const CardStatus = (props) => {
 
   let value;
   switch (props.status) {
+    case "link":
+      value = "External link";
+      break;
     case "loading":
       value = "Loading...";
       break;
@@ -18,11 +21,10 @@ const CardStatus = (props) => {
     case "construction":
       value = "In Progress";
       break;
-    case "link":
-      value = "External link";
-      break;
     default:
-      console.warn("Incorrect props.status on the Card component");
+      console.warn(
+        `${props.status} is an incorrect status for the Card component`
+      );
       break;
   }
 

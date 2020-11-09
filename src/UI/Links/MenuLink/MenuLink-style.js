@@ -2,10 +2,10 @@ import { createUseStyles } from "react-jss";
 
 const MenuLinkStyle = createUseStyles({
   "@keyframes slidein": {
-    from: { opacity: 0, top: "28px", transition: "all .1s ease" },
+    from: { opacity: 0, top: "28px", transition: "all .15s ease" },
 
-    "77%": { opacity: 0, top: "28px", transition: "all .1s ease" },
-    to: { opacity: 1, top: "32px", transition: "all .1s ease" },
+    "77%": { opacity: 0, top: "28px", transition: "all .15s ease" },
+    to: { opacity: 1, top: "32px", transition: "all .15s ease" },
   },
   MenuLink: {
     position: "relative",

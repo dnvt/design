@@ -1,7 +1,7 @@
 import React from "react";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import Verticaler from "../../Utils/Spacer/Variations/Verticaler";
-import ArrowDragScroll from "../ArrowSignals/ArrowDragSignal";
+import ArrowDragScroll from "../../Utils/ArrowSignals/ArrowDragSignal";
 import ContainerStyle from "./Container-style";
 
 // TODO

@@ -1,4 +1,10 @@
 export const light = {
+  // season: {
+  //   main: "#F5B470",
+  //   secondary: "#962F3B",
+  //   gradient:
+  //     "linear-gradient(180deg, rgba(245, 180, 112, .2) -30%, rgba(228, 118, 70, .12) 130%)",
+  // },
   gridLine: "rgba(106,120,255,.2)",
   gridBackground: "rgba(0,186,255,.1)",
   sidelines: "1px solid rgba(25,25,25,.1)",
@@ -38,6 +44,7 @@ export const light = {
 };
 
 export const dark = {
+  // season: { main: "#470E18", secondary: "#4B0D6E" },
   gridLine: "rgba(105,70,186,.4)",
   gridBackground: "rgba(80,11,241,.25)",
   sidelines: "1px solid rgba(225,225,225,.15)",

@@ -2,8 +2,8 @@ import React from "react";
 import { useTheme } from "react-jss";
 
 import { useWindowSize } from "../../Hooks/useWindowSize";
-import Icon from "../../Utils/Icon/Icon";
-import Spacer from "../../Utils/Spacer/Spacer";
+import Icon from "../Icon/Icon";
+import Spacer from "../Spacer/Spacer";
 import ArrowSignalsStyle from "./ArrowSignals-style";
 
 const ArrowDragScroll = (props) => {

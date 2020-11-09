@@ -8,14 +8,14 @@ const Image = (props) => {
   const theme = useTheme();
   const classes = ImageStyle({ ...props, theme });
 
-  // Transforming the image Array fomr Device
+  // Transforming the image Array from Device
   let imageWebp = null;
   let imagePng = null;
 
   if (props.src) {
     imageWebp = props.src[1];
     imagePng = props.src[0];
-    console.log(props.src);
+    // console.log(props.src);
   }
 
   let dots = "...";
@@ -23,13 +23,14 @@ const Image = (props) => {
 
   const picture = (
     <picture
+      className={props.class}
       style={
         (props.background && { background: props.background }) ||
         (props.scale && { transform: "scale(" + props.scale + ")" })
       }
     >
       <source srcSet={imageWebp} type='image/webp' />
-      <img src={imagePng} alt={props.alt} />
+      <img style={{ height: "100%" }} src={imagePng} alt={props.alt} />
     </picture>
   );
 

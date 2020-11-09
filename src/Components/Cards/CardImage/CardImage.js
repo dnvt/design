@@ -8,7 +8,9 @@ const CardImage = (props) => {
 
   const cardImage = (
     <div className={classes.CardImage} style={{ background: props.background }}>
-      {props.src && <Image src={props.src} alt={props.alt} />}
+      {props.src && (
+        <Image scale={props.scale} class={classes.image} src={props.src} alt={props.alt} />
+      )}
     </div>
   );
 

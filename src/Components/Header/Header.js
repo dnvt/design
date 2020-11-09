@@ -96,12 +96,7 @@ const Header = (props) => {
             color={color[0]}
             hover={color[1]}
           />
-          <MenuLink
-            to='/menu'
-            icon='menu'
-            color={color[0]}
-            hover={color[1]}
-          />
+          <MenuLink to='/menu' icon='menu' color={color[0]} hover={color[1]} />
         </nav>
       </header>
     </Container>

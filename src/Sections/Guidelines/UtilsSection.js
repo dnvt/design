@@ -17,7 +17,7 @@ const ColorSwatch = (props) => {
           width: "100%",
           height: 64,
           background: props.color,
-          transition: "background .1s ease",
+          transition: "background .15s ease",
         }}
       ></div>
       <Spacer height={8} />

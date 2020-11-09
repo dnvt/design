@@ -6,7 +6,7 @@ const SeparatorStyle = createUseStyles({
     height: "1px",
     background: props.color,
     opacity: props.opacity,
-    transition: "background .1s ease,opacity .1s ease",
+    transition: "background .15s ease,opacity .15s ease",
     marginTop: "-9px",
     "&:hover": {
       background: props.hover,
@@ -18,7 +18,7 @@ const SeparatorStyle = createUseStyles({
     height: "1px",
     background: props.color,
     opacity: props.opacity,
-    transition: "background .1s ease,opacity .1s ease",
+    transition: "background .15s ease,opacity .15s ease",
     marginTop: "-10px",
     "&:hover": {
       background: props.hover,

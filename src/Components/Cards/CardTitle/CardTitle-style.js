@@ -37,7 +37,7 @@ const CardTitleStyle = createUseStyles({
 
     "@media (min-width: 768px)": {
       padding: "40px",
-      maxWidth: "28%",
+      maxWidth: "40%",
     },
 
     "@media (min-width: 992px)": {
