@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 
 import { useWindowSize } from "../../Hooks/useWindowSize";
@@ -91,4 +91,4 @@ const Font = (props) => {
   return <>{fontType}</>;
 };
 
-export default Font;
+export default memo(Font);

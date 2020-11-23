@@ -22,11 +22,11 @@ export default function useHover() {
       return;
     }
 
-    currentRef.addEventListener("mouseenter", enter);
-    currentRef.addEventListener("mouseleave", leave);
+    currentRef.addEventListener("mouseenter", enter, false);
+    currentRef.addEventListener("mouseleave", leave, false);
     return () => {
-      currentRef.removeEventListener("mouseenter", enter);
-      currentRef.removeEventListener("mouseleave", leave);
+      currentRef.removeEventListener("mouseenter", enter, false);
+      currentRef.removeEventListener("mouseleave", leave, false);
     };
   }, [setHovered, ref]);
 

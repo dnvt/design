@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 import Icon from "../../Utils/Icon/Icon";
 import ButtonStyle from "./Button-style";
@@ -34,4 +34,4 @@ const GridToggle = (props) => {
   );
 };
 
-export default GridToggle;
+export default memo(GridToggle);

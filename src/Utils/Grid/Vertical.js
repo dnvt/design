@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 
 import VerticalStyle from "./Vertical-style";
@@ -43,4 +43,4 @@ const Vertical = (props) => {
   );
 };
 
-export default Vertical;
+export default memo(Vertical);

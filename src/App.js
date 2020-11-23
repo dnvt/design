@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./Components/Layout";
 import Guidelines from "./Routes/Guidelines";
+import Coverjs from "./Routes/Projects/Coverjs";
 import Homepage from "./Routes/Homepage";
 import ScrollToTop from "./Utils/ScrollToTop/ScrollToTop";
 
@@ -13,6 +14,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route path='/guidelines' component={Guidelines}></Route>
+          <Route path='/work/coverjs' component={Coverjs}></Route>
           <Route path='/' component={Homepage}></Route>
         </Switch>
       </Layout>

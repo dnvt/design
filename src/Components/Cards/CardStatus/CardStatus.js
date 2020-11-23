@@ -22,16 +22,13 @@ const CardStatus = (props) => {
       value = "In Progress";
       break;
     default:
-      console.warn(
-        `${props.status} is an incorrect status for the Card component`
-      );
       break;
   }
 
   return (
     <>
       <div className={classes.Status}>
-        <MenuLink icon={props.status} value={value} color={theme.text} />
+        <MenuLink icon={props.status} value={value} color={props.color} />
       </div>
     </>
   );

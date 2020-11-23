@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import CardStyle from "./Card-style";
 
 import CardStatus from "./CardStatus/CardStatus";
@@ -6,8 +6,10 @@ import CardImage from "./CardImage/CardImage";
 import CardTitle from "./CardTitle/CardTitle";
 import useHover from "../../Hooks/useHover";
 import Container from "../Containers/Container";
+import { useTheme } from "react-jss";
 
 const Card = (props) => {
+  const theme = useTheme();
   const classes = CardStyle();
   const [hoveredRef, isHovered] = useHover();
 
@@ -15,9 +17,17 @@ const Card = (props) => {
     <div
       className={props.status !== "stop" ? classes.Card : classes.PrivateCard}
       ref={hoveredRef}
-      style={{ height: props.height, width: props.width }}
+      style={
+        props.background === theme.background
+          ? {
+              border: `1px solid ${theme.outline}`,
+              height: props.height,
+              width: props.width,
+            }
+          : { height: props.height, width: props.width }
+      }
     >
-      <CardStatus status={props.status} />
+      <CardStatus status={props.status} color={props.titleColor} />
       <CardImage
         status={props.status}
         alt={props.alt}
@@ -45,4 +55,4 @@ const Card = (props) => {
   return card;
 };
 
-export default Card;
+export default memo(Card);

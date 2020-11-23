@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Verticaler from "../../../Utils/Spacer/Variations/Verticaler";
 import ColumnStyle from "./Column-style";
@@ -31,4 +31,4 @@ const Column = (props) => {
   );
 };
 
-export default Column;
+export default memo(Column);

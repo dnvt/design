@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 
@@ -29,4 +29,4 @@ const Grid = (props) => {
   );
 };
 
-export default Grid;
+export default memo(Grid);

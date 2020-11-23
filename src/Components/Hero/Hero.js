@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 import { useSpring } from "react-spring";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
@@ -165,4 +165,4 @@ const Hero = ({ value }) => {
   );
 };
 
-export default Hero;
+export default memo(Hero);

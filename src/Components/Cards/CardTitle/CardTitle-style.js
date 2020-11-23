@@ -21,6 +21,7 @@ const CardTitleStyle = createUseStyles({
 
     "@media (min-width: 1360px)": {
       padding: "40px 56px",
+      maxWidth: "608px",
     },
   },
 

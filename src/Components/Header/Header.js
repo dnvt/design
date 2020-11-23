@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 
 import { useWindowSize } from "../../Hooks/useWindowSize";
@@ -102,4 +102,4 @@ const Header = (props) => {
     </Container>
   );
 };
-export default Header;
+export default memo(Header);

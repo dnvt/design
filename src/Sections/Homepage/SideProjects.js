@@ -5,22 +5,28 @@ import Font from "../../Utils/Font/Font";
 import Card from "../../Components/Cards/Card";
 import Container from "../../Components/Containers/Container";
 
-const SideProjects = (props) => {
+/// Images
+import starsPng from "../../Assets/Images/Stars/Stars.png";
+import starsWebp from "../../Assets/Images/Stars/Stars.webp";
+import coverPng from "../../Assets/Images/Coverjs/Coverjs.png";
+import coverWebp from "../../Assets/Images/Coverjs/Coverjs.webp";
+
+const SideProjects = () => {
   const theme = useTheme();
   return (
     <>
       <Container>
-        <Font type='h2'>Side Projects</Font>
+        <Font type='h2'>Play Ground</Font>
         <Spacer height={104} />
         <Card
           status='construction'
           titleColor={theme.text}
           tagValue='Animation, Illustration'
           tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
+          src={[starsPng, starsWebp]}
           background={theme.grey}
           backgroundHover={theme.hover}
-          alt
+          alt='Animation made with Lucas M Matholaz'
           path='/'
         >
           A Park for the Homeless
@@ -33,13 +39,13 @@ const SideProjects = (props) => {
           titleColor={theme.text}
           tagValue='Programming'
           tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
+          src={[coverPng, coverWebp]}
           background={theme.grey}
           backgroundHover={theme.hover}
-          alt
-          path='/'
+          alt='Covers animated in CSS and Javascript'
+          path='/work/coverjs'
         >
-          Cover.js
+          Coverjs
         </Card>
         <Spacer height={40} />
         <Card
@@ -47,10 +53,10 @@ const SideProjects = (props) => {
           titleColor={theme.text}
           tagValue='Programming'
           tagsColor={theme.main}
-          // src={"./img/USMobile-02"}
+          // src={[coverPng, coverWebp]}
           background={theme.grey}
           backgroundHover={theme.hover}
-          alt
+          alt='Coming soon! more playground projects'
           path='/'
         >
           Coming soon

@@ -28,7 +28,7 @@ const ImageStyle = createUseStyles({
     width: "100%",
     height: "100%",
     padding: "16px",
-    
+
     "@media (min-width: 576px)": {
       padding: "16px 24px",
     },
@@ -50,7 +50,7 @@ const ImageStyle = createUseStyles({
     width: "100%",
     height: "100%",
     padding: "16px",
-    
+
     "@media (min-width: 576px)": {
       padding: "16px 24px",
     },
@@ -67,6 +67,22 @@ const ImageStyle = createUseStyles({
     "@media (min-width: 1360px)": {
       padding: "40px 56px",
       width: "1120px",
+    },
+  },
+  heroVignette: {
+    display: "flex",
+    textAlign: "center",
+    overflow: "hidden",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    height: "calc(536px + 40px)",
+
+    "@media (min-width: 768px)": {
+      height: "calc(704px + 40px)",
+    },
+    "@media (min-width: 1360px)": {
+      height: "calc(840px + 40px)",
     },
   },
 });

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import useDarkMode from "use-dark-mode";
 import Icon from "../../Utils/Icon/Icon";
 import ButtonStyle from "./Button-style";
@@ -23,4 +23,4 @@ const DarkModeToggle = (props) => {
   );
 };
 
-export default DarkModeToggle;
+export default memo(DarkModeToggle);

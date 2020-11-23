@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
 import { useTheme } from "react-jss";
 
@@ -66,4 +66,4 @@ const Spacer = (props) => {
   return <>{spacer}</>;
 };
 
-export default Spacer;
+export default memo(Spacer);

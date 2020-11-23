@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 
 import HorizontalStyle from "./Horizontal-style";
@@ -20,4 +20,4 @@ const Horizontal = (props) => {
   return <div className={classes.Horizontal}>{rowArray}</div>;
 };
 
-export default Horizontal;
+export default memo(Horizontal);

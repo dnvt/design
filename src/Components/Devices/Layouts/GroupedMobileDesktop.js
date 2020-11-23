@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Spacer from "../../../Utils/Spacer/Spacer";
 import SpacerFullHeight from "../../../Utils/Spacer/Variations/SpacerFullHeight";
@@ -47,4 +47,4 @@ const GroupedMobileDesktop = (props) => {
   );
 };
 
-export default GroupedMobileDesktop;
+export default memo(GroupedMobileDesktop);

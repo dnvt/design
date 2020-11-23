@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "../../Containers/Container";
 import Device from "../Device";
 
@@ -19,4 +19,4 @@ const DragFramelessFive = (props) => {
   }
 };
 
-export default DragFramelessFive;
+export default memo(DragFramelessFive);

@@ -13,7 +13,9 @@ const FontSection = () => {
   return (
     <>
       <Container>{spacer}</Container>
-      <FontHero value='Hello World!' />
+      <div style={{ height: "800px" }}>
+        <FontHero value='Hello World!' />
+      </div>
       <Container>
         <Spacer height={64} />
         <Font type='h1'>

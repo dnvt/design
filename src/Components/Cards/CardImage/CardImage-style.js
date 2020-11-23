@@ -14,11 +14,14 @@ const CardImageStyle = createUseStyles({
     },
   },
   image: {
-    transition: "transform .15s ease",
-    width: "auto",
+    display: "flex",
+    justifyContent: "center",
     position: "relative",
+    width: "auto",
     height: "100%",
     objectFit: "cover",
+    transition: "transform .15s ease",
+
     "@media (min-width: 576px)": {
       minWidth: "100%",
     },

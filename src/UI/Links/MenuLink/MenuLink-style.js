@@ -37,8 +37,8 @@ const MenuLinkStyle = createUseStyles({
     top: "32px",
     position: "absolute",
     opacity: "1",
-    animationDuration: "1.2s",
     animationName: "$slidein",
+    animationDuration: "1.2s",
   },
 });
 

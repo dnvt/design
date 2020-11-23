@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 
 import DarkModeToggle from "../../Buttons/ThemeToggle";
@@ -113,4 +113,4 @@ const MenuLink = (props) => {
     </Link>
   );
 };
-export default MenuLink;
+export default memo(MenuLink);

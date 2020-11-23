@@ -4,12 +4,11 @@ import Spacer from "../../Utils/Spacer/Spacer";
 import Font from "../../Utils/Font/Font";
 import Container from "../../Components/Containers/Container";
 import Column from "../../Components/Containers/Columns/Column";
-// import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
-// import InternalLink from "../../UI/Links/InternalLink/InternalLink";
+import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
+import InternalLink from "../../UI/Links/InternalLink/InternalLink";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import Card from "../../Components/Cards/Card";
 import DragMobileFour from "../../Components/Devices/Layouts/DragMobileFour";
-import DragCardsThree from "../../Components/Cards/Layouts/DragCardsThree";
 
 /// Images
 // Mobile
@@ -29,6 +28,7 @@ import matrixPng from "../../Assets/Images/USMobile/Cards/Matrix.png";
 import matrixWebp from "../../Assets/Images/USMobile/Cards/Matrix.webp";
 import systemPng from "../../Assets/Images/USMobile/Cards/System.png";
 import systemWebp from "../../Assets/Images/USMobile/Cards/System.webp";
+import FontHero from "../../Components/Hero/FontHero";
 
 const USMWork = () => {
   const theme = useTheme();
@@ -54,6 +54,9 @@ const USMWork = () => {
     <>
       <Container>
         <Font type='h2'>Work</Font>
+      </Container>
+      <FontHero value='2016-19' />
+      <Container>
         <Spacer height={40} />
         <Column spacer half>
           <Font type='h3'>US Mobile, cellular plans for everybody.</Font>
@@ -73,7 +76,7 @@ const USMWork = () => {
             mouth from product experience.
           </Font>
         </Column>
-        {/* <div style={{ display: "flex" }}>
+        <div style={{ display: "flex" }}>
           <InternalLink
             path='/'
             value='Read use case'
@@ -85,10 +88,9 @@ const USMWork = () => {
             color={theme.text}
             value='Visit usmobile.com'
           />
-        </div> */}
+        </div>
       </Container>
-      {/* <Spacer c height={80} /> */}
-      <Spacer c height={64} />
+      <Spacer c height={80} />
       <DragMobileFour
         src={[
           [phone01Png, phone01Webp],
@@ -121,7 +123,7 @@ const USMWork = () => {
           tagsColor={theme.usmobile.text}
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
-          alt
+          alt='US Mobile interactive Matrix of prices'
           path='/'
         >
           Build your plan
@@ -136,41 +138,12 @@ const USMWork = () => {
           tagsColor={theme.usmobile.text}
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
-          alt
+          alt="US Mobile design system, for mobile and desktop"
           path='/'
         >
           US Mobile Dashboard use case
         </Card>
-        <Spacer height={104} />
-        <Font type='h4'>Work under NDA</Font>
-        <Column spacer third>
-          <Font type='text'>
-            As a freelancer in Berlin, I worked on several NDA projects as an
-            interaction and motion designer. I defined and unified the behavior
-            for interfaces on mediums like airplane seats, cookwear and TV
-            screens.
-            <br /> Contact me to learn more about these projects.
-          </Font>
-        </Column>
-        <Spacer height={40} />
       </Container>
-      <DragCardsThree
-        title={{
-          color: [theme.text, theme.text, theme.text],
-          value: ["Title number 1", "Title number 2", "Title number 3"],
-        }}
-        tag={{
-          color: [theme.main, theme.main, theme.text],
-          value: ["Tag number 1", "Tag number 2", "Tag number 3"],
-        }}
-        background={{
-          color: [theme.grey, theme.grey, theme.grey],
-          hover: [theme.hover, theme.hover, theme.hover],
-        }}
-        status={["loading", "loading", "stop"]}
-        src={["", "", ""]}
-        alt={["", "", ""]}
-      />
     </>
   );
 };

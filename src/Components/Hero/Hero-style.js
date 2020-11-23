@@ -27,11 +27,11 @@ const HeroStyle = createUseStyles({
     },
     "@media (min-width: 768px)": {
       height: "800px",
-      margin: "-120px auto",
+      margin: "-120px auto -640px",
     },
     "@media (min-width: 1360px)": {
       height: "1240px",
-      margin: "-160px auto",
+      margin: "-160px auto -1080px",
     },
   },
   heroAnimated: {

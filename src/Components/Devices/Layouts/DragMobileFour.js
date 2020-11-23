@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "../../Containers/Container";
 import Device from "../Device";
 
@@ -13,4 +13,4 @@ const DragMobileFour = (props) => {
   );
 };
 
-export default DragMobileFour;
+export default memo(DragMobileFour);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 // import FooterStyle from "./Footer-style";
 import Spacer from "../../Utils/Spacer/Spacer";
 import { useWindowSize } from "../../Hooks/useWindowSize";
@@ -51,4 +51,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

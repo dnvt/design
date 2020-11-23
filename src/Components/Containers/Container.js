@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import Verticaler from "../../Utils/Spacer/Variations/Verticaler";
 import ArrowDragScroll from "../../Utils/ArrowSignals/ArrowDragSignal";
@@ -122,4 +122,4 @@ const Container = (props) => {
   return <div className={classes.Container}>{props.children}</div>;
 };
 
-export default Container;
+export default memo(Container);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Container from "../../Containers/Container";
 import Card from "../Card";
@@ -24,6 +24,7 @@ const DragCardsThree = (props) => {
         src={props.src[i]}
         alt={props.alt}
         path={"/"}
+        statusColor={props.title.color[i]}
         tagsColor={props.tag.color[i]}
         tagValue={props.tag.value[i]}
         background={props.background.color[i]}
@@ -44,4 +45,4 @@ const DragCardsThree = (props) => {
   );
 };
 
-export default DragCardsThree;
+export default memo(DragCardsThree);

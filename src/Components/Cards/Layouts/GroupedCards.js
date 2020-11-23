@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Spacer from "../../../Utils/Spacer/Spacer";
 import Container from "../../Containers/Container";
@@ -50,4 +50,4 @@ const GroupedCard = (props) => {
   );
 };
 
-export default GroupedCard;
+export default memo(GroupedCard);

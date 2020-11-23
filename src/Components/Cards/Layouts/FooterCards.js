@@ -1,9 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "../../Containers/Container";
 import Card from "../Card";
 
 const DragCardsThree = (props) => {
-
   let cardGroup = [];
 
   for (let i = 0; i < 3; i++) {
@@ -52,4 +51,4 @@ const DragCardsThree = (props) => {
   return <Container footer>{cardGroup}</Container>;
 };
 
-export default DragCardsThree;
+export default memo(DragCardsThree);

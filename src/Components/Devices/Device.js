@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useTheme } from "react-jss";
 import Image from "../../Utils/Image/Image";
 import DeviceStyle from "./Device-style";
@@ -54,4 +54,4 @@ const Device = (props) => {
   return device;
 };
 
-export default Device;
+export default memo(Device);
