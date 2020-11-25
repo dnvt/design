@@ -44,8 +44,8 @@ const Homepage = () => {
       <Spacer c height={184} />
       <FontHero value='Yeaaah!' />
       <SideProjects />
-      <Spacer c height={184} />
       <FontHero value='dnvt.me' />
+      <Spacer c height={184} />
       <About />
     </>
   );

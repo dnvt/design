@@ -31,29 +31,30 @@
 import React, { memo } from "react";
 import { useWindowSize } from "../../Hooks/useWindowSize";
 
-import Font from "../../Utils/Font/Font";
-import Container from "../Containers/Container";
+// import Font from "../../Utils/Font/Font";
+// import Container from "../Containers/Container";
 import Hero from "./Hero";
-import HeroStyle from "./Hero-style";
+// import HeroStyle from "./Hero-style";
 
 const FontHero = (props) => {
-  const classes = HeroStyle();
+  // const classes = HeroStyle();
   const window = useWindowSize();
 
   if (window.width > 768) {
     return <Hero value={props.value} bottom={props.bottom} />;
   }
 
-  return (
-    <Container full>
-      <div
-        className={classes.Fontimation}
-        style={{ height: "920px", margin: "-80px 0" }}
-      >
-        <Font type='hero'>{props.value}</Font>
-      </div>
-    </Container>
-  );
+  return null
+  // (
+  //   <Container full>
+  //     <div
+  //       className={classes.Fontimation}
+  //       style={{ height: "920px", margin: "-80px 0" }}
+  //     >
+  //       <Font type='hero'>{props.value}</Font>
+  //     </div>
+  //   </Container>
+  // );
 };
 
 export default memo(FontHero);
