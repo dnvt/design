@@ -6,6 +6,7 @@ import Guidelines from "./Routes/Guidelines";
 import Coverjs from "./Routes/Projects/Coverjs";
 import Homepage from "./Routes/Homepage";
 import ScrollToTop from "./Utils/ScrollToTop/ScrollToTop";
+import Dashboard from "./Routes/USMobile/Dashboard";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Switch>
           <Route path='/guidelines' component={Guidelines}></Route>
           <Route path='/work/coverjs' component={Coverjs}></Route>
+          <Route path='/work/usmobile/dashboard' component={Dashboard}></Route>
           <Route path='/' component={Homepage}></Route>
         </Switch>
       </Layout>

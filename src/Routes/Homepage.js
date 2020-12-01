@@ -6,9 +6,35 @@ import FontHero from "../Components/Hero/FontHero";
 import USMWork from "../Sections/Homepage/USMWork";
 import Introduction from "../Sections/Homepage/Introduction";
 import SelectedWork from "../Sections/Homepage/SelectedWork";
-import SideProjects from "../Sections/Homepage/SideProjects";
+import PlayGround from "../Sections/Homepage/PlayGround";
 import About from "../Sections/Homepage/About";
 import PrivateWork from "../Sections/Homepage/PrivateWork";
+
+const Homepage = () => {
+  return (
+    <>
+      <Spacer c height={104} />
+      <Spacer c height={184} />
+      <FontHero value='François' />
+      <Introduction />
+      <Spacer c height={184} />
+      <USMWork />
+      <Spacer c height={104} />
+      <PrivateWork />
+      <Spacer c height={104} />
+      <SelectedWork />
+      <Spacer c height={184} />
+      <FontHero value='Yeaaah!' />
+      <PlayGround />
+      <FontHero value='dnvt.me' />
+      <Spacer c height={184} />
+      <About />
+    </>
+  );
+};
+
+export default Homepage;
+
 // import Container from "../Components/Containers/Container";
 // import { animated, useSpring } from "react-spring";
 // import { useHover } from "react-use-gesture";
@@ -27,28 +53,3 @@ import PrivateWork from "../Sections/Homepage/PrivateWork";
 //     </Container>
 //   );
 // }
-
-const Homepage = () => {
-  return (
-    <>
-      <Spacer c height={104} />
-      <Spacer c height={184} />
-      <FontHero value='François' />
-      <Introduction />
-      <Spacer c height={184} />
-      <USMWork />
-      <Spacer c height={104} />
-      <PrivateWork />
-      <Spacer c height={104} />
-      <SelectedWork />
-      <Spacer c height={184} />
-      <FontHero value='Yeaaah!' />
-      <SideProjects />
-      <FontHero value='dnvt.me' />
-      <Spacer c height={184} />
-      <About />
-    </>
-  );
-};
-
-export default Homepage;

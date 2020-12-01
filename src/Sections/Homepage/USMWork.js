@@ -78,16 +78,16 @@ const USMWork = () => {
         </Column>
         <div style={{ display: "flex" }}>
           <InternalLink
-            path='/'
+            path='/work/usmobile/dashboard'
             value='Read use case'
             color={theme.text}
             hover={theme.main}
-          />
+            />
           <ExternalLink
-            path='/'
+            path='https://usmobile.com'
             color={theme.text}
             value='Visit usmobile.com'
-          />
+            />
         </div>
       </Container>
       <Spacer c height={80} />
@@ -98,7 +98,7 @@ const USMWork = () => {
           [phone03Png, phone03Webp],
           [phone04Png, phone04Webp],
         ]}
-      />
+        />
       <Spacer c height={104} />
       <Container>
         <Card
@@ -110,8 +110,8 @@ const USMWork = () => {
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
           alt='Branding image for US Mobile'
-          path='/'
-        >
+          path='/work/coverjs'
+          >
           Creative direction <br /> & design guidelines
         </Card>
         <Spacer height={32} />
@@ -124,8 +124,8 @@ const USMWork = () => {
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
           alt='US Mobile interactive Matrix of prices'
-          path='/'
-        >
+          path='/work/coverjs'
+          >
           Build your plan
         </Card>
         <Spacer height={32} />
@@ -138,8 +138,8 @@ const USMWork = () => {
           tagsColor={theme.usmobile.text}
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
-          alt="US Mobile design system, for mobile and desktop"
-          path='/'
+          alt='US Mobile design system, for mobile and desktop'
+          path='/work/usmobile/dashboard'
         >
           US Mobile Dashboard use case
         </Card>

@@ -11,7 +11,7 @@ import starsWebp from "../../Assets/Images/Stars/Stars.webp";
 import coverPng from "../../Assets/Images/Coverjs/Coverjs.png";
 import coverWebp from "../../Assets/Images/Coverjs/Coverjs.webp";
 
-const SideProjects = () => {
+const PlayGround = () => {
   const theme = useTheme();
   return (
     <>
@@ -27,7 +27,7 @@ const SideProjects = () => {
           background={theme.grey}
           backgroundHover={theme.hover}
           alt='Animation made with Lucas M Matholaz'
-          path='/'
+          path='/work/coverjs'
         >
           A Park for the Homeless
           <br />
@@ -57,7 +57,7 @@ const SideProjects = () => {
           background={theme.grey}
           backgroundHover={theme.hover}
           alt='Coming soon! more playground projects'
-          path='/'
+          path='/work/coverjs'
         >
           Coming soon
         </Card>
@@ -66,4 +66,4 @@ const SideProjects = () => {
   );
 };
 
-export default SideProjects;
+export default PlayGround;

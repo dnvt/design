@@ -59,6 +59,7 @@ const SelectedWork = () => {
           "Norse interieur manual",
           "Elastic movie who scared the hell out of me",
         ]}
+        path={(["/work/coverjs"], ["/work/coverjs"])}
       />
       <SpacerFortyHalf />
       <Card
@@ -70,8 +71,8 @@ const SelectedWork = () => {
         src={[wastePng, wasteWebp]}
         background={theme.grey}
         backgroundHover={theme.hover}
-        alt="Love your Waste Paris based startup"
-        path='/'
+        alt='Love your Waste Paris based startup'
+        path='/work/coverjs'
       >
         Love your waste
       </Card>
@@ -100,6 +101,7 @@ const SelectedWork = () => {
           [mimiPng, mimiWebp],
         ]}
         alt={["kiptfit keeps you fit!", "Mimi hearing illustrations"]}
+        path={(["/work/coverjs"], ["/work/coverjs"])}
       />
     </>
   );
