@@ -17,16 +17,20 @@ const Dashboard = () => {
       {/* /// Introduction */}
       <Container>
         <SpacerEightyHalf />
-        <Font type='h4'>US Mobile</Font>
-        <Font type='h1'>PWA Dashboard use case</Font>
+        <Font type='h4'>Head of Design</Font>
+        <Font type='h1'>
+          US Mobile PWA <br />
+          Dashboard use case
+        </Font>
         <Spacer height={32} />
         <Font type='h5'>Illustrations - Interface - Design systems</Font>
         <Column spacer third>
           <Font type='text'>
             US Mobile is a telecom company that sells T-Mobile and Verizon
             networks. We focus on highly customizable and affordable plans for
-            your devices. <br />
-            <br />
+            your devices.
+          </Font>
+          <Font type='text'>
             As the Lead Product Designer and Head of Design at US Mobile, I am
             directly involved in defining the product strategy, responsible for
             designing the UI and product usability. Finally, I am supervising
@@ -53,8 +57,9 @@ const Dashboard = () => {
             How can we modernize our dashboard solution to new design standards?
             Making it a cross-platform compatible (desktop to smartphone stores)
             and standalone app–no connectivity required? With our limited
-            resources ~ 8 employees in total. <br />
-            <br />
+            resources ~ 8 employees in total.
+          </Font>
+          <Font type='text'>
             We entirely reinvented our designs and processes, genuinely focused
             around cross-platform components with a brand new graphic
             style-guides and branding. Our Design System Library is made of
@@ -64,6 +69,35 @@ const Dashboard = () => {
         </Column>
         <Spacer height={24} />
         <Vignettes src='' alt='Legacy version of the dashboard' />
+      </Container>
+
+      {/* /// Context */}
+      <Container>
+        <Spacer height={64} />
+        <Font type='h4'>Design process</Font>
+        <Column spacer third>
+          <Font type='text'>
+            As a tiny team, we do not have the resources to facilitate customer
+            interviews within the design process.
+          </Font>
+          <Font type='text'>
+            Therefore, I’m adapting design thinking processes to what’s
+            feasible. I extensively draft sketches and concepts to challenge our
+            assumptions. I unfold the iterative and testings loops internally,
+            among all company stakeholders.
+          </Font>
+          <Font type='text'>
+            When finally satisfied, I use video recording tools like Hotjar,
+            Google Analytics data, and customer feedback from forms and emails.
+            It serves to track problems, misunderstandings and to gather new
+            hypotheses and suggestions.
+          </Font>
+        </Column>
+        <Spacer height={32} />
+      </Container>
+
+      {/* /// To be continued... */}
+      <Container>
         <Spacer height={40} />
         <Font type='h2'>To be continued...</Font>
       </Container>
