@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "react-jss";
+import Container from "../../Components/Containers/Container";
 
 import MenuLink from "../../UI/Links/MenuLink/MenuLink";
 import ImageStyle from "./Image-style";
@@ -34,11 +35,18 @@ const Image = (props) => {
     </picture>
   );
 
-  const loading = (
+  const loading = props.big ? (
+    <Container>
+      <div className={props.cl ? classes[props.cl] : classes.loading}>
+        <MenuLink icon='loading' color={theme.text} value={"Loading" + dots} />
+      </div>
+    </Container>
+  ) : (
     <div className={props.cl ? classes[props.cl] : classes.loading}>
       <MenuLink icon='loading' color={theme.text} value={"Loading" + dots} />
     </div>
   );
+
   props.src ? (imageState = picture) : (imageState = loading);
 
   return imageState;

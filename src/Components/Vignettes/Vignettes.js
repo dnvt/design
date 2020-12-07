@@ -22,6 +22,7 @@ const Vignettes = (props) => {
     <div className={classes.Vignette}>
       <Image
         class={props.big ? "image" : "image"}
+        big={props.big ? true : false}
         src={props.src}
         alt={props.alt}
       />
