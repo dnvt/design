@@ -20,7 +20,7 @@ const HeaderStyle = createUseStyles({
     },
   },
   menu: {
-    zIndex: "100",
+    zIndex: "1000",
     display: "flex",
   },
   nav: {

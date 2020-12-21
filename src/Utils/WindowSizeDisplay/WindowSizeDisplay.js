@@ -12,19 +12,23 @@ const WindowSizeDisplay = (props) => {
   const window = useWindowSize();
   const document = useDocumentSize();
 
-  return (
-    <div className={classes.Display}>
-      <Spacer height={8} />
-      <Font type='menu' color={theme.background}>
-        w: {window.width}
-        <br />
-        h: {window.height}
-        <br />
-        d: {document.height}
-      </Font>
-      <Spacer height={8} />
-    </div>
-  );
+  if (window.width > 767) {
+    return (
+      <div className={classes.Display}>
+        <Spacer height={8} />
+        <Font type='menu' color={theme.background}>
+          w: {window.width}
+          <br />
+          h: {window.height}
+          <br />
+          d: {document.height}
+        </Font>
+        <Spacer height={8} />
+      </div>
+    );
+  }
+
+  return null;
 };
 
 export default WindowSizeDisplay;

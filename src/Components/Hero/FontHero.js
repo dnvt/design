@@ -1,30 +1,25 @@
 import React, { memo } from "react";
-import { useWindowSize } from "../../Hooks/useWindowSize";
+import Font from "../../Utils/Font/Font";
+import HeroStyle from "./Hero-style";
+// import { useWindowSize } from "../../Hooks/useWindowSize";
 
-// import Font from "../../Utils/Font/Font";
-// import Container from "../Containers/Container";
-import Hero from "./Hero";
-// import HeroStyle from "./Hero-style";
+// import Hero from "./Hero";
 
 const FontHero = (props) => {
-  // const classes = HeroStyle();
-  const window = useWindowSize();
+  const classes = HeroStyle();
+  // const window = useWindowSize();
 
-  if (window.width > 768) {
-    return <Hero value={props.value} bottom={props.bottom} />;
-  }
+  // if (window.width > 768) {
+  //   return <Hero value={props.value} bottom={props.bottom} />;
+  // }
 
-  return null
+  // return null;
   // (
-  //   <Container full>
-  //     <div
-  //       className={classes.Fontimation}
-  //       style={{ height: "920px", margin: "-80px 0" }}
-  //     >
-  //       <Font type='hero'>{props.value}</Font>
-  //     </div>
-  //   </Container>
-  // );
+  return (
+    <div className={classes.Fontimation} style={{ zIndex: "-1" }}>
+      <Font type='hero'>{props.value}</Font>
+    </div>
+  );
 };
 
 export default memo(FontHero);

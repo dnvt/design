@@ -15,7 +15,9 @@ const Homepage = () => {
     <>
       <Spacer c height={104} />
       <Spacer c height={184} />
-      <FontHero value='François' />
+      <div style={{ position: "relative" }}>
+        <FontHero value='François' />
+      </div>
       <Introduction />
       <Spacer c height={184} />
       <USMWork />
@@ -24,9 +26,13 @@ const Homepage = () => {
       <Spacer c height={104} />
       <SelectedWork />
       <Spacer c height={184} />
-      <FontHero value='Yeaaah!' />
+      <div style={{ position: "relative" }}>
+        <FontHero value='Yeaaah!' />
+      </div>
       <PlayGround />
-      <FontHero value='dnvt.me' />
+      <div style={{ position: "relative" }}>
+        <FontHero value='dnvt.me' />
+      </div>
       <Spacer c height={184} />
       <About />
     </>

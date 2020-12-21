@@ -23,7 +23,7 @@ const Column = (props) => {
 
   return (
     <div className={classes.Column}>
-      <div>{props.children}</div>
+      <div className={props.grid && classes.Column}>{props.children}</div>
       {props.spacer && window.width > 992 ? (
         <Verticaler width={props.half ? spacerWidth[1] : spacerWidth[0]} />
       ) : null}

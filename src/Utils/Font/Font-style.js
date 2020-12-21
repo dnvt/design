@@ -58,7 +58,7 @@ const FontStyle = createUseStyles({
   h2: {
     transition: "color .15s ease",
     fontFamily: "Inter",
-    fontWeight: "300",
+    fontWeight: "200",
     fontSize: "84px",
     lineHeight: "88px",
     letterSpacing: "-.022em",

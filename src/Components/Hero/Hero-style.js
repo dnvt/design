@@ -16,23 +16,27 @@ const HeroStyle = createUseStyles({
     },
   },
   Fontimation: {
+    position: "absolute",
+    top: "-320px",
+    height: "1480px",
+    width: "100%",
     display: "flex",
     alignItems: "baseline",
     justifyContent: "center",
-    overflow: "hidden",
+    overflowX: "hidden",
 
-    "@media (min-width: 576px)": {
-      height: "240px",
-      margin: "-80px auto 80px",
-    },
-    "@media (min-width: 768px)": {
-      height: "800px",
-      margin: "-120px auto -640px",
-    },
-    "@media (min-width: 1360px)": {
-      height: "1240px",
-      margin: "-160px auto -1080px",
-    },
+    // "@media (min-width: 576px)": {
+    //   height: "240px",
+    //   margin: "-320px auto 320px",
+    // },
+    // "@media (min-width: 768px)": {
+    //   height: "800px",
+    //   margin: "-120px auto -640px",
+    // },
+    // "@media (min-width: 1360px)": {
+    //   height: "1240px",
+    //   margin: "-480px auto",
+    // },
   },
   heroAnimated: {
     width: "100%",

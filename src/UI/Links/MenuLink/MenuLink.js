@@ -10,6 +10,7 @@ import MenuLinkStyle from "./MenuLink-style";
 import useHover from "../../../Hooks/useHover";
 import { Link } from "react-router-dom";
 import Tooltip from "../../Tooltip/Tooltip";
+import MenuToggle from "../../Buttons/MenuToggle";
 
 const MenuLink = (props) => {
   const [hoveredRef, isHovered] = useHover();
@@ -35,6 +36,13 @@ const MenuLink = (props) => {
     case "theme":
       iconType = (
         <DarkModeToggle
+          color={props.hover && isHovered ? props.hover : props.color}
+        />
+      );
+      break;
+    case "menu":
+      iconType = (
+        <MenuToggle
           color={props.hover && isHovered ? props.hover : props.color}
         />
       );
@@ -106,6 +114,7 @@ const MenuLink = (props) => {
       to={props.to ? props.to : "/"}
       className={classes.MenuLink}
       ref={hoveredRef}
+      onClick={props.clicked}
     >
       {props.icon && icon}
       {props.value && content}

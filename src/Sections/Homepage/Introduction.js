@@ -50,6 +50,7 @@ const Introduction = () => {
         status={["link", "link"]}
         src={["", ""]}
         alt={["", ""]}
+        path={["/", "/"]}
       />
     </>
   );

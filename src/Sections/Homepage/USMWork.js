@@ -52,23 +52,25 @@ const USMWork = () => {
 
   return (
     <>
+      <div style={{ position: "relative" }}>
+        <FontHero value='2016-19' />
+      </div>
       <Container>
         <Font type='h2'>Work</Font>
       </Container>
-      <FontHero value='2016-19' />
       <Container>
         <Spacer height={40} />
         <Column spacer half>
           <Font type='h3'>US Mobile, cellular plans for everybody.</Font>
         </Column>
         <Spacer height={24} />
-        <Column>
+        <Column grid>
           <Font type='text'>
-            Lead all creative direction organizationally. Develop the product
-            strategy, set product design requirements and create priority maps
-            based on end-user data. Drive integration efforts with Verizon’s
-            carrier platform while maintaining continued service integration
-            with T-Mobile.
+            Lead all creative direction organizationally. <br />
+            Develop the product strategy, set product design requirements and
+            create priority maps based on end-user data. Drive integration
+            efforts with Verizon’s carrier platform while maintaining continued
+            service integration with T-Mobile.
           </Font>
           <Font type='text' width={spacerWidth}>
             Lead to the expansion of the organization from 15,000 customers to
@@ -82,12 +84,12 @@ const USMWork = () => {
             value='Read use case'
             color={theme.text}
             hover={theme.main}
-            />
+          />
           <ExternalLink
             path='https://usmobile.com'
             color={theme.text}
             value='Visit usmobile.com'
-            />
+          />
         </div>
       </Container>
       <Spacer c height={80} />
@@ -98,7 +100,7 @@ const USMWork = () => {
           [phone03Png, phone03Webp],
           [phone04Png, phone04Webp],
         ]}
-        />
+      />
       <Spacer c height={104} />
       <Container>
         <Card
@@ -111,7 +113,7 @@ const USMWork = () => {
           backgroundHover={theme.usmobile.hover}
           alt='Branding image for US Mobile'
           path='/work/coverjs'
-          >
+        >
           Creative direction <br /> & design guidelines
         </Card>
         <Spacer height={32} />
@@ -125,7 +127,7 @@ const USMWork = () => {
           backgroundHover={theme.usmobile.hover}
           alt='US Mobile interactive Matrix of prices'
           path='/work/coverjs'
-          >
+        >
           Build your plan
         </Card>
         <Spacer height={32} />

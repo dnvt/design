@@ -3,13 +3,16 @@ import { GridVisibilityProvider } from "./useGridVisibility";
 import { WindowSizeProvider } from "./useWindowSize";
 import { DocumentSizeProvider } from "./useDocumentSize";
 import { ColorTheme } from "./useTheme";
+import { MenuVisibilityProvider } from "./useMenu";
 
 const Context = (props) => {
   return (
     <ColorTheme>
       <GridVisibilityProvider>
         <WindowSizeProvider>
-          <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+          <MenuVisibilityProvider>
+            <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+          </MenuVisibilityProvider>
         </WindowSizeProvider>
       </GridVisibilityProvider>
     </ColorTheme>

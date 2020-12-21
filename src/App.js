@@ -14,10 +14,10 @@ const App = () => {
       <ScrollToTop />
       <Layout>
         <Switch>
-          <Route path='/guidelines' component={Guidelines}></Route>
-          <Route path='/work/coverjs' component={Coverjs}></Route>
-          <Route path='/work/usmobile/dashboard' component={Dashboard}></Route>
-          <Route path='/' component={Homepage}></Route>
+          <Route path='/guidelines' component={Guidelines} />
+          <Route path='/work/coverjs' component={Coverjs} />
+          <Route path='/work/usmobile/dashboard' component={Dashboard} />
+          <Route path='/' component={Homepage} />
         </Switch>
       </Layout>
     </BrowserRouter>
