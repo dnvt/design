@@ -49,7 +49,6 @@ const Header = (props) => {
                 color={color[0]}
                 hover={color[1]}
                 active={color[2]}
-                tooltip={visibility ? "Hide Grid" : "Show Grid"}
                 left={visibility ? "-46px" : "-49px"}
               />
             ) : (
@@ -66,7 +65,6 @@ const Header = (props) => {
                 icon='theme'
                 color={color[0]}
                 hover={color[1]}
-                tooltip={darkMode.value ? "Light Theme" : "Dark Theme"}
                 left={darkMode.value ? "-60px" : "-56px"}
               />
             )}
