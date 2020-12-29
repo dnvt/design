@@ -1,85 +1,92 @@
 import React from "react";
+
 import { useTheme } from "react-jss";
-import FontHero from "../../Components/Hero/FontHero";
-import { useGridVisibility } from "../../Hooks/useGridVisibility";
-import { useDarkTheme } from "../../Hooks/useTheme";
+// import useDarkMode from "use-dark-mode";
+// import { useGridVisibility } from "../../Hooks/useGridVisibility";
+import { useMenuVisibility } from "../../Hooks/useMenu";
+// import { useDarkTheme } from "../../Hooks/useTheme";
+
 import MenuLink from "../../UI/Links/MenuLink/MenuLink";
+import Font from "../../Utils/Font/Font";
 import Spacer from "../../Utils/Spacer/Spacer";
 import Container from "../Containers/Container";
 import MenuStyle from "./Menu-style";
 
-const Menu = () => {
-  const [visibility] = useGridVisibility();
-  const darkMode = useDarkTheme();
+const Wrap = (props) => {
+  const [menu, setMenu] = useMenuVisibility();
+  return <div onClick={() => setMenu(!menu)}>{props.children}</div>;
+};
+
+///
+const Menu = (props) => {
+  // const [visibility, setVisibility] = useGridVisibility();
   const theme = useTheme();
-  const classes = MenuStyle();
+  const classes = MenuStyle({ ...props, theme });
+  // const darkMode = useDarkTheme();
+  // const dark = useDarkMode();
 
   const color = [theme.text, theme.main, theme.secondary];
-  const spacer = <Spacer font height='40px' width='100%' />;
+  const spacer = <Spacer font height='64px' width='100%' />;
 
   return (
     <div className={classes.Menu}>
       <Container>
         <div className={classes.hash}>
           <nav className={classes.nav}>
-            <MenuLink
-              icon='mouse'
-              value='Work'
-              color={color[0]}
-              hover={color[0]}
-            />
+            <Wrap>
+              <MenuLink
+                icon='loading'
+                value='Homepage'
+                color={color[0]}
+                hover={color[0]}
+              />
+            </Wrap>
             {spacer}
-            <MenuLink
-              icon='mouse'
-              value='Playground'
-              color={color[0]}
-              hover={color[0]}
-            />
+            <Wrap>
+              <MenuLink
+                icon='mouseOn'
+                iconHover='mouseOff'
+                value='Work'
+                color={color[0]}
+                hover={color[0]}
+              />
+            </Wrap>
             {spacer}
-            <MenuLink
-              icon='smiley'
-              value='About'
-              color={color[0]}
-              hover={color[0]}
-            />
+            <Wrap>
+              <MenuLink
+                icon='cheeseOn'
+                iconHover='cheeseOff'
+                value='Playground'
+                color={color[0]}
+                hover={color[0]}
+              />
+            </Wrap>
             {spacer}
-            <MenuLink
-              to='/guidelines'
-              icon='guidelines'
-              value='Guidelines'
-              color={color[0]}
-              hover={color[0]}
-            />
+            <Wrap>
+              <MenuLink
+                icon='smileyOn'
+                iconHover='smileyOff'
+                value='About'
+                color={color[0]}
+                hover={color[0]}
+              />
+            </Wrap>
             {spacer}
-            <MenuLink
-              noLink
-              icon='theme'
-              color={color[0]}
-              hover={color[1]}
-              tooltip={darkMode.value ? "Light Theme" : "Dark Theme"}
-              left={darkMode.value ? "-60px" : "-56px"}
-            />
+            <Wrap>
+              <MenuLink
+                to='/guidelines'
+                icon='guidelinesOn'
+                iconHover='guidelinesOff'
+                value='Guidelines'
+                color={color[0]}
+                hover={color[0]}
+              />
+            </Wrap>
             {spacer}
-            <MenuLink
-              noLink
-              icon='grid'
-              color={color[0]}
-              hover={color[1]}
-              active={color[2]}
-              tooltip={visibility ? "Hide Grid" : "Show Grid"}
-              left={visibility ? "-46px" : "-49px"}
-            />
           </nav>
         </div>
-        <div
-          style={{
-            position: "absolute",
-            width: "100%",
-            bottom: "-40px",
-            marginLeft: "-30px",
-          }}
-        >
-          <FontHero value='#' />
+        <div className={classes.hashContain}>
+          <Font type='hero'>#</Font>
         </div>
       </Container>
     </div>

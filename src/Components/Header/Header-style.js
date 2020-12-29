@@ -8,13 +8,7 @@ const HeaderStyle = createUseStyles({
   menuMobile: {
     zIndex: "100",
     display: "flex",
-    // width: "calc(100% - 24px)",
-    // "@media (min-width: 576px)": {
-    //   width: "calc(100% - 38px)",
-    // },
-    // "@media (min-width: 768px)": {
-    //   display: "none",
-    // },
+
     "& div": {
       display: "flex",
     },

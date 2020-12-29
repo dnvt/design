@@ -11,12 +11,8 @@ const FontStyle = createUseStyles({
     fontSize: "242px",
     lineHeight: "360px",
     letterSpacing: "-.023em",
-    WebkitTouchCallout: "none" /* iOS Safari */,
-    WebkitUserSelect: "none" /* Safari */,
-    khtmlUserSelect: "none" /* Konqueror HTML */,
-    MozUserSelect: "none" /* Old versions of Firefox */,
-    MsUserSelect: "none" /* Internet Explorer/Edge */,
     userSelect: "none",
+    padding: "0 60px",
 
     background: ({ theme }) => theme.gradient,
     WebkitBackgroundClip: "text !important",

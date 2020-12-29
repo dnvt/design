@@ -14,6 +14,12 @@ const ButtonStyle = createUseStyles({
     "& :hover": {
       cursor: "pointer",
     },
+    "&:after": { content: "", marginRight: "200px", cursor: "pointer" },
+  },
+  MenuLink: {
+    position: "relative",
+    display: "flex",
+    flexDirection: "row",
   },
   icon: {
     zIndex: "1",

@@ -7,9 +7,9 @@ const DarkModeToggle = (props) => {
   const classes = ButtonStyle();
   const darkMode = useDarkMode();
 
-  let button = <Icon name='light' color={props.color} size='24' />;
+  let button = <Icon name={props.icon} color={props.color} size='24' />;
   if (darkMode.value)
-    button = <Icon name='dark' color={props.color} size='24' />;
+    button = <Icon name={props.iconDark} color={props.color} size='24' />;
 
   return (
     <button

@@ -10,6 +10,7 @@ const WindowSizeDisplayStyle = createUseStyles({
     padding: "0 24px",
     background: ({ theme }) => theme.text,
     opacity: 0.94,
+    zIndex: "10001",
   },
 });
 

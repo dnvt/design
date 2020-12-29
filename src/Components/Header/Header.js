@@ -3,13 +3,13 @@ import { useTheme } from "react-jss";
 
 import { useWindowSize } from "../../Hooks/useWindowSize";
 import { useGridVisibility } from "../../Hooks/useGridVisibility";
+import { useMenuVisibility } from "../../Hooks/useMenu";
 
 import HeaderStyle from "./Header-style";
 import Container from "../Containers/Container";
 import MenuLink from "../../UI/Links/MenuLink/MenuLink";
 import Spacer from "../../Utils/Spacer/Spacer";
 import useDarkMode from "use-dark-mode";
-import { useMenuVisibility } from "../../Hooks/useMenu";
 
 const Header = (props) => {
   const theme = useTheme();
@@ -28,6 +28,8 @@ const Header = (props) => {
     <Spacer font height='100%' width={window.width > 1360 ? 32 : 24} />
   );
 
+  //  Header Variations
+  /// Mobile
   if (window.width < 767)
     return (
       <Container>
@@ -40,11 +42,34 @@ const Header = (props) => {
           }}
         >
           <nav className={classes.nav}>
-            <MenuLink
-              value={!menu ? "François Denavaut" : " "}
-              color={color[0]}
-              hover={color[1]}
-            />
+            {menu ? (
+              <MenuLink
+                noLink
+                icon='grid'
+                color={color[0]}
+                hover={color[1]}
+                active={color[2]}
+                tooltip={visibility ? "Hide Grid" : "Show Grid"}
+                left={visibility ? "-46px" : "-49px"}
+              />
+            ) : (
+              <MenuLink
+                value='François Denavaut'
+                to='/'
+                color={color[0]}
+                hover={color[0]}
+              />
+            )}
+            {menu && (
+              <MenuLink
+                noLink
+                icon='theme'
+                color={color[0]}
+                hover={color[1]}
+                tooltip={darkMode.value ? "Light Theme" : "Dark Theme"}
+                left={darkMode.value ? "-60px" : "-56px"}
+              />
+            )}
 
             <MenuLink icon='menu' color={color[0]} />
           </nav>
@@ -52,6 +77,8 @@ const Header = (props) => {
       </Container>
     );
 
+  ///
+  /// Desktop
   return (
     <Container>
       <header
@@ -63,26 +90,30 @@ const Header = (props) => {
         <nav className={classes.nav}>
           <MenuLink
             value='François Denavaut'
+            to='/'
             color={color[0]}
             hover={color[0]}
           />
           {spacer}
           <MenuLink
-            icon='mouse'
+            icon='mouseOn'
+            iconHover='mouseOff'
             value='Work'
             color={color[0]}
             hover={color[0]}
           />
           {spacer}
           <MenuLink
-            icon='mouse'
+            icon='cheeseOn'
+            iconHover='cheeseOff'
             value='Playground'
             color={color[0]}
             hover={color[0]}
           />
           {spacer}
           <MenuLink
-            icon='smiley'
+            icon='smileyOn'
+            iconHover='smileyOff'
             value='About'
             color={color[0]}
             hover={color[0]}
@@ -90,7 +121,8 @@ const Header = (props) => {
           {spacer}
           <MenuLink
             to='/guidelines'
-            icon='guidelines'
+            icon='guidelinesOn'
+            iconHover='guidelinesOff'
             value='Guidelines'
             color={color[0]}
             hover={color[0]}
@@ -104,7 +136,7 @@ const Header = (props) => {
             tooltip={darkMode.value ? "Light Theme" : "Dark Theme"}
             left={darkMode.value ? "-60px" : "-56px"}
           />
-          {spacer}
+          {iconSpacer}
           <MenuLink
             noLink
             icon='grid'
@@ -114,8 +146,12 @@ const Header = (props) => {
             tooltip={visibility ? "Hide Grid" : "Show Grid"}
             left={visibility ? "-46px" : "-49px"}
           />
+          {/* // Debugging Mobile
+
           {iconSpacer}
-          <MenuLink icon='menu' color={color[0]} />
+          <MenuLink icon='menu' color={color[0]} /> 
+          
+          */}
         </nav>
       </header>
     </Container>
