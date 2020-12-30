@@ -7,7 +7,7 @@ export const MenuVisibilityProvider = ({ children }) => {
 
   return (
     <MenuVisibilityCtx.Provider value={[menu, setMenu]}>
-      {menu && console.log("hello")}
+      {/* {menu && console.log("hello")} */}
       {children}
     </MenuVisibilityCtx.Provider>
   );

@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "react-jss";
 
@@ -6,17 +6,46 @@ import DarkModeToggle from "../../Buttons/ThemeToggle";
 import GridToggle from "../../Buttons/GridToggle";
 import useHover from "../../../Hooks/useHover";
 
+import MenuLinkStyle from "./MenuLink-style";
 import Font from "../../../Utils/Font/Font";
 import Separator from "../../../Utils/Separator/Separator";
 import Icon from "../../../Utils/Icon/Icon";
-import MenuLinkStyle from "./MenuLink-style";
 import Tooltip from "../../Tooltip/Tooltip";
 import MenuToggle from "../../Buttons/MenuToggle";
+import { useTooltip } from "../../../Hooks/useTooltip";
 
 const MenuLink = (props) => {
   const [hoveredRef, isHovered] = useHover();
+  const [hint, setHint] = useTooltip();
   const theme = useTheme();
+
   const classes = MenuLinkStyle({ ...props, theme });
+
+  useEffect(() => {
+    let comingUp;
+    let comingDown;
+
+    if (isHovered) {
+      clearTimeout(comingDown);
+      comingUp = setTimeout(function () {
+        setHint(true);
+      }, 650);
+    }
+
+    else if (!isHovered) {
+      clearTimeout(comingUp);
+      if (hint) {
+        comingDown = setTimeout(function () {
+          setHint(false);
+        }, 4000);
+      }
+    }
+
+    return () => {
+      clearTimeout(comingUp);
+      clearTimeout(comingDown);
+    };
+  }, [isHovered, setHint, hint]);
 
   //  ICONS
   /// Default case
@@ -97,7 +126,7 @@ const MenuLink = (props) => {
   const tooltip = (
     <div
       style={{ left: props.left }}
-      className={isHovered ? classes.tooltipHovered : classes.tooltip}
+      className={isHovered && hint ? classes.tooltipHovered : classes.tooltip}
     >
       <Tooltip value={props.tooltip} />
     </div>

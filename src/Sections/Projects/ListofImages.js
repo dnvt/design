@@ -14,10 +14,10 @@ const ListofImages = (props) => {
 
 const ModuleImage = (props) => {
   return (
-    <>
+    <div key={props.value}>
       <SpacerFortyHalf />
       <Vignettes src={props.src} alt={props.alt} />
-    </>
+    </div>
   );
 };
 

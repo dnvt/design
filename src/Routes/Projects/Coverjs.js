@@ -1,63 +1,30 @@
 import React from "react";
-import Vignettes from "../../Components/Vignettes/Vignettes";
+import { useTheme } from "react-jss";
 
+import { IntroProject } from "./IntroProject";
+import { ThanksProject } from "./ThanksProject";
+import Vignettes from "../../Components/Vignettes/Vignettes";
+import Spacer from "../../Utils/Spacer/Spacer";
+import FooterCards from "../../Components/Cards/Layouts/FooterCards";
+import SpacerEightyHalf from "../../Utils/Spacer/Variations/SpacerEightyHalf";
+import ListofImages from "../../Sections/Projects/ListofImages";
 /// Images
 import heroCoverPng from "../../Assets/Images/Coverjs/Work/CoverHero.png";
 import heroCoverWebp from "../../Assets/Images/Coverjs/Work/CoverHero.webp";
-import Spacer from "../../Utils/Spacer/Spacer";
-import FooterCards from "../../Components/Cards/Layouts/FooterCards";
-import { useTheme } from "react-jss";
-import Container from "../../Components/Containers/Container";
-import SpacerEightyHalf from "../../Utils/Spacer/Variations/SpacerEightyHalf";
-import Font from "../../Utils/Font/Font";
-import SpacerFortyHalf from "../../Utils/Spacer/Variations/SpacerFortyHalf";
-import Column from "../../Components/Containers/Columns/Column";
-import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
-import ListofImages from "../../Sections/Projects/ListofImages";
 
 const Coverjs = () => {
   const theme = useTheme();
 
+  /// Move this part as an Mother Component for all projects
+  //
   return (
     <>
       <Vignettes hero src={[heroCoverPng, heroCoverWebp]} background='blue' />
-      <Container>
-        <SpacerEightyHalf />
-        <Font type='h4'>Playground project</Font>
-        <Font type='h1'>Album covers animated in javascript.</Font>
-        <Spacer height={32} />
-        <Font type='h5'>Javascript</Font>
-        <Column spacer third>
-          <Font type='text'>
-            Product designer and creative director able to provide strong
-            leadership on the development of product designs, marketing
-            campaigns, user interfaces, and motion design.
-          </Font>
-        </Column>
-        <ExternalLink
-          path='https://dnvt.github.io/Coverjs/'
-          color={theme.text}
-          value='Visit project'
-        />
-      </Container>
-
-      {/* /// List of images */}
+      <SpacerEightyHalf />
+      <IntroProject content={CONTENT.INTRO} />
       <ListofImages images={CONTENT.IMAGES} />
-
-      {/* /// Thanks section */}
-      <Container>
-        <SpacerFortyHalf />
-        <Column spacer third>
-          <Font type='text'>
-            Thanks to all the team at US Mobile for making this project
-            happening. Thanks for @Nikita for implementing all the guidelines in
-            React.
-          </Font>
-        </Column>
-        <Font type='text'>Thanks for reading it.</Font>
-      </Container>
-
-      {/* Footer */}
+      <ThanksProject content={CONTENT.THANKS} />
+      {/* TODO Move the Footer to an independent place */}
       <Spacer c height={80} />
       <FooterCards
         footer
@@ -78,28 +45,56 @@ const Coverjs = () => {
 };
 
 const CONTENT = {
+  /// Content for the upper part of the project
+  INTRO: {
+    section: "Fun project",
+    title: "Album covers animated in javascript.",
+    typeOfProject: "Javascript",
+    paragraph: [
+      {
+        value: "1",
+        paragraph:
+        "Product designer and creative director able to provide strong ip on the development of product designs, marketing campaigns, user interfaces, and motion design.",
+      },
+    ],
+    link: "https://dnvt.github.io/Coverjs/",
+    button: "Visit project",
+  },
+  /// List of images for the project
   IMAGES: [
     {
       value: "1",
-      src: "./img/library/Image1",
+      src: [heroCoverPng, heroCoverWebp],
       alt: "alt",
     },
     {
       value: "2",
-      src: "./img/library/Image2",
+      src: [heroCoverPng, heroCoverWebp],
     },
     {
       value: "3",
-      src: "./img/library/Image3",
+      src: [heroCoverPng, heroCoverWebp],
     },
     {
       value: "4",
-      src: "./img/library/Image4",
+      src: [heroCoverPng, heroCoverWebp],
     },
     {
       value: "5",
-      src: "./img/library/Image5",
+      src: [heroCoverPng, heroCoverWebp],
       alt: "alt",
+    },
+  ],
+  /// Content for the end part of the project
+  THANKS: [
+    {
+      value: "1",
+      paragraph:
+      "Thanks to all the team at US Mobile for making this project happening. Thanks for @Nikita for implementing all the guidelines in React.",
+    },
+    {
+      value: "2",
+      paragraph: "Thanks for reading it.",
     },
   ],
 };

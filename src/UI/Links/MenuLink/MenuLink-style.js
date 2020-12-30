@@ -1,12 +1,6 @@
 import { createUseStyles } from "react-jss";
 
 const MenuLinkStyle = createUseStyles({
-  "@keyframes slidein": {
-    from: { opacity: 0, top: "28px", transition: "all .15s ease" },
-
-    "77%": { opacity: 0, top: "28px", transition: "all .15s ease" },
-    to: { opacity: 1, top: "32px", transition: "all .15s ease" },
-  },
   MenuLink: {
     position: "relative",
     display: "flex",
@@ -31,14 +25,14 @@ const MenuLinkStyle = createUseStyles({
     top: "28px",
     position: "absolute",
     opacity: "0",
+    // transition: "all .15s ease",
   },
   tooltipHovered: {
     display: "block",
     top: "32px",
     position: "absolute",
     opacity: "1",
-    animationName: "$slidein",
-    animationDuration: "1.2s",
+    transition: "all .15s ease",
   },
 });
 

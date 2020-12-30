@@ -6,6 +6,7 @@ const InternalLinkStyle = createUseStyles({
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
+    "@media (max-width: 768px)": { paddingBottom: "8px" },
   },
 
   internal: {

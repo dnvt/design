@@ -14,61 +14,67 @@ import SpacerEightyHalf from "../../Utils/Spacer/Variations/SpacerEightyHalf";
 
 const DashIntroduction = () => {
   return (
-    <Container>
+    <>
       <SpacerEightyHalf />
-      <Font type='h4'>Head of Design</Font>
-      <Font type='h1'>
-        US Mobile PWA <br />
-        Dashboard use case
-      </Font>
-      <Spacer height={32} />
-      <Font type='h5'>Illustrations - Interface - Design systems</Font>
-      <Column spacer third>
-        <Font type='text'>
-          US Mobile is a telecom company that sells T-Mobile and Verizon
-          networks. We focus on highly customizable and affordable plans for
-          your devices.
+      <Container>
+        <Font type='h4'>Head of Design</Font>
+        <Font type='h1'>
+          US Mobile PWA <br />
+          Dashboard use case
         </Font>
-        <Font type='text'>
-          As the Lead Product Designer and Head of Design at US Mobile, I am
-          directly involved in defining the product strategy, responsible for
-          designing the UI and product usability. Finally, I am supervising our
-          front-end team to ensure the quality of the result.
-        </Font>
-      </Column>
-    </Container>
+        <Spacer height={32} />
+        <Font type='h5'>Illustrations - Interface - Design systems</Font>
+        <Column spacer third>
+          <Font type='text'>
+            US Mobile is a telecom company that sells T-Mobile and Verizon
+            networks. We focus on highly customizable and affordable plans for
+            your devices.
+          </Font>
+          <Font type='text'>
+            As the Lead Product Designer and Head of Design at US Mobile, I am
+            directly involved in defining the product strategy, responsible for
+            designing the UI and product usability. Finally, I am supervising
+            our front-end team to ensure the quality of the result.
+          </Font>
+        </Column>
+      </Container>
+    </>
   );
 };
 
 const DashContext = () => {
   return (
     <>
-      <Spacer height={64} />
-      <Font type='h4'>Context</Font>
-      <Column spacer third>
-        <Font type='text'>
-          ile’s legacy dashboard is old, unresponsive, and it is very laborious
-          to add new features and customer requirements to it.
-        </Font>
-      </Column>
-      <Spacer height={32} />
+      <Container>
+        <Spacer height={64} />
+        <Font type='h4'>Context</Font>
+        <Column spacer third>
+          <Font type='text'>
+            ile’s legacy dashboard is old, unresponsive, and it is very
+            laborious to add new features and customer requirements to it.
+          </Font>
+        </Column>
+        <Spacer height={32} />
+      </Container>
       <Vignettes src='' alt='Legacy version of the dashboard' />
-      <Spacer height={40} />
-      <Column spacer third>
-        <Font type='text'>
-          How can we modernize our dashboard solution to new design standards?
-          cross-platform compatible (desktop to smartphone stores) and st –no
-          connectivity required?With our limited resources ~8 employees in
-          total.
-        </Font>
-        <Font type='text'>
-          irely reinvented our designs and processes, genuinely focused
-          -platform components with a brand new graphic style- randing.Our
-          Design System Library is made of React compone n be improved with the
-          addition of new features.
-        </Font>
-      </Column>
-      <Spacer height={24} />
+      <Container>
+        <Spacer height={40} />
+        <Column spacer third>
+          <Font type='text'>
+            How can we modernize our dashboard solution to new design standards?
+            cross-platform compatible (desktop to smartphone stores) and st –no
+            connectivity required?With our limited resources ~8 employees in
+            total.
+          </Font>
+          <Font type='text'>
+            irely reinvented our designs and processes, genuinely focused
+            -platform components with a brand new graphic style- randing.Our
+            Design System Library is made of React compone n be improved with
+            the addition of new features.
+          </Font>
+        </Column>
+        <Spacer height={24} />
+      </Container>
       <Vignettes src='' alt='Legacy version of the dashboard' />
     </>
   );
@@ -76,7 +82,7 @@ const DashContext = () => {
 
 const DashProcess = () => {
   return (
-    <>
+    <Container>
       <Spacer height={64} />
       <Font type='h4'>Design process</Font>
       <Column spacer third>
@@ -97,13 +103,13 @@ const DashProcess = () => {
           hypotheses and suggestions.
         </Font>
       </Column>
-    </>
+    </Container>
   );
 };
 
 const DashRequierements = () => {
   return (
-    <>
+    <Container>
       <Spacer height={64} />
       <Font type='h4'>Business requirements</Font>
       <Column spacer third>
@@ -134,28 +140,30 @@ const DashRequierements = () => {
           </Font>
         </NumberedList>
       </Column>
-    </>
+    </Container>
   );
 };
 
 const DashProduction = () => {
   return (
     <>
-      <Spacer height={64} />
-      <Font type='h4'>Production steps</Font>
-      <Column spacer third>
-        <Font type='h5'>Dashboard MVP 1</Font>
-        <Font type='text'>
-          Release the same amount of features available in the legacy dashboard
-          so it can be quickly replaced and tested rapidly.
-        </Font>
-        <Font type='h5'>Dashboard MVP 2</Font>
-        <Font type='text'>
-          Release enough features to get a standalone app available on the App
-          Store.
-        </Font>
-      </Column>
-      <Spacer height={24} />
+      <Container>
+        <Spacer height={64} />
+        <Font type='h4'>Production steps</Font>
+        <Column spacer third>
+          <Font type='h5'>Dashboard MVP 1</Font>
+          <Font type='text'>
+            Release the same amount of features available in the legacy
+            dashboard so it can be quickly replaced and tested rapidly.
+          </Font>
+          <Font type='h5'>Dashboard MVP 2</Font>
+          <Font type='text'>
+            Release enough features to get a standalone app available on the App
+            Store.
+          </Font>
+        </Column>
+        <Spacer height={24} />
+      </Container>
       <Vignettes
         src=''
         alt='Each user story and design specs are always documented (here, in Notion).'
@@ -204,7 +212,7 @@ const DashDesigns = () => {
         <ExternalLink
           path='/'
           color={theme.text}
-          value='Sketch prototype of the activation flow'
+          value='Prototype of the activation flow'
         />
       </Container>
     </>
@@ -224,13 +232,15 @@ const DashLibrary = () => {
           </Font>
         </Column>
         <Spacer height={24} />
-        <Vignettes
-          src=''
-          alt='Regularly updated and documented design library, constantly updated'
-        />
-        <Spacer height={40} />
-        <Vignettes src='' alt='Guidelines applied to the mobile profiles' />
-        <Spacer height={64} />
+      </Container>
+      <Vignettes
+        src=''
+        alt='Regularly updated and documented design library, constantly updated'
+      />
+      <Spacer c height={40} />
+      <Vignettes src='' alt='Guidelines applied to the mobile profiles' />
+      <Spacer c height={64} />
+      <Container>
         <Font type='h4'>A standalone app for the App Store</Font>
       </Container>
       <Spacer c height={40} />
@@ -261,13 +271,11 @@ const Dashboard = () => {
   return (
     <>
       <Vignettes hero src={[]} background={theme.usmobile.background} />
-      <Container>
-        <DashIntroduction />
-        <DashContext />
-        <DashProcess />
-        <DashRequierements />
-        <DashProduction />
-      </Container>
+      <DashIntroduction />
+      <DashContext />
+      <DashProcess />
+      <DashRequierements />
+      <DashProduction />
       <Spacer c height={64} />
       <Vignettes
         big
