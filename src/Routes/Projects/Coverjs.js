@@ -1,8 +1,8 @@
 import React from "react";
 import { useTheme } from "react-jss";
 
-import { IntroProject } from "./IntroProject";
-import { ThanksProject } from "./ThanksProject";
+import IntroProject from "../../Sections/Projects/Template/IntroProject";
+import ThanksProject from "../../Sections/Projects/Template/ThanksProject";
 import Vignettes from "../../Components/Vignettes/Vignettes";
 import Spacer from "../../Utils/Spacer/Spacer";
 import FooterCards from "../../Components/Cards/Layouts/FooterCards";

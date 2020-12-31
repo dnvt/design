@@ -1,5 +1,5 @@
 import React from "react";
-import Font from "../../Utils/Font/Font";
+import Font from "../../../Utils/Font/Font";
 
 const ParagraphModule = (props) => {
   return (

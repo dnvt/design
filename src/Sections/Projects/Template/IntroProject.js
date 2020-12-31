@@ -1,14 +1,14 @@
 import React from "react";
 import { useTheme } from "react-jss";
 
-import Spacer from "../../Utils/Spacer/Spacer";
-import Container from "../../Components/Containers/Container";
-import Font from "../../Utils/Font/Font";
-import Column from "../../Components/Containers/Columns/Column";
-import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
+import Spacer from "../../../Utils/Spacer/Spacer";
+import Container from "../../../Components/Containers/Container";
+import Font from "../../../Utils/Font/Font";
+import Column from "../../../Components/Containers/Columns/Column";
+import ExternalLink from "../../../UI/Links/ExternalLink/ExternalLink";
 import ParagraphModule from "./ParagraphModule";
 
-export const IntroProject = (props) => {
+const IntroProject = (props) => {
   const theme = useTheme();
   const rows = props.content.paragraph.map(ParagraphModule);
 
@@ -31,3 +31,5 @@ export const IntroProject = (props) => {
     </Container>
   );
 };
+
+export default IntroProject;
