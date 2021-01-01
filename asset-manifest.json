@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/design/static/css/main.dbc53280.chunk.css",
-    "main.js": "/design/static/js/main.c8b03bb5.chunk.js",
-    "main.js.map": "/design/static/js/main.c8b03bb5.chunk.js.map",
+    "main.js": "/design/static/js/main.41d1899e.chunk.js",
+    "main.js.map": "/design/static/js/main.41d1899e.chunk.js.map",
     "runtime-main.js": "/design/static/js/runtime-main.3f359fd2.js",
     "runtime-main.js.map": "/design/static/js/runtime-main.3f359fd2.js.map",
     "static/js/2.fb3d8c25.chunk.js": "/design/static/js/2.fb3d8c25.chunk.js",
     "static/js/2.fb3d8c25.chunk.js.map": "/design/static/js/2.fb3d8c25.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.9c8d5912d152ba2a359bdbe3f38e2ba2.js": "/design/precache-manifest.9c8d5912d152ba2a359bdbe3f38e2ba2.js",
+    "precache-manifest.5fe5842cd83138dc077354e5b09ec2c3.js": "/design/precache-manifest.5fe5842cd83138dc077354e5b09ec2c3.js",
     "service-worker.js": "/design/service-worker.js",
     "static/css/main.dbc53280.chunk.css.map": "/design/static/css/main.dbc53280.chunk.css.map",
     "static/js/2.fb3d8c25.chunk.js.LICENSE.txt": "/design/static/js/2.fb3d8c25.chunk.js.LICENSE.txt",
@@ -30,10 +30,10 @@
     "static/media/Matrix.png": "/design/static/media/Matrix.92beb9db.png",
     "static/media/Mimi.png": "/design/static/media/Mimi.27ceadc1.png",
     "static/media/Mimi.webp": "/design/static/media/Mimi.33829df4.webp",
-    "static/media/Norse.png": "/design/static/media/Norse.3a8b1ead.png",
-    "static/media/Norse.webp": "/design/static/media/Norse.a34e0230.webp",
-    "static/media/NorseDark.png": "/design/static/media/NorseDark.17f01a69.png",
-    "static/media/NorseDark.webp": "/design/static/media/NorseDark.f1e4d348.webp",
+    "static/media/Norse.webp": "/design/static/media/Norse.c991f245.webp",
+    "static/media/Norse.png": "/design/static/media/Norse.ff52ac48.png",
+    "static/media/NorseDark.png": "/design/static/media/NorseDark.64aba480.png",
+    "static/media/NorseDark.webp": "/design/static/media/NorseDark.c7ea6a37.webp",
     "static/media/Siemens.webp": "/design/static/media/Siemens.d8796229.webp",
     "static/media/Stars.webp": "/design/static/media/Stars.d618d8c4.webp",
     "static/media/Stars.png": "/design/static/media/Stars.f61701a3.png",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.3f359fd2.js",
     "static/js/2.fb3d8c25.chunk.js",
     "static/css/main.dbc53280.chunk.css",
-    "static/js/main.c8b03bb5.chunk.js"
+    "static/js/main.41d1899e.chunk.js"
   ]
 }
