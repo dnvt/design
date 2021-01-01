@@ -85,6 +85,7 @@ const SelectedWork = () => {
         backgroundHover={theme.hover}
         alt='Love your Waste Paris based startup'
         path='/work/coverjs'
+        paddingB={72}
       >
         Love your waste
       </Card>

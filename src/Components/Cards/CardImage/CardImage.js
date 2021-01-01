@@ -7,9 +7,17 @@ const CardImage = (props) => {
   const classes = CardImageStyle();
 
   const cardImage = (
-    <div className={classes.CardImage} style={{ background: props.background }}>
+    <div
+      className={classes.CardImage}
+      style={{ background: props.background, paddingBottom: props.paddingB }}
+    >
       {props.src && (
-        <Image scale={props.scale} class={classes.image} src={props.src} alt={props.alt} />
+        <Image
+          scale={props.scale}
+          class={classes.image}
+          src={props.src}
+          alt={props.alt}
+        />
       )}
     </div>
   );

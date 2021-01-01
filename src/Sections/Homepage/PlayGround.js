@@ -44,6 +44,7 @@ const PlayGround = () => {
           backgroundHover={theme.hover}
           alt='Covers animated in CSS and Javascript'
           path='/work/coverjs'
+          paddingB={40}
         >
           Coverjs
         </Card>
