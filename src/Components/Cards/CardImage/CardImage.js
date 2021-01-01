@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useWindowSize } from "../../../Hooks/useWindowSize";
 import Image from "../../../Utils/Image/Image";
 import CardImageStyle from "./CardImage-style";
 
 const CardImage = (props) => {
   const classes = CardImageStyle();
+  const window = useWindowSize();
 
   const cardImage = (
     <div
       className={classes.CardImage}
-      style={{ background: props.background, paddingBottom: props.paddingB }}
+      style={
+        window.width > "768"
+          ? { background: props.background }
+          : { background: props.background, paddingBottom: props.paddingB }
+      }
     >
       {props.src && (
         <Image
