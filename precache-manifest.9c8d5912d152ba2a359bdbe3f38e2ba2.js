@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5de0acff41489207995d1ef4f0fec9a9",
+    "revision": "063f34932b2dc177d0425da2770dc3c7",
     "url": "/design/index.html"
   },
   {
-    "revision": "189ef8102f3dfff3bb3e",
+    "revision": "3a47e90733844b130da8",
     "url": "/design/static/css/main.dbc53280.chunk.css"
   },
   {
-    "revision": "f2047245fac0ee681ecb",
-    "url": "/design/static/js/2.3d4e79ee.chunk.js"
+    "revision": "88f7a046e098673b1118",
+    "url": "/design/static/js/2.fb3d8c25.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/design/static/js/2.3d4e79ee.chunk.js.LICENSE.txt"
+    "url": "/design/static/js/2.fb3d8c25.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "189ef8102f3dfff3bb3e",
-    "url": "/design/static/js/main.f18933e5.chunk.js"
+    "revision": "3a47e90733844b130da8",
+    "url": "/design/static/js/main.c8b03bb5.chunk.js"
   },
   {
     "revision": "78ee108af4e5ddf6feec",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Airbus.8531fa7b.webp"
   },
   {
-    "revision": "a06a6150b60461c43c8c1d0be0c62432",
-    "url": "/design/static/media/Branding.a06a6150.png"
+    "revision": "418db7ee920b8b114c338eeccddfd02c",
+    "url": "/design/static/media/Branding.418db7ee.webp"
   },
   {
-    "revision": "bc06d47089ea7b4d6ad4ba96c2544add",
-    "url": "/design/static/media/Branding.bc06d470.webp"
+    "revision": "9591c253aafaa51204740b6bf6a658a7",
+    "url": "/design/static/media/Branding.9591c253.png"
   },
   {
     "revision": "af72c5c302b0ec5891edf2acd9c78f54",
@@ -48,16 +48,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Coverjs.28015144.webp"
   },
   {
+    "revision": "38d19cfb2ffe319bb39de20fc58e6237",
+    "url": "/design/static/media/Coverjs.38d19cfb.png"
+  },
+  {
+    "revision": "42be7e67311d7822295adabf05600b90",
+    "url": "/design/static/media/Coverjs.42be7e67.webp"
+  },
+  {
     "revision": "615bb02ee3cbced69e454442e7da0199",
     "url": "/design/static/media/Coverjs.615bb02e.png"
   },
   {
-    "revision": "aa717a156f61ca5aa9fc26b73a331300",
-    "url": "/design/static/media/Elastic.aa717a15.webp"
-  },
-  {
     "revision": "e5e7ad7692aba4ad2dc940548837c563",
     "url": "/design/static/media/Elastic.e5e7ad76.png"
+  },
+  {
+    "revision": "ed7add97af91e0def76850120dcd1bb7",
+    "url": "/design/static/media/Elastic.ed7add97.webp"
   },
   {
     "revision": "0f7377ac0c62569fca72604cd0f06fa1",
@@ -84,12 +92,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Kipfit.f1765a57.webp"
   },
   {
+    "revision": "bf20114062e0d0a7b7997c1b542972a8",
+    "url": "/design/static/media/KipfitDark.bf201140.webp"
+  },
+  {
+    "revision": "e96318ce2e239e5d267754cd49435673",
+    "url": "/design/static/media/KipfitDark.e96318ce.png"
+  },
+  {
     "revision": "176c49f15b850dc1a99948f0226c9d83",
     "url": "/design/static/media/Matrix.176c49f1.webp"
   },
   {
     "revision": "5a8ff615efc94d3cceb1aadf06ec070d",
     "url": "/design/static/media/Matrix.5a8ff615.png"
+  },
+  {
+    "revision": "92102303b04007341115bdea560bb74c",
+    "url": "/design/static/media/Matrix.92102303.webp"
+  },
+  {
+    "revision": "92beb9db42d77199e679f7d77b728593",
+    "url": "/design/static/media/Matrix.92beb9db.png"
   },
   {
     "revision": "27ceadc1090431a3279a9a72f58e71f0",
@@ -100,12 +124,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Mimi.33829df4.webp"
   },
   {
-    "revision": "2116d9530cb6f347087a3a83ecd38e34",
-    "url": "/design/static/media/Norse.2116d953.png"
+    "revision": "3a8b1eadefd0d42b76c47e998cb11b28",
+    "url": "/design/static/media/Norse.3a8b1ead.png"
   },
   {
-    "revision": "c91da41b519955b65099638191293209",
-    "url": "/design/static/media/Norse.c91da41b.webp"
+    "revision": "a34e023013c3224c9f70830ae9647a6f",
+    "url": "/design/static/media/Norse.a34e0230.webp"
+  },
+  {
+    "revision": "17f01a69f1fba792d17c9e45cd330a64",
+    "url": "/design/static/media/NorseDark.17f01a69.png"
+  },
+  {
+    "revision": "f1e4d348cc6163a9aaf9c9e1c291befc",
+    "url": "/design/static/media/NorseDark.f1e4d348.webp"
   },
   {
     "revision": "d87962298b72c8cb8652a061c50877b0",
@@ -116,16 +148,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Stars.2986fe05.webp"
   },
   {
+    "revision": "63e4ff4c82a5143b90b81c59f7395db5",
+    "url": "/design/static/media/Stars.63e4ff4c.png"
+  },
+  {
+    "revision": "d618d8c40dea583c05cb321013daa829",
+    "url": "/design/static/media/Stars.d618d8c4.webp"
+  },
+  {
     "revision": "f61701a3f2b8ce02a6755b1ff3b663bc",
     "url": "/design/static/media/Stars.f61701a3.png"
   },
   {
-    "revision": "bbc92297b4e403e5fd1b460bc5b2a4d8",
-    "url": "/design/static/media/System.bbc92297.webp"
+    "revision": "22a6a46f3be9dc59d8cdcc40a3a68156",
+    "url": "/design/static/media/System.22a6a46f.png"
   },
   {
-    "revision": "bd57a52b07390e70ac0948d5afdc16a6",
-    "url": "/design/static/media/System.bd57a52b.png"
+    "revision": "2e740f09e94b68162a176eaeb7683e72",
+    "url": "/design/static/media/System.2e740f09.webp"
+  },
+  {
+    "revision": "4422555701f39e885adf67eba7381821",
+    "url": "/design/static/media/System.44225557.png"
+  },
+  {
+    "revision": "810b8dc9186078b961b55568871e4bc0",
+    "url": "/design/static/media/System.810b8dc9.webp"
   },
   {
     "revision": "af84162a70058614c71cb5c8cf17beb3",
@@ -138,6 +186,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "576347c63ee41cf4de719b1935bacb32",
     "url": "/design/static/media/Waste.576347c6.png"
+  },
+  {
+    "revision": "b85fc79b62c9988bfd836f6c02397d0f",
+    "url": "/design/static/media/Waste.b85fc79b.webp"
+  },
+  {
+    "revision": "f403f9a66df68a5855939dda1a400c09",
+    "url": "/design/static/media/Waste.f403f9a6.png"
   },
   {
     "revision": "156b50d1aa7d9211561510712c81dde8",
