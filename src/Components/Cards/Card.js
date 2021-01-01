@@ -7,11 +7,13 @@ import CardTitle from "./CardTitle/CardTitle";
 import useHover from "../../Hooks/useHover";
 import Container from "../Containers/Container";
 import { useTheme } from "react-jss";
+import usePress from "../../Hooks/usePress";
 
 const Card = (props) => {
   const theme = useTheme();
   const classes = CardStyle();
   const [hoveredRef, isHovered] = useHover();
+  const [pressedRef, isPressed] = usePress();
 
   let card = (
     <div
@@ -29,11 +31,14 @@ const Card = (props) => {
     >
       <CardStatus status={props.status} color={props.titleColor} />
       <CardImage
+        ref={pressedRef}
         status={props.status}
         alt={props.alt}
         src={props.src}
-        background={isHovered ? props.backgroundHover : props.background}
-        scale={isHovered ? "1.04" : "1"}
+        background={
+          isHovered && !isPressed ? props.backgroundHover : props.background
+        }
+        scale={isHovered && !isPressed ? "1.04" : "1"}
         path={props.path}
       />
       <CardTitle
@@ -43,6 +48,7 @@ const Card = (props) => {
         hover={isHovered}
         tagColor={props.tagsColor}
         titleColor={props.titleColor}
+        background={props.background}
       >
         {props.children}
       </CardTitle>

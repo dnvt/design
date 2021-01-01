@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "react-jss";
+
 import FooterCards from "../../Components/Cards/Layouts/FooterCards";
 import Vignettes from "../../Components/Vignettes/Vignettes";
 import Spacer from "../../Utils/Spacer/Spacer";
@@ -10,6 +11,14 @@ import DashLibrary from "../../Sections/Projects/Dashboard/DashLibrary";
 import DashProcess from "../../Sections/Projects/Dashboard/DashProcess";
 import DashProduction from "../../Sections/Projects/Dashboard/DashProduction";
 import DashRequierements from "../../Sections/Projects/Dashboard/DashRequierements";
+
+/// Images
+import systemPng from "../../Assets/Images/Footer/System.png";
+import systemWebp from "../../Assets/Images/Footer/System.webp";
+import matrixPng from "../../Assets/Images/Footer/Matrix.png";
+import matrixWebp from "../../Assets/Images/Footer/Matrix.webp";
+import starsFooterPng from "../../Assets/Images/Footer/Stars.png";
+import starsFooterWebp from "../../Assets/Images/Footer/Stars.webp";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -40,11 +49,19 @@ const Dashboard = () => {
           value: ["Previous", "Random", "Next"],
         }}
         background={{
-          color: [theme.grey, theme.grey, theme.grey],
-          hover: [theme.hover, theme.hover, theme.hover],
+          color: [
+            theme.usmobile.background,
+            theme.grey,
+            theme.usmobile.background,
+          ],
+          hover: [theme.usmobile.hover, theme.hover, theme.usmobile.hover],
         }}
         status={["loading", "loading", "stop"]}
-        src={["", "", ""]}
+        src={[
+          [systemPng, systemWebp],
+          [starsFooterPng, starsFooterWebp],
+          [matrixPng, matrixWebp],
+        ]}
         alt={["", "", ""]}
       />
     </>

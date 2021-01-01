@@ -7,6 +7,7 @@ const CardTitleStyle = createUseStyles({
     bottom: "0",
     left: "0",
     padding: "16px",
+
     "@media (min-width: 576px)": {
       padding: "16px 24px",
     },
@@ -31,6 +32,7 @@ const CardTitleStyle = createUseStyles({
     bottom: "0",
     right: "0",
     padding: "16px",
+
     "@media (min-width: 576px)": {
       padding: "16px 24px",
       maxWidth: "50%",

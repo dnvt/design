@@ -21,8 +21,8 @@ const PlayGround = () => {
         <Card
           status='construction'
           titleColor={theme.text}
-          tagValue='Animation, Illustration'
-          tagsColor={theme.main}
+          tagValue='Animation - Illustration'
+          tagsColor={theme.stars.text}
           src={[starsPng, starsWebp]}
           background={theme.grey}
           backgroundHover={theme.hover}

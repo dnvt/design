@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "react-jss";
+import useDarkMode from "use-dark-mode";
 import Container from "../../Components/Containers/Container";
 
 import MenuLink from "../../UI/Links/MenuLink/MenuLink";
@@ -8,6 +9,7 @@ import ImageStyle from "./Image-style";
 const Image = (props) => {
   const theme = useTheme();
   const classes = ImageStyle({ ...props, theme });
+  const dark = useDarkMode();
 
   // Transforming the image Array from Device
   let imageWebp = null;
@@ -31,7 +33,13 @@ const Image = (props) => {
       }
     >
       <source srcSet={imageWebp} type='image/webp' />
-      <img style={{ height: "100%" }} src={imagePng} alt={props.alt} />
+      <img
+        style={
+          dark.value ? { height: "100%", opacity: ".9" } : { height: "100%" }
+        }
+        src={imagePng}
+        alt={props.alt}
+      />
     </picture>
   );
 

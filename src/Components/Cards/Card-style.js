@@ -4,7 +4,7 @@ const CardStyle = createUseStyles({
   Card: {
     position: "relative",
     width: "100%",
-    minWidth: "100%",
+    minWidth: "288px",
     height: "448px",
     overflowWrap: "break-word",
     overflow: "hidden",
