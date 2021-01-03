@@ -25,15 +25,15 @@ const VignettesStyle = createUseStyles({
     position: "relative",
     objectFit: "cover",
     overflow: "hidden",
-    padding: "48px 0",
+    padding: "24px 0",
     height: "576px",
     background: (props) => props.background,
 
     "@media (min-width: 768px)": {
-      height: "744px",
+      height: "784px",
     },
     "@media (min-width: 1360px)": {
-      height: "880px",
+      height: "960px",
     },
   },
   image: {

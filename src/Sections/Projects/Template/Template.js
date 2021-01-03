@@ -5,7 +5,7 @@ import IntroProject from "./IntroProject";
 import ThanksProject from "./ThanksProject";
 import Spacer from "../../../Utils/Spacer/Spacer";
 import FooterCards from "../../../Components/Cards/Layouts/FooterCards";
-import ListofImages from "../ListofImages";
+import ListofImages from "./ListofImages";
 import Vignettes from "../../../Components/Vignettes/Vignettes";
 import SpacerEightyHalf from "../../../Utils/Spacer/Variations/SpacerEightyHalf";
 

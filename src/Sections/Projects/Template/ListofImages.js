@@ -1,6 +1,6 @@
 import React from "react";
-import Vignettes from "../../Components/Vignettes/Vignettes";
-import SpacerFortyHalf from "../../Utils/Spacer/Variations/SpacerFortyHalf";
+import Vignettes from "../../../Components/Vignettes/Vignettes";
+import SpacerFortyHalf from "../../../Utils/Spacer/Variations/SpacerFortyHalf";
 
 const ListofImages = (props) => {
   const rows = props.images.map(ModuleImage);

@@ -14,8 +14,8 @@ import DashRequierements from "../../Sections/Projects/Dashboard/DashRequieremen
 
 //  Images
 /// Hero
-import heroPng from "../../Assets/Images/USMobile/System/Hero.png";
-import heroWebp from "../../Assets/Images/USMobile/System/Hero.webp";
+import heroPng from "../../Assets/Images/USMobile/System/DashboardHero.png";
+import heroWebp from "../../Assets/Images/USMobile/System/DashboardHero.webp";
 
 /// Footer
 import systemPng from "../../Assets/Images/Footer/System.png";
