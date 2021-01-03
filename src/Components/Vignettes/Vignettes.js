@@ -19,7 +19,10 @@ const Vignettes = (props) => {
 
   /// Always going to have this
   const imgSegment = (
-    <div className={classes.Vignette}>
+    <div
+      className={classes.Vignette}
+      style={{ background: props.background }}
+    >
       <Image
         class={props.big ? "image" : "image"}
         big={props.big ? true : false}

@@ -17,7 +17,7 @@ const IntroProject = (props) => {
       <Font type='h4'>{props.content.section}</Font>
       <Font type='h1'>{props.content.title}</Font>
       <Spacer height={32} />
-      <Font type='h5'>{props.content.typeOfProject}</Font>
+      <Font type='h5' color={props.content.theme}>{props.content.typeOfProject}</Font>
       <Column spacer third>
         {rows}
       </Column>

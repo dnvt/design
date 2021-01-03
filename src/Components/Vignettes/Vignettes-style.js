@@ -28,7 +28,7 @@ const VignettesStyle = createUseStyles({
 
 
     height: "576px",
-    background: ({ theme }) => theme.outline,
+    background: ( props ) => props.background,
 
     "@media (min-width: 768px)": {
       height: "744px",

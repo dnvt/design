@@ -1,13 +1,6 @@
 import React from "react";
 import { useTheme } from "react-jss";
 
-import IntroProject from "../../Sections/Projects/Template/IntroProject";
-import ThanksProject from "../../Sections/Projects/Template/ThanksProject";
-import Vignettes from "../../Components/Vignettes/Vignettes";
-import Spacer from "../../Utils/Spacer/Spacer";
-import FooterCards from "../../Components/Cards/Layouts/FooterCards";
-import SpacerEightyHalf from "../../Utils/Spacer/Variations/SpacerEightyHalf";
-import ListofImages from "../../Sections/Projects/ListofImages";
 /// Images
 import heroCoverPng from "../../Assets/Images/Coverjs/Work/CoverHero.png";
 import heroCoverWebp from "../../Assets/Images/Coverjs/Work/CoverHero.webp";
@@ -17,18 +10,22 @@ import starsFooterPng from "../../Assets/Images/Footer/Stars.png";
 import starsFooterWebp from "../../Assets/Images/Footer/Stars.webp";
 import coversFooterPng from "../../Assets/Images/Footer/Coverjs.png";
 import coversFooterWebp from "../../Assets/Images/Footer/Coverjs.webp";
+import { Template } from "./Template";
 
 const Coverjs = () => {
   const theme = useTheme();
-  /// Move this part as an Mother Component for all projects
-
   /// Content for the Project
   const CONTENT = {
+    /// Introduction image
+    HERO: [heroCoverPng, heroCoverWebp],
+    /// No color makes it default grey
+    // HEROBACKGROUND: theme.main,
     /// Content for the upper part of the project
     INTRO: {
       section: "Fun project",
       title: "Album covers animated in javascript.",
       typeOfProject: "Javascript",
+      theme: theme.main,
       paragraph: [
         {
           value: "1",
@@ -79,55 +76,39 @@ const Coverjs = () => {
     /// Test with the footer
     FOOTER: [
       {
-        title: {
-          color: [theme.text, theme.text, theme.text],
-          value: ["Previous", "Random", "Next"],
-        },
-
-        background: {
-          color: [theme.grey, theme.grey, theme.grey],
-          hover: [theme.hover, theme.hover, theme.hover],
-        },
-        status: ["loading", "loading", "stop"],
-        src: [
-          [wasteFooterPng, wasteFooterWebp],
-          [starsFooterPng, starsFooterWebp],
-          [coversFooterPng, coversFooterWebp],
-        ],
-        alt: ["", "", ""],
+        key: "1",
+        reverse: true,
+        title: { color: theme.text, value: "Previous" },
+        background: { color: theme.background, hover: theme.hover },
+        status: "loading",
+        src: [wasteFooterPng, wasteFooterWebp],
+        alt: "I'm an alt ",
+        path: "/",
+      },
+      {
+        key: "2",
+        // reverse: false,
+        title: { color: theme.text, value: "Random" },
+        background: { color: theme.grey, hover: theme.hover },
+        status: "loading",
+        src: [starsFooterPng, starsFooterWebp],
+        alt: "I'm an alt ",
+        path: "/",
+      },
+      {
+        key: "3",
+        // reverse: false,
+        title: { color: theme.text, value: "Next" },
+        background: { color: theme.grey, hover: theme.hover },
+        status: "stop",
+        src: [coversFooterPng, coversFooterWebp],
+        alt: "I'm an alt ",
+        path: "/",
       },
     ],
   };
 
-  return (
-    <>
-      <Vignettes hero src={[heroCoverPng, heroCoverWebp]} background='blue' />
-      <SpacerEightyHalf />
-      <IntroProject content={CONTENT.INTRO} />
-      <ListofImages images={CONTENT.IMAGES} />
-      <ThanksProject content={CONTENT.THANKS} />
-      {/* TODO Move the Footer to an independent place */}
-      <Spacer c height={80} />
-      <FooterCards
-        footer
-        title={{
-          color: [theme.text, theme.text, theme.text],
-          value: ["Previous", "Random", "Next"],
-        }}
-        background={{
-          color: [theme.grey, theme.grey, theme.grey],
-          hover: [theme.hover, theme.hover, theme.hover],
-        }}
-        status={["loading", "loading", "stop"]}
-        src={[
-          [wasteFooterPng, wasteFooterWebp],
-          [starsFooterPng, starsFooterWebp],
-          [coversFooterPng, coversFooterWebp],
-        ]}
-        alt={["", "", ""]}
-      />
-    </>
-  );
+  return <Template {...CONTENT} />;
 };
 
 export default Coverjs;
