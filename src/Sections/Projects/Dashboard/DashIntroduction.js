@@ -1,11 +1,13 @@
 import React from "react";
+
 import Column from "../../../Components/Containers/Columns/Column";
 import Container from "../../../Components/Containers/Container";
 import Font from "../../../Utils/Font/Font";
 import Spacer from "../../../Utils/Spacer/Spacer";
 import SpacerEightyHalf from "../../../Utils/Spacer/Variations/SpacerEightyHalf";
 
-const DashIntroduction = () => {
+const DashIntroduction = (props) => {
+
   return (
     <>
       <SpacerEightyHalf />
@@ -16,7 +18,9 @@ const DashIntroduction = () => {
           Dashboard use case
         </Font>
         <Spacer height={32} />
-        <Font type='h5'>Illustrations - Interface - Design systems</Font>
+        <Font type='h5' color={props.color}>
+          Illustrations - Interface - Design systems
+        </Font>
         <Column spacer third>
           <Font type='text'>
             US Mobile is a telecom company that sells T-Mobile and Verizon

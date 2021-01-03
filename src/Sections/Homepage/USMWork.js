@@ -13,14 +13,14 @@ import DragMobileFour from "../../Components/Devices/Layouts/DragMobileFour";
 
 /// Images
 // Mobile
-import phone01Png from "../../Assets/Images/USMobile/System/Phone/phone01.png";
-import phone01Webp from "../../Assets/Images/USMobile/System/Phone/phone01.webp";
-import phone02Png from "../../Assets/Images/USMobile/System/Phone/phone02.png";
-import phone02Webp from "../../Assets/Images/USMobile/System/Phone/phone02.webp";
-import phone03Png from "../../Assets/Images/USMobile/System/Phone/phone03.png";
-import phone03Webp from "../../Assets/Images/USMobile/System/Phone/phone03.webp";
-import phone04Png from "../../Assets/Images/USMobile/System/Phone/phone04.png";
-import phone04Webp from "../../Assets/Images/USMobile/System/Phone/phone04.webp";
+import phone01Png from "../../Assets/Images/USMobile/PhoneHomepage/phone01.png";
+import phone01Webp from "../../Assets/Images/USMobile/PhoneHomepage/phone01.webp";
+import phone02Png from "../../Assets/Images/USMobile/PhoneHomepage/phone02.png";
+import phone02Webp from "../../Assets/Images/USMobile/PhoneHomepage/phone02.webp";
+import phone03Png from "../../Assets/Images/USMobile/PhoneHomepage/phone03.png";
+import phone03Webp from "../../Assets/Images/USMobile/PhoneHomepage/phone03.webp";
+import phone04Png from "../../Assets/Images/USMobile/PhoneHomepage/phone04.png";
+import phone04Webp from "../../Assets/Images/USMobile/PhoneHomepage/phone04.webp";
 
 // Cards
 import brandingPng from "../../Assets/Images/USMobile/Branding/Branding.png";

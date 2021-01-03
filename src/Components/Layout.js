@@ -5,10 +5,12 @@ import Header from "./Header/Header";
 import Sidelines from "../Utils/Sidelines/Sidelines";
 import Footer from "./Footer/Footer";
 import { useMenuVisibility } from "../Hooks/useMenu";
+import { useMainColor } from "../Hooks/useMainColor";
 import Menu from "./Menu/Menu";
 
 const Layout = (props) => {
   const [menu] = useMenuVisibility();
+  const [color] = useMainColor();
 
   return (
     <>
@@ -17,7 +19,7 @@ const Layout = (props) => {
         {menu && <Menu />}
         <Sidelines />
         {props.children}
-        <Footer />
+        <Footer color={color} />
       </Grid>
     </>
   );

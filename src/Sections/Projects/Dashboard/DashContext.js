@@ -4,6 +4,11 @@ import Container from "../../../Components/Containers/Container";
 import Vignettes from "../../../Components/Vignettes/Vignettes";
 import Font from "../../../Utils/Font/Font";
 import Spacer from "../../../Utils/Spacer/Spacer";
+/// Images
+import contextPng from "../../../Assets/Images/USMobile/System/Context.png";
+import contextWebp from "../../../Assets/Images/USMobile/System/Context.webp";
+import componentsPng from "../../../Assets/Images/USMobile/System/Components.png";
+import componentsWebp from "../../../Assets/Images/USMobile/System/Components.webp";
 
 const DashContext = () => {
   return (
@@ -19,7 +24,10 @@ const DashContext = () => {
         </Column>
         <Spacer height={32} />
       </Container>
-      <Vignettes src='' alt='Legacy version of the dashboard' />
+      <Vignettes
+        src={[contextPng, contextWebp]}
+        alt='Legacy version of the dashboard'
+      />
       <Container>
         <Spacer height={40} />
         <Column spacer third>
@@ -38,7 +46,10 @@ const DashContext = () => {
         </Column>
         <Spacer height={24} />
       </Container>
-      <Vignettes src='' alt='Legacy version of the dashboard' />
+      <Vignettes
+        src={[componentsPng, componentsWebp]}
+        alt='Legacy version of the dashboard'
+      />
     </>
   );
 };

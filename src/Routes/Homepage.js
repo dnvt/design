@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // import HomepageStyle from "./Homepage-style";
 import Spacer from "../Utils/Spacer/Spacer";
@@ -9,8 +9,18 @@ import SelectedWork from "../Sections/Homepage/SelectedWork";
 import PlayGround from "../Sections/Homepage/PlayGround";
 import About from "../Sections/Homepage/About";
 import PrivateWork from "../Sections/Homepage/PrivateWork";
+import { useMainColor } from "../Hooks/useMainColor";
+import { useTheme } from "react-jss";
 
 const Homepage = () => {
+  const theme = useTheme();
+  const [color, setColor] = useMainColor();
+
+  useEffect(() => {
+    setColor(theme.main);
+    console.log(color);
+  }, [setColor, color, theme.main]);
+
   return (
     <>
       <Spacer c height={104} />

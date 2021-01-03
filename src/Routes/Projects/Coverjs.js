@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTheme } from "react-jss";
 
+import Template from "../../Sections/Projects/Template/Template";
 /// Images
 import heroCoverPng from "../../Assets/Images/Coverjs/Work/CoverHero.png";
 import heroCoverWebp from "../../Assets/Images/Coverjs/Work/CoverHero.webp";
@@ -10,10 +11,16 @@ import starsFooterPng from "../../Assets/Images/Footer/Stars.png";
 import starsFooterWebp from "../../Assets/Images/Footer/Stars.webp";
 import coversFooterPng from "../../Assets/Images/Footer/Coverjs.png";
 import coversFooterWebp from "../../Assets/Images/Footer/Coverjs.webp";
-import { Template } from "./Template";
+import { useMainColor } from "../../Hooks/useMainColor";
 
 const Coverjs = () => {
   const theme = useTheme();
+  const [color, setColor] = useMainColor();
+
+  useEffect(() => {
+    setColor(theme.main);
+  }, [setColor, theme.main]);
+
   /// Content for the Project
   const CONTENT = {
     /// Introduction image
@@ -25,7 +32,7 @@ const Coverjs = () => {
       section: "Fun project",
       title: "Album covers animated in javascript.",
       typeOfProject: "Javascript",
-      theme: theme.main,
+      theme: color,
       paragraph: [
         {
           value: "1",

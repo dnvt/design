@@ -20,14 +20,16 @@ p,
 span,
 legend,
 ul,
-a, div {
+a,
+div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "kern" 1; font-kerning: normal; 
-
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-display: optional;
 }
 
 body.light-mode {

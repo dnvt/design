@@ -7,7 +7,7 @@ import { useTheme } from "react-jss";
 import Font from "../../Utils/Font/Font";
 import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
 
-const Footer = () => {
+const Footer = (props) => {
   const window = useWindowSize();
   const theme = useTheme();
 
@@ -32,7 +32,7 @@ const Footer = () => {
       <footer style={{ height: "auto" }}>
         <Container>
           <Spacer height={window.width > 767 ? 80 : 64} />
-          <Font type='legend' color={theme.main}>
+          <Font type='legend' color={props.color || theme.main}>
             More of me at
           </Font>
 

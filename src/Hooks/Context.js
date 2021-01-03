@@ -5,6 +5,7 @@ import { DocumentSizeProvider } from "./useDocumentSize";
 import { ColorTheme } from "./useTheme";
 import { MenuVisibilityProvider } from "./useMenu";
 import { TooltipVisibilityProvider } from "./useTooltip";
+import { MainColorProvider } from "./useMainColor";
 
 const Context = (props) => {
   return (
@@ -13,7 +14,9 @@ const Context = (props) => {
         <WindowSizeProvider>
           <MenuVisibilityProvider>
             <TooltipVisibilityProvider>
-              <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+              <MainColorProvider>
+                <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+              </MainColorProvider>
             </TooltipVisibilityProvider>
           </MenuVisibilityProvider>
         </WindowSizeProvider>
