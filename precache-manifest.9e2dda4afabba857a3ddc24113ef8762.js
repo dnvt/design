@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7476ca2fc7c9c59e7a69ec12cb624736",
+    "revision": "4b1200ee1c9fbc13fa69844429d998ea",
     "url": "/design/index.html"
   },
   {
-    "revision": "56003657d3573bd5b7cd",
+    "revision": "38312faad9bf4f7ebcc1",
     "url": "/design/static/css/main.cc3b1935.chunk.css"
   },
   {
-    "revision": "bb6878cb9799ad6238cc",
-    "url": "/design/static/js/2.2fd38db2.chunk.js"
+    "revision": "409e18fed52bb826b18c",
+    "url": "/design/static/js/2.c633a264.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/design/static/js/2.2fd38db2.chunk.js.LICENSE.txt"
+    "url": "/design/static/js/2.c633a264.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56003657d3573bd5b7cd",
-    "url": "/design/static/js/main.83497c13.chunk.js"
+    "revision": "38312faad9bf4f7ebcc1",
+    "url": "/design/static/js/main.e8abe850.chunk.js"
   },
   {
     "revision": "78ee108af4e5ddf6feec",
@@ -26,6 +26,46 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8531fa7be7330ba846a2e291d229c77a",
     "url": "/design/static/media/Airbus.8531fa7b.webp"
+  },
+  {
+    "revision": "48a733eacf5479e39f4c0454b0d0faf0",
+    "url": "/design/static/media/App-01.48a733ea.webp"
+  },
+  {
+    "revision": "edde91e70f0cf966d8c47cd465d5ffd6",
+    "url": "/design/static/media/App-01.edde91e7.png"
+  },
+  {
+    "revision": "7fd2e1576724346ebed77f173297e5d5",
+    "url": "/design/static/media/App-02.7fd2e157.webp"
+  },
+  {
+    "revision": "9e3c90f632b133a8976955eb7890c7bf",
+    "url": "/design/static/media/App-02.9e3c90f6.png"
+  },
+  {
+    "revision": "12dfd9b15f5a90b9fab80e6a3d9f379f",
+    "url": "/design/static/media/App-03.12dfd9b1.png"
+  },
+  {
+    "revision": "44d8176511ef012ee7f7202742bf39b3",
+    "url": "/design/static/media/App-03.44d81765.webp"
+  },
+  {
+    "revision": "5014c8b1fff344c36c8c1bdb1a1b230c",
+    "url": "/design/static/media/App-04.5014c8b1.webp"
+  },
+  {
+    "revision": "71aac4b635e1ba7758e0b66da3286a42",
+    "url": "/design/static/media/App-04.71aac4b6.png"
+  },
+  {
+    "revision": "ac9b00e46a6dd8ce557b85716f15615e",
+    "url": "/design/static/media/App-05.ac9b00e4.webp"
+  },
+  {
+    "revision": "ecc8f5b8f28b7b13cd62f178de64a021",
+    "url": "/design/static/media/App-05.ecc8f5b8.png"
   },
   {
     "revision": "3022bdb651ede2a20e02c664ed44e40d",
@@ -84,6 +124,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/DashboardHero.8b9fccf6.png"
   },
   {
+    "revision": "981dfefbb4f0088cd434af2af167ffa4",
+    "url": "/design/static/media/Diagram.981dfefb.webp"
+  },
+  {
+    "revision": "bd1772e6e6c91042f97eb96f049d27e4",
+    "url": "/design/static/media/Diagram.bd1772e6.png"
+  },
+  {
     "revision": "e5e7ad7692aba4ad2dc940548837c563",
     "url": "/design/static/media/Elastic.e5e7ad76.png"
   },
@@ -124,6 +172,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/KipfitDark.e96318ce.png"
   },
   {
+    "revision": "2d48bfd61cd4f3e6565eaa04dde43334",
+    "url": "/design/static/media/Library-01.2d48bfd6.png"
+  },
+  {
+    "revision": "c2dfc58d601450de703536c187406e5e",
+    "url": "/design/static/media/Library-01.c2dfc58d.webp"
+  },
+  {
+    "revision": "512012270d169a24748242fc66e746b7",
+    "url": "/design/static/media/Library-02.51201227.webp"
+  },
+  {
+    "revision": "88857123d24ae3cebb50aabc3d5b2036",
+    "url": "/design/static/media/Library-02.88857123.png"
+  },
+  {
     "revision": "92102303b04007341115bdea560bb74c",
     "url": "/design/static/media/Matrix.92102303.webp"
   },
@@ -162,6 +226,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c7ea6a378a6d3933ba1cbc7403e8b7cf",
     "url": "/design/static/media/NorseDark.c7ea6a37.webp"
+  },
+  {
+    "revision": "0df6a21df7947fdea176230bb7f4dd67",
+    "url": "/design/static/media/Notion.0df6a21d.png"
+  },
+  {
+    "revision": "7462a1d7a1004c96ba4235ec7f919568",
+    "url": "/design/static/media/Notion.7462a1d7.webp"
   },
   {
     "revision": "d87962298b72c8cb8652a061c50877b0",
