@@ -15,6 +15,13 @@ const Device = (props) => {
     </div>
   );
 
+  // Browser headerless device
+  const browserLess = (
+    <div className={classes.browserLessContent}>
+      <Image fullWidth src={props.src} alt={props.alt} />
+    </div>
+  );
+
   // Mobile device
   const mobile = (
     <div className={classes.mobileContent}>
@@ -29,7 +36,7 @@ const Device = (props) => {
   // Frameless device
   const frameless = (
     <div className={classes.shadowContent}>
-      <Image src={""} srcset={""} alt={props.alt} />
+      <Image src={props.src} alt={props.alt} />
     </div>
   );
 
@@ -37,6 +44,9 @@ const Device = (props) => {
   let device = null;
 
   switch (true) {
+    case props.browserLess:
+      device = browserLess;
+      break;
     case props.browser:
       device = browser;
       break;

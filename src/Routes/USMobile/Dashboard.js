@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useTheme } from "react-jss";
+import { useMainColor } from "../../Hooks/useMainColor";
 
 import FooterCards from "../../Components/Cards/Layouts/FooterCards";
 import Vignettes from "../../Components/Vignettes/Vignettes";
@@ -17,6 +18,8 @@ import DashRequierements from "../../Sections/Projects/Dashboard/DashRequieremen
 import heroPng from "../../Assets/Images/USMobile/System/DashboardHero.png";
 import heroWebp from "../../Assets/Images/USMobile/System/DashboardHero.webp";
 
+import diagramPng from "../../Assets/Images/USMobile/System/Diagram.png";
+import diagramWebp from "../../Assets/Images/USMobile/System/Diagram.webp";
 /// Footer
 import systemPng from "../../Assets/Images/Footer/System.png";
 import systemWebp from "../../Assets/Images/Footer/System.webp";
@@ -24,7 +27,6 @@ import matrixPng from "../../Assets/Images/Footer/Matrix.png";
 import matrixWebp from "../../Assets/Images/Footer/Matrix.webp";
 import starsFooterPng from "../../Assets/Images/Footer/Stars.png";
 import starsFooterWebp from "../../Assets/Images/Footer/Stars.webp";
-import { useMainColor } from "../../Hooks/useMainColor";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -86,16 +88,18 @@ const Dashboard = () => {
       <DashContext />
       <DashProcess />
       <DashRequierements />
-      <DashProduction />
+      <DashProduction color={theme.legend} />
       <Spacer c height={64} />
       <Vignettes
         big
+        width
+        height={576}
         alt='Example of a user journey for the Starter Kit activation feature, with its backend and business rules'
         background={theme.usmobile.background}
+        src={[diagramPng, diagramWebp]}
       />
-      <DashDesigns />
+      <DashDesigns color={color} />
       <DashLibrary />
-
       {/* /// Footer */}
       <Spacer c height={80} />
       <FooterCards content={CONTENT.FOOTER} />

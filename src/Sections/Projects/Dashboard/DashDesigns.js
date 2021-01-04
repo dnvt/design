@@ -7,7 +7,7 @@ import ExternalLink from "../../../UI/Links/ExternalLink/ExternalLink";
 import Font from "../../../Utils/Font/Font";
 import Spacer from "../../../Utils/Spacer/Spacer";
 
-const DashDesigns = () => {
+const DashDesigns = (props) => {
   const theme = useTheme();
 
   return (
@@ -43,7 +43,7 @@ const DashDesigns = () => {
       <GroupedMobileDesktop srcDesktop={[]} srcMobile={[]} />
       <Container>
         <Spacer height={80} />
-        <Font type='h5'>Play with a prototype</Font>
+        <Font type='h5' color={props.color}>Play with a prototype</Font>
         <ExternalLink
           path='/'
           color={theme.text}

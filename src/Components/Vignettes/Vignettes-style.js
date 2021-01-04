@@ -17,6 +17,22 @@ const VignettesStyle = createUseStyles({
       height: "704px",
     },
   },
+  VignetteWidth: {
+    display: "flex",
+    textAlign: "center",
+    overflow: "hidden",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "336px",
+    background: ({ theme }) => theme.outline,
+
+    "@media (min-width: 768px)": {
+      height: "296px",
+    },
+    "@media (min-width: 1360px)": {
+      height: "464px",
+    },
+  },
   heroVignette: {
     display: "flex",
     justifyContent: "center",

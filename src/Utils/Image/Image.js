@@ -8,8 +8,8 @@ import ImageStyle from "./Image-style";
 
 const Image = (props) => {
   const theme = useTheme();
-  const classes = ImageStyle({ ...props, theme });
   const dark = useDarkMode();
+  const classes = ImageStyle({ ...props, theme, dark });
 
   // Transforming the image Array from Device
   let imageWebp = null;
@@ -34,9 +34,8 @@ const Image = (props) => {
     >
       <source srcSet={imageWebp} type='image/webp' />
       <img
-        style={
-          dark.value ? { height: "100%", opacity: ".9" } : { height: "100%" }
-        }
+        className={classes.img}
+        style={props.fullWidth ? { width: "100%" } : { height: "100%" }}
         src={imagePng}
         alt={props.alt}
       />

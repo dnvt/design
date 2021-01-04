@@ -85,6 +85,11 @@ const ImageStyle = createUseStyles({
       height: "calc(840px + 40px)",
     },
   },
+  img: {
+    // height: "100%",
+    opacity: ({ dark }) => (dark.value ? 0.9 : 1),
+    userDrag: "none",
+  },
 });
 
 export default ImageStyle;

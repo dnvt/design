@@ -30,6 +30,32 @@ const DeviceStyle = createUseStyles({
       height: "704px",
     },
   },
+  browserLessContent: {
+    display: "flex",
+    justifyContent: "center",
+    zIndex: "90",
+    position: "relative",
+    boxShadow: ({ theme }) => theme.shadow,
+    background: ({ theme }) => theme.tint,
+    borderRadius: "6px",
+    overflow: "hidden",
+    width: "auto",
+    maxWidth: "100%",
+    height: "364px",
+    transition: "background .15s ease, box-shadow .15s ease",
+    "@media (min-width: 576px)": {
+      height: "428px",
+    },
+    "@media (min-width: 768px)": {
+      height: "568px",
+      borderRadius: "8px",
+      minWidth: "808px",
+      width: "100%",
+    },
+    "@media (min-width: 1360px)": {
+      height: "832px",
+    },
+  },
   tricolor: {
     position: "absolute",
     top: "7px",

@@ -1,10 +1,29 @@
 import React from "react";
+
 import Column from "../../../Components/Containers/Columns/Column";
 import Container from "../../../Components/Containers/Container";
 import DragFramelessFive from "../../../Components/Devices/Layouts/DragFramelessFive";
 import Vignettes from "../../../Components/Vignettes/Vignettes";
 import Font from "../../../Utils/Font/Font";
 import Spacer from "../../../Utils/Spacer/Spacer";
+
+//  Images
+/// Library
+import Library01Png from "../../../Assets/Images/USMobile/System/Library-01.png";
+import Library01Webp from "../../../Assets/Images/USMobile/System/Library-01.webp";
+import Library02Png from "../../../Assets/Images/USMobile/System/Library-02.png";
+import Library02Webp from "../../../Assets/Images/USMobile/System/Library-02.webp";
+/// App Store
+import App01Png from "../../../Assets/Images/USMobile/System/App-01.png";
+import App02Png from "../../../Assets/Images/USMobile/System/App-02.png";
+import App03Png from "../../../Assets/Images/USMobile/System/App-03.png";
+import App04Png from "../../../Assets/Images/USMobile/System/App-04.png";
+import App05Png from "../../../Assets/Images/USMobile/System/App-05.png";
+import App01Webp from "../../../Assets/Images/USMobile/System/App-01.webp";
+import App02Webp from "../../../Assets/Images/USMobile/System/App-02.webp";
+import App03Webp from "../../../Assets/Images/USMobile/System/App-03.webp";
+import App04Webp from "../../../Assets/Images/USMobile/System/App-04.webp";
+import App05Webp from "../../../Assets/Images/USMobile/System/App-05.webp";
 
 const DashLibrary = () => {
   return (
@@ -21,17 +40,28 @@ const DashLibrary = () => {
         <Spacer height={24} />
       </Container>
       <Vignettes
-        src=''
+        src={[Library01Png, Library01Webp]}
         alt='Regularly updated and documented design library, constantly updated'
       />
       <Spacer c height={40} />
-      <Vignettes src='' alt='Guidelines applied to the mobile profiles' />
+      <Vignettes
+        src={[Library02Png, Library02Webp]}
+        alt='Guidelines applied to the mobile profiles'
+      />
       <Spacer c height={64} />
       <Container>
         <Font type='h4'>A standalone app for the App Store</Font>
       </Container>
       <Spacer c height={40} />
-      <DragFramelessFive src={[]} />
+      <DragFramelessFive
+        src={[
+          [App01Png, App01Webp],
+          [App02Png, App02Webp],
+          [App03Png, App03Webp],
+          [App04Png, App04Webp],
+          [App05Png, App05Webp],
+        ]}
+      />
       <Container>
         <Spacer height={80} />
         <Column spacer third>
@@ -47,6 +77,11 @@ const DashLibrary = () => {
           </Font>
           <Font type='text'>Thanks for reading.</Font>
         </Column>
+        <Font type='h3'>
+          <span role='img' aria-label='cheers'>
+            ✌🏽
+          </span>
+        </Font>
       </Container>
     </>
   );

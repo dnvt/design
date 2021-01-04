@@ -19,8 +19,12 @@ const Vignettes = (props) => {
 
   /// Always going to have this
   const imgSegment = (
-    <div className={classes.Vignette} style={{ background: props.background }}>
+    <div
+      className={props.width ? classes.VignetteWidth : classes.Vignette}
+      style={{ background: props.background }}
+    >
       <Image
+        fullWidth={props.width}
         class={props.big ? "image" : classes.image}
         big={props.big ? true : false}
         src={props.src}
