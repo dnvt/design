@@ -79,7 +79,7 @@ const USMWork = () => {
             mouth from product experience.
           </Font>
         </Column>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", position: "absolute", zIndex: "1000" }}>
           <InternalLink
             path='/work/usmobile/dashboard'
             value='Read use case'
@@ -92,6 +92,7 @@ const USMWork = () => {
             value='Visit usmobile.com'
           />
         </div>
+        <Spacer c height={80} />
       </Container>
       <Spacer c height={80} />
       <DragMobileFour
@@ -113,7 +114,7 @@ const USMWork = () => {
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
           alt='Branding image for US Mobile'
-          path='/work/coverjs'
+          // path='/work/coverjs'
           paddingB={144}
         >
           Creative direction <br /> & design guidelines
@@ -128,7 +129,7 @@ const USMWork = () => {
           background={theme.usmobile.background}
           backgroundHover={theme.usmobile.hover}
           alt='US Mobile interactive Matrix of prices'
-          path='/work/coverjs'
+          // path='/work/coverjs'
           paddingB={80}
         >
           Build your plan
@@ -136,7 +137,6 @@ const USMWork = () => {
         <Spacer height={32} />
         <Card
           right
-          status='construction'
           titleColor={theme.text}
           tagValue='UX, UI, Design system'
           src={[systemPng, systemWebp]}

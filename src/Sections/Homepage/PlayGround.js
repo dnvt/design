@@ -27,7 +27,7 @@ const PlayGround = () => {
           background={theme.grey}
           backgroundHover={theme.hover}
           alt='Animation made with Lucas M Matholaz'
-          path='/work/coverjs'
+          // path='/work/coverjs'
         >
           A Park for the Homeless
           <br />
@@ -35,7 +35,6 @@ const PlayGround = () => {
         </Card>
         <Spacer height={40} />
         <Card
-          status='construction'
           titleColor={theme.text}
           tagValue='Programming'
           tagsColor={theme.main}
@@ -58,7 +57,7 @@ const PlayGround = () => {
           background={theme.grey}
           backgroundHover={theme.hover}
           alt='Coming soon! more playground projects'
-          path='/work/coverjs'
+          // path='/work/coverjs'
         >
           Coming soon
         </Card>

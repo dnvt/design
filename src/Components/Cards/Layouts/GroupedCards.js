@@ -15,8 +15,9 @@ const GroupedCard = (props) => {
         key={i}
         status={props.status[i]}
         src={props.src[i]}
-        alt={props.alt}
-        path={props.path}
+        alt={props.alt[i]}
+        path={props.path && props.path[i]}
+        href={props.href && props.href[i]}
         tagsColor={props.tag.color[i]}
         tagValue={props.tag.value[i]}
         background={props.background.color[i]}

@@ -7,15 +7,19 @@ import CardTitle from "./CardTitle/CardTitle";
 import useHover from "../../Hooks/useHover";
 import Container from "../Containers/Container";
 import { useTheme } from "react-jss";
+import { privacy } from "./Switch/privacy";
 
 const Card = (props) => {
   const theme = useTheme();
   const classes = CardStyle();
   const [hoveredRef, isHovered] = useHover();
 
+  /// Defining if a card as a linked project yet or not
+  let cardPrivacyClass = privacy(classes, props);
+
   let card = (
     <div
-      className={props.status !== "stop" ? classes.Card : classes.PrivateCard}
+      className={cardPrivacyClass}
       ref={hoveredRef}
       style={
         props.background === theme.background
@@ -32,11 +36,10 @@ const Card = (props) => {
         status={props.status}
         alt={props.alt}
         src={props.src}
-        background={
-          isHovered ? props.backgroundHover : props.background
-        }
+        background={isHovered ? props.backgroundHover : props.background}
         scale={isHovered ? "1.04" : "1"}
         path={props.path}
+        href={props.href}
         paddingB={props.paddingB}
       />
       <CardTitle

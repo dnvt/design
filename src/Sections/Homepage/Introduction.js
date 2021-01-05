@@ -1,11 +1,18 @@
 import React from "react";
 import { useTheme } from "react-jss";
+
 import Spacer from "../../Utils/Spacer/Spacer";
 import Font from "../../Utils/Font/Font";
 import Container from "../../Components/Containers/Container";
 import ExternalLink from "../../UI/Links/ExternalLink/ExternalLink";
 import Column from "../../Components/Containers/Columns/Column";
 import GroupedCard from "../../Components/Cards/Layouts/GroupedCards";
+
+/// Images
+import frame36Png from "../../Assets/Images/Frameio/36.png";
+import frame36Webp from "../../Assets/Images/Frameio/36.webp";
+import frame37Png from "../../Assets/Images/Frameio/37.png";
+import frame37Webp from "../../Assets/Images/Frameio/37.webp";
 
 const Introduction = () => {
   const theme = useTheme();
@@ -36,21 +43,30 @@ const Introduction = () => {
         left
         width='100%'
         title={{
-          color: [theme.text, theme.text],
+          color: ["#fff", "#fff"],
           value: ["Frame.io 3.7", "Frame.io 3.6"],
         }}
         tag={{
-          color: [theme.main, theme.text],
-          value: ["Product designer", "Product designer"],
+          color: [theme.legend, theme.legend],
+          value: ["Product design", "Product design"],
         }}
         background={{
           color: [theme.grey, theme.grey],
           hover: [theme.hover, theme.hover],
         }}
         status={["link", "link"]}
-        src={["", ""]}
-        alt={["", ""]}
-        path={["/", "/"]}
+        src={[
+          [frame37Png, frame37Webp],
+          [frame36Png, frame36Webp],
+        ]}
+        alt={[
+          "Introducing Frame.io v3.7 — Speed, Precision, Security.",
+          "Introducing Frame.io v3.6: Rapidly Responsive. Powerfully Secure.",
+        ]}
+        href={[
+          "https://blog.frame.io/2020/08/25/frameio-v3-7/",
+          "https://blog.frame.io/2020/05/05/frameio-v3-6/",
+        ]}
       />
     </>
   );

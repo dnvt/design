@@ -31,10 +31,10 @@ export const light = {
   kipfit: { text: "#D73951" },
   mimi: { text: "#fff", background: "#5ED0B0", hover: "#4AC6A5" },
   stars: { text: "#fff", background: "#9F536B" },
-
-  usmob: "#EEFAF4",
-  usmobHover: "#def5e9",
-  usmobileMain: "#667AF4",
+  frameio: { text: "#5B53FF" },
+  // usmob: "#EEFAF4",
+  // usmobHover: "#def5e9",
+  // usmobileMain: "#667AF4",
   usmobile: {
     text: "#667AF4",
     background: "#EEFAF4",
@@ -75,12 +75,13 @@ export const dark = {
   kipfit: { text: "#D73951" },
   mimi: { text: "#fff", background: "#5ED0B0", hover: "#4AC6A5" },
   stars: { text: "#191919", background: "#9F536B" },
-  usmob: "#EEFAF4",
-  usmobHover: "#def5e9",
-  usmobileMain: "#667AF4",
+  // usmob: "#EEFAF4",
+  // usmobHover: "#def5e9",
+  // usmobileMain: "#667AF4",
   usmobile: {
     text: "#78C58E",
     background: "#192E23",
     hover: "#234232",
   },
+  frameio: { text: "#5B53FF" },
 };

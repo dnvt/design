@@ -65,13 +65,13 @@ const SelectedWork = () => {
           color: [theme.greySwitcher, theme.grey],
           hover: [theme.hover, theme.hover],
         }}
-        status={["loading", "loading"]}
+        status={["construction", "construction"]}
         src={[norseImages, [elasticPng, elasticWebp]]}
         alt={[
           "Norse interieur manual",
           "Elastic movie who scared the hell out of me",
         ]}
-        path={(["/work/coverjs"], ["/work/coverjs"])}
+        // path={(["/work/coverjs"], ["/work/coverjs"])}
       />
       <SpacerFortyHalf />
       <Card
@@ -84,7 +84,7 @@ const SelectedWork = () => {
         background={theme.grey}
         backgroundHover={theme.hover}
         alt='Love your Waste Paris based startup'
-        path='/work/coverjs'
+        // path='/work/coverjs'
         paddingB={72}
       >
         Love your waste
@@ -108,10 +108,10 @@ const SelectedWork = () => {
           color: [theme.greySwitcher, theme.mimi.background],
           hover: [theme.hover, theme.mimi.hover],
         }}
-        status={["loading", "loading"]}
+        status={["construction", "construction"]}
         src={[kipfitImages, [mimiPng, mimiWebp]]}
         alt={["kiptfit keeps you fit!", "Mimi hearing illustrations"]}
-        path={(["/work/coverjs"], ["/work/coverjs"])}
+        // path={(["/work/coverjs"], ["/work/coverjs"])}
       />
     </>
   );
