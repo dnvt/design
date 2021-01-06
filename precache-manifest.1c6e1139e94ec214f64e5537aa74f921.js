@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6b6bfdec62055972d01c0a4357e2ef3",
+    "revision": "777e439aca2aec3835b2f6e7ff26d949",
     "url": "/design/index.html"
   },
   {
-    "revision": "79c391ae0d8b40ff6673",
+    "revision": "f14908259a073e165cdb",
     "url": "/design/static/css/main.cc3b1935.chunk.css"
   },
   {
-    "revision": "6d677a84b6dbf7fceecd",
-    "url": "/design/static/js/2.6cd9bb6a.chunk.js"
+    "revision": "7827a0c033358eb72d50",
+    "url": "/design/static/js/2.92842925.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/design/static/js/2.6cd9bb6a.chunk.js.LICENSE.txt"
+    "url": "/design/static/js/2.92842925.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "79c391ae0d8b40ff6673",
-    "url": "/design/static/js/main.707ad2c2.chunk.js"
+    "revision": "f14908259a073e165cdb",
+    "url": "/design/static/js/main.b8a908f8.chunk.js"
   },
   {
     "revision": "78ee108af4e5ddf6feec",
     "url": "/design/static/js/runtime-main.3f359fd2.js"
   },
   {
-    "revision": "8b43c4d2bdfb76616990d4f4b3237a51",
-    "url": "/design/static/media/36.8b43c4d2.png"
+    "revision": "54451ae97a15a4a2ed74f9a641bee8ad",
+    "url": "/design/static/media/36.54451ae9.png"
   },
   {
-    "revision": "ce427ac715f82e51d68f07076256ac0b",
-    "url": "/design/static/media/36.ce427ac7.webp"
+    "revision": "7aab956630e8b6a741cd8383748a9dc4",
+    "url": "/design/static/media/36.7aab9566.webp"
   },
   {
-    "revision": "86180542ec201e2eca8fb30bf053d759",
-    "url": "/design/static/media/37.86180542.png"
+    "revision": "41a8df25225721796bf77476cc5d3993",
+    "url": "/design/static/media/37.41a8df25.png"
   },
   {
-    "revision": "c7f7ed2924d90cae1d5814f1588de262",
-    "url": "/design/static/media/37.c7f7ed29.webp"
+    "revision": "6cd35b4247cf23cae2eee124c24962ef",
+    "url": "/design/static/media/37.6cd35b42.webp"
   },
   {
     "revision": "8531fa7be7330ba846a2e291d229c77a",
@@ -308,12 +308,76 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/design/static/media/Waste.f403f9a6.png"
   },
   {
+    "revision": "caba9cb66925bf4ebf3231a930e1be9e",
+    "url": "/design/static/media/desk-dashboard-01.caba9cb6.webp"
+  },
+  {
+    "revision": "d57b8cb0c198e3ae5bd450f8506198a3",
+    "url": "/design/static/media/desk-dashboard-01.d57b8cb0.png"
+  },
+  {
+    "revision": "383942508b42b7ae00283364bf3322d9",
+    "url": "/design/static/media/desk-dashboard-02.38394250.png"
+  },
+  {
+    "revision": "573c0213d9e22af2289e53fe7cdf76a2",
+    "url": "/design/static/media/desk-dashboard-02.573c0213.webp"
+  },
+  {
+    "revision": "17b56ac6c039ff6f74c7cfa78809c665",
+    "url": "/design/static/media/desk-dashboard-04.17b56ac6.webp"
+  },
+  {
+    "revision": "503ad2d4a78644b6377df7443d30d9d1",
+    "url": "/design/static/media/desk-dashboard-04.503ad2d4.png"
+  },
+  {
+    "revision": "2e3d95530bcd60a330f2111ffd1dcabe",
+    "url": "/design/static/media/desk-dashboard-05.2e3d9553.webp"
+  },
+  {
+    "revision": "6ab22d5e49ebf30aacdd023921017d7f",
+    "url": "/design/static/media/desk-dashboard-05.6ab22d5e.png"
+  },
+  {
     "revision": "156b50d1aa7d9211561510712c81dde8",
     "url": "/design/static/media/iAWriterQuattroS-Regular.156b50d1.woff2"
   },
   {
     "revision": "d67923df405e9a661802c86049b35dbb",
     "url": "/design/static/media/iAWriterQuattroS-Regular.d67923df.woff"
+  },
+  {
+    "revision": "149bc50c2c392756b9da28cc80013d2c",
+    "url": "/design/static/media/mobile-dashboard-01.149bc50c.webp"
+  },
+  {
+    "revision": "8a4d61e21242390d1c6106b4f63edca8",
+    "url": "/design/static/media/mobile-dashboard-01.8a4d61e2.png"
+  },
+  {
+    "revision": "4472f9ff53b477cb91cbf9ace72cd572",
+    "url": "/design/static/media/mobile-dashboard-02.4472f9ff.png"
+  },
+  {
+    "revision": "7da58a21492a33cd7cb5edb33bddf1b7",
+    "url": "/design/static/media/mobile-dashboard-02.7da58a21.webp"
+  },
+  {
+    "revision": "d7fd24de5529abb25495823f47344286",
+    "url": "/design/static/media/mobile-dashboard-04.d7fd24de.png"
+  },
+  {
+    "revision": "e6faa0f18e51da84edc815d835fa3afc",
+    "url": "/design/static/media/mobile-dashboard-04.e6faa0f1.webp"
+  },
+  {
+    "revision": "7ead4b6b394866d4161ab2d044b231e5",
+    "url": "/design/static/media/mobile-dashboard-05.7ead4b6b.webp"
+  },
+  {
+    "revision": "ef916d24b93d110d1dbbbe755b7b9e70",
+    "url": "/design/static/media/mobile-dashboard-05.ef916d24.png"
   },
   {
     "revision": "6f94a6bdccea2a36346266a62270a358",
