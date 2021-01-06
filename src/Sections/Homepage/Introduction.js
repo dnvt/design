@@ -47,11 +47,11 @@ const Introduction = () => {
           value: ["Frame.io 3.7", "Frame.io 3.6"],
         }}
         tag={{
-          color: [theme.legend, theme.legend],
+          color: [theme.constant.white, theme.constant.white],
           value: ["Product design", "Product design"],
         }}
         background={{
-          color: [theme.grey, theme.grey],
+          color: [theme.white, theme.grey],
           hover: [theme.hover, theme.hover],
         }}
         status={["link", "link"]}

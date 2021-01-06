@@ -11,7 +11,7 @@ const Device = (props) => {
   const browser = (
     <div className={classes.browserContent}>
       <div className={classes.tricolor}></div>
-      <Image src={props.src} alt={props.alt} />
+      <Image fullWidth src={props.src} alt={props.alt} />
     </div>
   );
 

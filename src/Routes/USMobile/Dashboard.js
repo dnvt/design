@@ -20,6 +20,7 @@ import heroWebp from "../../Assets/Images/USMobile/System/DashboardHero.webp";
 
 import diagramPng from "../../Assets/Images/USMobile/System/Diagram.png";
 import diagramWebp from "../../Assets/Images/USMobile/System/Diagram.webp";
+
 /// Footer
 import systemPng from "../../Assets/Images/Footer/System.png";
 import systemWebp from "../../Assets/Images/Footer/System.webp";
