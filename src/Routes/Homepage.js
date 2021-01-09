@@ -11,10 +11,14 @@ import About from "../Sections/Homepage/About";
 import PrivateWork from "../Sections/Homepage/PrivateWork";
 import { useMainColor } from "../Hooks/useMainColor";
 import { useTheme } from "react-jss";
+import { useWindowSize } from "../Hooks/useWindowSize";
 
 const Homepage = () => {
   const theme = useTheme();
+  const window = useWindowSize();
   const [color, setColor] = useMainColor();
+
+  let spacer = <Spacer c height={window.width > 768 ? 184 : 40} />;
 
   useEffect(() => {
     setColor(theme.main);
@@ -24,18 +28,18 @@ const Homepage = () => {
   return (
     <>
       <Spacer c height={104} />
-      <Spacer c height={184} />
+      <Spacer c height={window.width > 768 ? 184 : null} />
       <div style={{ position: "relative" }}>
         <FontHero value='François' />
       </div>
       <Introduction />
-      <Spacer c height={184} />
+      {spacer}
       <USMWork />
       <Spacer c height={104} />
       <PrivateWork />
       <Spacer c height={104} />
       <SelectedWork />
-      <Spacer c height={184} />
+      {spacer}
       <div style={{ position: "relative" }}>
         <FontHero value='Yeaaah!' />
       </div>
@@ -43,7 +47,7 @@ const Homepage = () => {
       <div style={{ position: "relative" }}>
         <FontHero value='dnvt.me' />
       </div>
-      <Spacer c height={184} />
+      {spacer}
       <About />
     </>
   );

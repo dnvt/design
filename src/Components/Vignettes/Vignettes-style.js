@@ -7,7 +7,7 @@ const VignettesStyle = createUseStyles({
     overflow: "hidden",
     alignItems: "center",
     justifyContent: "center",
-    height: "336px",
+    height: "256px",
     background: ({ theme }) => theme.outline,
 
     "@media (min-width: 768px)": {
@@ -33,25 +33,30 @@ const VignettesStyle = createUseStyles({
       height: "464px",
     },
   },
+
   heroVignette: {
     display: "flex",
     justifyContent: "center",
-    transition: "background .15s ease",
+    transition: "height .6s ease",
     width: "auto",
     position: "relative",
     objectFit: "cover",
     overflow: "hidden",
     padding: "24px 0",
-    height: "576px",
+    height: "664px",
+    // Final values in the Component
     background: (props) => props.background,
 
     "@media (min-width: 768px)": {
-      height: "784px",
+      height: "960px",
+      // Final values in the Component
     },
     "@media (min-width: 1360px)": {
-      height: "960px",
+      height: "1200px",
+      // Final values in the Component
     },
   },
+
   image: {
     display: "flex",
     justifyContent: "center",

@@ -253,7 +253,7 @@ const DeviceStyle = createUseStyles({
     boxShadow: ({ theme }) => theme.shadow,
     background: ({ theme }) => theme.tint,
     overflow: "hidden",
-    maxWidth: "264px",
+    width: "236px",
     objectFit: "cover",
     height: "512px",
 

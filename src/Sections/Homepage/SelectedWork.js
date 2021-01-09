@@ -15,6 +15,8 @@ import norseDarkPng from "../../Assets/Images/Norse/NorseDark.png";
 import norseDarkWebp from "../../Assets/Images/Norse/NorseDark.webp";
 import elasticPng from "../../Assets/Images/Elastic/Elastic.png";
 import elasticWebp from "../../Assets/Images/Elastic/Elastic.webp";
+import elasticFullPng from "../../Assets/Images/Elastic/ElasticFull.png";
+import elasticFullWebp from "../../Assets/Images/Elastic/ElasticFull.webp";
 import wastePng from "../../Assets/Images/Waste/Waste.png";
 import wasteWebp from "../../Assets/Images/Waste/Waste.webp";
 import kipfitPng from "../../Assets/Images/Kipfit/Kipfit.png";
@@ -24,14 +26,21 @@ import kipfitDarkWebp from "../../Assets/Images/Kipfit/KipfitDark.webp";
 import mimiPng from "../../Assets/Images/Mimi/Mimi.png";
 import mimiWebp from "../../Assets/Images/Mimi/Mimi.webp";
 import useDarkMode from "use-dark-mode";
+import { useWindowSize } from "../../Hooks/useWindowSize";
 
 const SelectedWork = () => {
   const theme = useTheme();
+  const window = useWindowSize();
   const darkMode = useDarkMode();
 
   /// Changing image on Dark mode
   let kipfitImages = [kipfitPng, kipfitWebp];
   let norseImages = [norsePng, norseWebp];
+  let elastic = [elasticPng, elasticWebp];
+
+  if (window.width < 768) {
+    elastic = [elasticFullPng, elasticFullWebp];
+  }
 
   if (darkMode.value) {
     kipfitImages = [kipfitDarkPng, kipfitDarkWebp];
@@ -66,7 +75,7 @@ const SelectedWork = () => {
           hover: [theme.hover, theme.hover],
         }}
         status={["construction", "construction"]}
-        src={[norseImages, [elasticPng, elasticWebp]]}
+        src={[norseImages, elastic]}
         alt={[
           "Norse interieur manual",
           "Elastic movie who scared the hell out of me",

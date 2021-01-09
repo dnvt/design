@@ -28,14 +28,17 @@ import matrixPng from "../../Assets/Images/Footer/Matrix.png";
 import matrixWebp from "../../Assets/Images/Footer/Matrix.webp";
 import starsFooterPng from "../../Assets/Images/Footer/Stars.png";
 import starsFooterWebp from "../../Assets/Images/Footer/Stars.webp";
+import { useHeroTransition } from "../../Hooks/useHeroTransition";
 
 const Dashboard = () => {
   const theme = useTheme();
   const [color, setColor] = useMainColor();
+  const [, setHeroTransition] = useHeroTransition();
 
   useEffect(() => {
     setColor(theme.usmobile.text);
-  }, [setColor, theme.usmobile.text]);
+    setHeroTransition({ dashboard: false });
+  }, [setColor, theme.usmobile.text, setHeroTransition]);
 
   const CONTENT = {
     FOOTER: [
@@ -81,6 +84,7 @@ const Dashboard = () => {
   return (
     <>
       <Vignettes
+        tag='dashboard'
         hero
         src={[heroPng, heroWebp]}
         background={theme.usmobile.background}
@@ -96,7 +100,7 @@ const Dashboard = () => {
         width
         height={576}
         alt='Example of a user journey for the Starter Kit activation feature, with its backend and business rules'
-        background={theme.usmobile.background}
+        background='#EEFAF4'
         src={[diagramPng, diagramWebp]}
       />
       <DashDesigns color={color} />

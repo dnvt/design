@@ -6,6 +6,7 @@ import { ColorTheme } from "./useTheme";
 import { MenuVisibilityProvider } from "./useMenu";
 import { TooltipVisibilityProvider } from "./useTooltip";
 import { MainColorProvider } from "./useMainColor";
+import { HeroTransitionProvider } from "./useHeroTransition";
 
 const Context = (props) => {
   return (
@@ -15,7 +16,9 @@ const Context = (props) => {
           <MenuVisibilityProvider>
             <TooltipVisibilityProvider>
               <MainColorProvider>
-                <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+                <HeroTransitionProvider>
+                  <DocumentSizeProvider>{props.children}</DocumentSizeProvider>
+                </HeroTransitionProvider>
               </MainColorProvider>
             </TooltipVisibilityProvider>
           </MenuVisibilityProvider>

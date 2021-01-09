@@ -26,22 +26,46 @@ const GroupedMobileDesktop = (props) => {
       </>
     );
 
+  if (window.width > "576")
+    return (
+      <>
+        <Container big around>
+          <Device browser src={props.srcDesktop[0]} />
+        </Container>
+        <Spacer c height={80} />
+
+        <Container big center>
+          <Device mobile src={props.srcMobile[0]} />
+          <SpacerFullHeight />
+          <Device mobile src={props.srcMobile[1]} />
+        </Container>
+        <Spacer c height={80} />
+
+        <Container big around>
+          <Device browser src={props.srcDesktop[1]} />
+        </Container>
+      </>
+    );
+
   return (
     <>
       <Container big around>
         <Device browser src={props.srcDesktop[0]} />
       </Container>
-      <Spacer c height={80} />
-
-      <Container big center>
-        <Device mobile src={props.srcMobile[0]} />
-        <SpacerFullHeight />
-        <Device mobile src={props.srcMobile[1]} />
-      </Container>
-      <Spacer c height={80} />
+      <Spacer c height={40} />
 
       <Container big around>
         <Device browser src={props.srcDesktop[1]} />
+      </Container>
+      <Spacer c height={40} />
+
+      <Container big center>
+        <Device mobile src={props.srcMobile[0]} />
+      </Container>
+      <Spacer c height={40} />
+
+      <Container big center>
+        <Device mobile src={props.srcMobile[1]} />
       </Container>
     </>
   );

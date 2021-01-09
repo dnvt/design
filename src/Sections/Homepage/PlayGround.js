@@ -10,14 +10,17 @@ import starsPng from "../../Assets/Images/Stars/Stars.png";
 import starsWebp from "../../Assets/Images/Stars/Stars.webp";
 import coverPng from "../../Assets/Images/Coverjs/Coverjs.png";
 import coverWebp from "../../Assets/Images/Coverjs/Coverjs.webp";
+import { useWindowSize } from "../../Hooks/useWindowSize";
 
 const PlayGround = () => {
   const theme = useTheme();
+  const window = useWindowSize();
+
   return (
     <>
       <Container>
         <Font type='h2'>Play Ground</Font>
-        <Spacer height={104} />
+        <Spacer height={window.width > 768 ? 104 : 40} />
         <Card
           status='construction'
           titleColor={theme.text}

@@ -13,7 +13,7 @@ const FontSection = () => {
   return (
     <>
       <Container>{spacer}</Container>
-      <div style={{ height: "800px" }}>
+      <div style={{ position: "relative", height: "800px", padding:"120px -80px" }}>
         <FontHero value='Hello World!' />
       </div>
       <Container>

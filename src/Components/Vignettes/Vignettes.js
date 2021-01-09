@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { useWindowSize } from "../../Hooks/useWindowSize";
+import { useHeroTransition } from "../../Hooks/useHeroTransition";
 import { useTheme } from "react-jss";
 
 import VignettesStyle from "./Vignettes-style";
@@ -16,6 +17,17 @@ const Vignettes = (props) => {
   const theme = useTheme();
   const window = useWindowSize();
   const classes = VignettesStyle({ ...props, theme });
+  const [transition] = useHeroTransition();
+
+  let height = "416px";
+
+  if (window.width > 768) {
+    height = "784px";
+  }
+
+  if (window.width > 1360) {
+    height = "960px";
+  }
 
   /// Always going to have this
   const imgSegment = (
@@ -45,7 +57,10 @@ const Vignettes = (props) => {
 
   if (props.hero) {
     return (
-      <div className={classes.heroVignette}>
+      <div
+        className={classes.heroVignette}
+        style={transition[props.tag] ? null : { height: height }}
+      >
         <Image class={classes.image} src={props.src} alt={props.alt} />
       </div>
     );

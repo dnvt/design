@@ -10,13 +10,24 @@ const ImageStyle = createUseStyles({
       padding: "24px",
     },
   },
+  bigLoading: {
+    minWidth: "100%",
+    height: "fill-available",
+    background: ({ theme }) => theme.outline,
+    padding: "16px",
+    "@media (min-width: 1360px)": {
+      padding: "24px",
+    },
+  },
   mobile: {
-    width: "100%",
+    width: "225px",
     height: "100%",
     background: ({ theme }) => theme.outline,
     padding: "32px 16px",
     borderRadius: "22px",
+
     "@media (min-width: 768px)": {
+      width: "100%",
       borderRadius: "28px",
     },
     "@media (min-width: 1360px)": {
@@ -89,6 +100,16 @@ const ImageStyle = createUseStyles({
     // height: "100%",
     opacity: ({ dark }) => (dark.value ? 0.9 : 1),
     userDrag: "none",
+  },
+  deviceImg: {
+    // height: "100%",
+    opacity: ({ dark }) => (dark.value ? 0.9 : 1),
+    userDrag: "none",
+
+    "@media (max-width: 768px)": {
+      height: "fill-available",
+      minWidth: "100%",
+    },
   },
 });
 

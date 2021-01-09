@@ -39,10 +39,12 @@ const HeroStyle = createUseStyles({
     // },
   },
   heroAnimated: {
-    width: "100%",
     overflow: "hidden",
-    height: "auto",
-    zIndex: "-1",
+    display: "flex",
+    alignItems: "flex-start",
+    textAlign: "center",
+    justifyContent: "center",
+    zIndex: -1,
     // "@media (min-width: 768px)": {
   },
 });

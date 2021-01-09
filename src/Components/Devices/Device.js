@@ -8,6 +8,7 @@ const Device = (props) => {
   const classes = DeviceStyle({ ...props, theme });
 
   // Browser device
+  /// TODO: Create real class for this <Image />
   const browser = (
     <div className={classes.browserContent}>
       <div className={classes.tricolor}></div>
@@ -16,6 +17,7 @@ const Device = (props) => {
   );
 
   // Browser headerless device
+  /// TODO: Create real class for this <Image />
   const browserLess = (
     <div className={classes.browserLessContent}>
       <Image fullWidth src={props.src} alt={props.alt} />
