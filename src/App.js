@@ -10,7 +10,7 @@ import Dashboard from "./Routes/USMobile/Dashboard";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/design'>
       <ScrollToTop />
       <Layout>
         <Switch>
