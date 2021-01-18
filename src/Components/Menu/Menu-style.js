@@ -17,15 +17,20 @@ const MenuStyle = createUseStyles({
   hash: {
     position: "relative",
     bottom: "-20px",
+    display: "flex",
+    flexDirection: "column",
+    flexGrow: "1",
   },
   nav: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     width: "140px",
     margin: "auto",
-    marginTop: "64px",
+    marginTop: "72px",
     marginBottom: "0",
+    minHeight: "240px",
+    flexGrow: "1",
 
     padding: "8px 0px",
     "@media (min-width: 768px)": {

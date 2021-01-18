@@ -6,16 +6,29 @@ import Spacer from "../../Utils/Spacer/Spacer";
 import Container from "../../Components/Containers/Container";
 import { Description } from "./Description";
 import FontHero from "../../Components/Hero/FontHero";
+import { useWindowSize } from "../../Hooks/useWindowSize";
 
 const FontSection = () => {
   const theme = useTheme();
   const spacer = <Spacer height={40} />;
+  const window = useWindowSize();
+
   return (
     <>
-      <Container>{spacer}</Container>
-      <div style={{ position: "relative", height: "800px", padding:"120px -80px" }}>
-        <FontHero value='Hello World!' />
-      </div>
+      {window.width > 768 && (
+        <>
+          <Container>{spacer}</Container>
+          <div
+            style={{
+              position: "relative",
+              height: "800px",
+              padding: "120px -80px",
+            }}
+          >
+            <FontHero value='Hello World!' />
+          </div>
+        </>
+      )}
       <Container>
         <Spacer height={64} />
         <Font type='h1'>

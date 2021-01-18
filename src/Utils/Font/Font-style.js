@@ -63,11 +63,6 @@ const FontStyle = createUseStyles({
     marginLeft: "-.9%",
     marginRight: "-.9%",
     zIndex: -1,
-    webkitTouchCallout: "none" /* iOS Safari */,
-    webkitUserSelect: "none" /* Safari */,
-    khtmlUserSelect: "none" /* Konqueror HTML */,
-    mozUserSelect: "none" /* Old versions of Firefox */,
-    msUserSelect: "none" /* Internet Explorer/Edge */,
     userSelect: "none",
 
     "@media (min-width: 768px)": {

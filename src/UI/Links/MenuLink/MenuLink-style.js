@@ -7,6 +7,13 @@ const MenuLinkStyle = createUseStyles({
     flexDirection: "row",
     "&: hover": (props) => ({ color: props.hover }),
   },
+  WIPLink: {
+    position: "relative",
+    cursor: "not-allowed",
+    display: "flex",
+    flexDirection: "row",
+    "&: hover": (props) => ({ color: props.hover }),
+  },
   icon: {
     height: "100%",
     padding: "6px 0 2px",

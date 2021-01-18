@@ -1,10 +1,9 @@
-import React, { memo, useEffect } from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "react-jss";
 
 import DarkModeToggle from "../../Buttons/ThemeToggle";
 import GridToggle from "../../Buttons/GridToggle";
-import useHover from "../../../Hooks/useHover";
 
 import MenuLinkStyle from "./MenuLink-style";
 import Font from "../../../Utils/Font/Font";
@@ -12,47 +11,24 @@ import Separator from "../../../Utils/Separator/Separator";
 import Icon from "../../../Utils/Icon/Icon";
 import Tooltip from "../../Tooltip/Tooltip";
 import MenuToggle from "../../Buttons/MenuToggle";
-import { useTooltip } from "../../../Hooks/useTooltip";
 
 const MenuLink = (props) => {
-  const [hoveredRef, isHovered] = useHover();
-  const [hint, setHint] = useTooltip();
   const theme = useTheme();
-
   const classes = MenuLinkStyle({ ...props, theme });
+  console.log()
 
-  useEffect(() => {
-    let comingUp;
-    let comingDown;
-
-    if (isHovered) {
-      clearTimeout(comingDown);
-      comingUp = setTimeout(function () {
-        setHint(true);
-      }, 650);
-    }
-
-    else if (!isHovered) {
-      clearTimeout(comingUp);
-      if (hint) {
-        comingDown = setTimeout(function () {
-          setHint(false);
-        }, 4000);
-      }
-    }
-
-    return () => {
-      clearTimeout(comingUp);
-      clearTimeout(comingDown);
-    };
-  }, [isHovered, setHint, hint]);
+  // TODO: Simplify the shit out of this 
+  // by creating several MenuLink components
+  // > IconLink
+  // > MenuLink
+  // > WIPLink
 
   //  ICONS
   /// Default case
   let iconType = (
     <Icon
-      name={isHovered && props.iconHover ? props.iconHover : props.icon}
-      color={props.hover && isHovered ? props.hover : props.color}
+      name={props.isHovered && props.iconHover ? props.iconHover : props.icon}
+      color={props.hover && props.isHovered ? props.hover : props.color}
     />
   );
 
@@ -62,24 +38,24 @@ const MenuLink = (props) => {
     case "grid":
       iconType = (
         <GridToggle
-          active={props.hover && isHovered ? props.active : props.hover}
-          color={props.hover && isHovered ? props.hover : props.color}
+          active={props.hover && props.isHovered ? props.active : props.hover}
+          color={props.hover && props.isHovered ? props.hover : props.color}
         />
       );
       break;
     case "theme":
       iconType = (
         <DarkModeToggle
-          icon={props.hover && isHovered ? "lightOff" : "lightOn"}
-          iconDark={props.hover && isHovered ? "darkOff" : "darkOn"}
-          color={props.hover && isHovered ? props.hover : props.color}
+          icon={props.hover && props.isHovered ? "lightOff" : "lightOn"}
+          iconDark={props.hover && props.isHovered ? "darkOff" : "darkOn"}
+          color={props.hover && props.isHovered ? props.hover : props.color}
         />
       );
       break;
     case "menu": /// For mobile
       iconType = (
         <MenuToggle
-          color={props.hover && isHovered ? props.hover : props.color}
+          color={props.hover && props.isHovered ? props.hover : props.color}
         />
       );
       break;
@@ -101,13 +77,13 @@ const MenuLink = (props) => {
     <div>
       <Font
         type='menu'
-        color={props.hover && isHovered ? props.hover : props.color}
+        color={props.hover && props.isHovered ? props.hover : props.color}
       >
         {props.value}
       </Font>
       <Separator
-        opacity={props.hover && isHovered ? 1 : 0}
-        color={props.hover && isHovered ? props.hover : props.color}
+        opacity={props.hover && props.isHovered ? 1 : 0}
+        color={props.hover && props.isHovered ? props.hover : props.color}
       />
     </div>
   );
@@ -117,7 +93,7 @@ const MenuLink = (props) => {
     <div className={classes.iconRight}>
       <Icon
         name={props.iconRight}
-        color={props.hover && isHovered ? props.hover : props.color}
+        color={props.hover && props.isHovered ? props.hover : props.color}
       />
     </div>
   );
@@ -126,7 +102,9 @@ const MenuLink = (props) => {
   const tooltip = (
     <div
       style={{ left: props.left }}
-      className={isHovered && hint ? classes.tooltipHovered : classes.tooltip}
+      className={
+        props.isHovered && props.hint ? classes.tooltipHovered : classes.tooltip
+      }
     >
       <Tooltip value={props.tooltip} />
     </div>
@@ -135,7 +113,7 @@ const MenuLink = (props) => {
   /// Use noLink for when menuLink has an action, not a link
   if (props.noLink)
     return (
-      <div className={classes.MenuLink} ref={hoveredRef}>
+      <div className={classes.MenuLink} ref={props.hoveredRef}>
         {props.icon && icon}
         {props.value && content}
         {props.iconRight && iconRight}
@@ -145,10 +123,20 @@ const MenuLink = (props) => {
 
   if (!props.hover)
     return (
-      <div className={classes.MenuLink} ref={hoveredRef}>
+      <div className={classes.MenuLink} ref={props.hoveredRef}>
         {props.icon && icon}
         {props.value && content}
         {props.iconRight && iconRight}
+      </div>
+    );
+
+  if (props.wip)
+    return (
+      <div className={classes.WIPLink} ref={props.hoveredRef}>
+        {props.icon && icon}
+        {props.value && content}
+        {props.iconRight && iconRight}
+        {props.tooltip && tooltip}
       </div>
     );
 
@@ -157,7 +145,7 @@ const MenuLink = (props) => {
     <Link
       to={props.to ? props.to : "/"}
       className={classes.MenuLink}
-      ref={hoveredRef}
+      ref={props.hoveredRef}
       onClick={props.clicked}
     >
       {props.icon && icon}

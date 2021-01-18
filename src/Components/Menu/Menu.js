@@ -31,18 +31,17 @@ const Menu = (props) => {
   return (
     <div className={classes.Menu}>
       <Container>
-        <div className={classes.hash}>
-          <nav className={classes.nav}>
-            <Wrap>
-              <MenuLink
-                icon='loading'
-                value='Homepage'
-                color={color[0]}
-                hover={color[0]}
-              />
-            </Wrap>
-            {spacer}
-            <Wrap>
+        <nav className={classes.nav}>
+          <Wrap>
+            <MenuLink
+              icon='loading'
+              value='Homepage'
+              color={color[0]}
+              hover={color[0]}
+            />
+          </Wrap>
+          {spacer}
+          <Wrap>
               <MenuLink
                 icon='mouseOn'
                 iconHover='mouseOff'
@@ -72,19 +71,18 @@ const Menu = (props) => {
               />
             </Wrap>
             {spacer}
-            <Wrap>
-              <MenuLink
-                to='/guidelines'
-                icon='guidelinesOn'
-                iconHover='guidelinesOff'
-                value='Guidelines'
-                color={color[0]}
-                hover={color[0]}
-              />
-            </Wrap>
-            {spacer}
-          </nav>
-        </div>
+          <Wrap>
+            <MenuLink
+              to='/guidelines'
+              icon='guidelinesOn'
+              iconHover='guidelinesOff'
+              value='Guidelines'
+              color={color[0]}
+              hover={color[0]}
+            />
+          </Wrap>
+          {spacer}
+        </nav>
         <div className={classes.hashContain}>
           <Font type='hero'>#</Font>
         </div>
