@@ -1,17 +1,20 @@
-import React from "react";
-import { useTheme } from "react-jss";
+import React from "react"
+import { useTheme } from "react-jss"
+import { parse } from "query-string"
 
-import Font from "../../Utils/Font/Font";
-import Spacer from "../../Utils/Spacer/Spacer";
-import Container from "../../Components/Containers/Container";
-import { Description } from "./Description";
-import FontHero from "../../Components/Hero/FontHero";
-import { useWindowSize } from "../../Hooks/useWindowSize";
+import Font from "../../Utils/Font/Font"
+import Spacer from "../../Utils/Spacer/Spacer"
+import Container from "../../Components/Containers/Container"
+import { Description } from "./Description"
+import FontHero from "../../Components/Hero/FontHero"
+import { useWindowSize } from "../../Hooks/useWindowSize"
 
-const FontSection = () => {
-  const theme = useTheme();
-  const spacer = <Spacer height={40} />;
-  const window = useWindowSize();
+const FontSection = (props) => {
+  const theme = useTheme()
+  const spacer = <Spacer height={40} />
+  const window = useWindowSize()
+  const animate = parse(props.location.search).fontAnimation
+  console.log(animate)
 
   return (
     <>
@@ -25,7 +28,7 @@ const FontSection = () => {
               padding: "120px -80px",
             }}
           >
-            <FontHero value='Hello World!' />
+            <FontHero animate={animate} value='Hello World!' />
           </div>
         </>
       )}
@@ -129,8 +132,8 @@ const FontSection = () => {
         />
       </Container>
     </>
-  );
-};
+  )
+}
 
 const DESC = {
   large: {
@@ -229,6 +232,6 @@ const DESC = {
       "Padding. 32px 0px 32px",
     ],
   },
-};
+}
 
-export default FontSection;
+export default FontSection
