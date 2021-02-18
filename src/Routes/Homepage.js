@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import { parse } from "query-string"
-// import HomepageStyle from "./Homepage-style";
 import Spacer from "../Utils/Spacer/Spacer"
 import FontHero from "../Components/Hero/FontHero"
 import USMWork from "../Sections/Homepage/USMWork"
@@ -46,7 +45,7 @@ const Homepage = ({ location }) => {
       </div>
       <PlayGround />
       <div style={{ position: "relative" }}>
-        <FontHero animate value='dnvt.me' />
+        <FontHero animate={animate} value='dnvt.me' />
       </div>
       {spacer}
       <About />
@@ -55,22 +54,3 @@ const Homepage = ({ location }) => {
 }
 
 export default Homepage
-
-// import Container from "../Components/Containers/Container";
-// import { animated, useSpring } from "react-spring";
-// import { useHover } from "react-use-gesture";
-
-// function DragAndMouseDown() {
-//   const [{ color }, set] = useSpring(() => ({ color: "white" }));
-//   const bind = useHover(
-//     ({ hovering }) => set({ color: hovering ? "green" : "white" })
-//   );
-
-//   return (
-//     <Container>
-//       <animated.div {...bind()} style={{ padding: "120px 0", color }}>
-//         hello
-//       </animated.div>
-//     </Container>
-//   );
-// }
